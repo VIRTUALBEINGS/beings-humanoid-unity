@@ -1,7 +1,7 @@
 # Humanoid Being - Unity
 
 ## VIRTUAL BEINGS HUB Discord server
-[Feel free to join our developer's Discord server !](https://discord.gg/raHeeqbh)
+[Feel free to join our developers Discord server !](https://discord.gg/raHeeqbh)
 
 ## Requirements
 - Unity Version 2021.3 or higher
