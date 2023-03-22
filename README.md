@@ -2,7 +2,7 @@
 
 # VIRTUAL BEINGS Unity Humanoid Being
 
-<img src="https://user-images.githubusercontent.com/1152671/226948619-fbd38430-ba12-4dd2-be04-c9d8c0760614.png" width=16 /> [**VIRTUAL BEINGS Hub Discord**](https://discord.gg/raHeeqbh)
+<img src="https://user-images.githubusercontent.com/1152671/226948619-fbd38430-ba12-4dd2-be04-c9d8c0760614.png" width=16 /> [**VIRTUAL BEINGS Hub on Discord**](https://discord.gg/raHeeqbh)
 
 ## Requirements
 - Unity Version 2021.3 or higher
