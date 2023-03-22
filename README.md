@@ -2,6 +2,7 @@
 
 ## Requirements
 - Unity Version 2021.3 or higher
+- Universal Render Pipeline Unity project
 - [Git](https://git-scm.com/)
 - [VirtualBeings Tech](https://github.com/VIRTUALBEINGS/virtualbeingstech-unity)
 
