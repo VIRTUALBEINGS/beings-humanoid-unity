@@ -1,7 +1,8 @@
-# Humanoid Being - Unity
+![VIRTUAL BEINGS banner](https://user-images.githubusercontent.com/1152671/226950188-3fef7fe8-c051-4769-a79e-0b7992188298.png)
 
-## VIRTUAL BEINGS HUB Discord server
-[Feel free to join our developers Discord server !](https://discord.gg/raHeeqbh)
+# VIRTUAL BEINGS Unity Humanoid Being
+
+<img src="https://user-images.githubusercontent.com/1152671/226948619-fbd38430-ba12-4dd2-be04-c9d8c0760614.png" width=16 /> [**VIRTUAL BEINGS Hub on Discord**](https://discord.gg/raHeeqbh)
 
 ## Requirements
 - Unity Version 2021.3 or higher
@@ -83,3 +84,4 @@
 Your new Being is now ready. You can use it in the QuickStart scene by replacing the being prefab on the `Being Installer Settings Sample`.
 
 ![image](https://user-images.githubusercontent.com/128504226/226884446-a73ef2cf-e47c-4994-a3d2-20ae4c9fa475.png)
+
