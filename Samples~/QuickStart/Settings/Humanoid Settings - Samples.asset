@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dbff021fa71cdaa4eb64fbdd5c6a7dfe, type: 3}
-  m_Name: Sample Humanoid Settings
+  m_Name: Humanoid Settings - Samples
   m_EditorClassIdentifier: 
   _defaultExecutionType: 0
   _names:
@@ -37,8 +37,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8febb00a6ef5d42409cd64b7d7e8fd51, type: 2}
   _motives:
   - MotiveName:
-      rid: 8065694534942064643
-    Salience01: 0
+      rid: 8065694557485137921
+    Salience01: 0.5
   _physicalInformation:
     Clearance: 0.55
     Height: 1.8
@@ -101,5 +101,5 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 8065694534942064643
-      type: {class: MotiveIdle, ns: VirtualBeings.Beings.Humanoid, asm: com.virtualbeings.being.humanoid}
+    - rid: 8065694557485137921
+      type: {class: MotiveIdle, ns: VirtualBeings.Beings.Humanoid, asm: Assembly-CSharp}

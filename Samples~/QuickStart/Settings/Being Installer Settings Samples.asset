@@ -20,9 +20,9 @@ MonoBehaviour:
         type: 2}
       BeingInstances:
       - Type: 0
-        BeingPrefab: {fileID: 8181254309971691334, guid: 91ea48591153c324d894eb1adb9faf9e,
+        BeingPrefab: {fileID: 7786341663441435999, guid: 777292301bbca64438211f0d6cb077aa,
           type: 3}
-        BeingSettings: {fileID: 11400000, guid: c1d82a71d90510941a4e8ec9e9c1850d,
+        BeingSettings: {fileID: 11400000, guid: d1676288b01cf3f45bc1223bf1b522c4,
           type: 2}
   SoundManagerSettings:
     DefaultFadeOutDuration: 0.3
