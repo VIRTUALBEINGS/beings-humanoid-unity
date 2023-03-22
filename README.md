@@ -1,10 +1,13 @@
 # Humanoid Being - Unity
 
+## VIRTUAL BEINGS HUB Discord server
+[Feel free to join our developer's Discord server !](https://discord.gg/raHeeqbh)
+
 ## Requirements
 - Unity Version 2021.3 or higher
 - Universal Render Pipeline Unity project
 - [Git](https://git-scm.com/)
-- [VirtualBeings Tech](https://github.com/VIRTUALBEINGS/virtualbeingstech-unity)
+- [VIRTUAL BEINGS Tech Unity package](https://github.com/VIRTUALBEINGS/virtualbeingstech-unity)
 
 ## How to import Humanoid Being package into your Unity project
 - Open Package Manager windows in Unity : `Window > Package Manager`.
