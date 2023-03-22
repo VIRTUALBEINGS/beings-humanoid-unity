@@ -1,0 +1,16 @@
+{
+    "name": "com.virtualbeings.being.humanoid",
+    "rootNamespace": "",
+    "references": [
+        "GUID:25a3c14666c047c4cbfc17c332c5a31b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
