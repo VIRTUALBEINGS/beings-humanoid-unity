@@ -1,4 +1,4 @@
-![VIRTUAL BEINGS banner](https://user-images.githubusercontent.com/1152671/226950188-3fef7fe8-c051-4769-a79e-0b7992188298.png)
+![VIRTUAL BEINGS banner](https://github.com/VIRTUALBEINGS/beings-humanoid-unity/blob/b797800e5ccfcab2adc747a58f21972012b2285c/GitHub%20readme%20banner.jpg)
 
 # VIRTUAL BEINGS Unity Humanoid Being
 
