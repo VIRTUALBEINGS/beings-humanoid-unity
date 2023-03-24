@@ -18,19 +18,22 @@ namespace VirtualBeings.Beings.Humanoid
         public static STHumanoid StepL = new(false, nameof(StepL));
         public static STHumanoid StepR = new(false, nameof(StepR));
 
-        public static STHumanoid Defeated           = new(false, nameof(Defeated));
-        public static STHumanoid Greet              = new(false, nameof(Greet));
-        public static STHumanoid GreetActive        = new(false, nameof(GreetActive));
-        public static STHumanoid Reacting           = new(false, nameof(Reacting));
-        public static STHumanoid Angry_CrossArms    = new(false, nameof(Angry_CrossArms));
-        public static STHumanoid StretchArms        = new(false, nameof(StretchArms));
-        public static STHumanoid InspectCurious     = new(false, nameof(InspectCurious));
-        public static STHumanoid Scared             = new(false, nameof(Scared));
-        public static STHumanoid ScaredLeftRight    = new(false, nameof(ScaredLeftRight));
-        public static STHumanoid Laugh              = new(false, nameof(Laugh));
-        public static STHumanoid Applause           = new(false, nameof(Applause));
-        public static STHumanoid Disappointed       = new(false, nameof(Disappointed));
-        public static STHumanoid Shrug              = new(false, nameof(Shrug));
+        public static STHumanoid Defeated         = new(false, nameof(Defeated));
+        public static STHumanoid Greet            = new(false, nameof(Greet));
+        public static STHumanoid GreetActive      = new(false, nameof(GreetActive));
+        public static STHumanoid Reacting         = new(false, nameof(Reacting));
+        public static STHumanoid Angry_CrossArms  = new(false, nameof(Angry_CrossArms));
+        public static STHumanoid StretchArms      = new(false, nameof(StretchArms));
+        public static STHumanoid InspectCurious   = new(false, nameof(InspectCurious));
+        public static STHumanoid Scared           = new(false, nameof(Scared));
+        public static STHumanoid ScaredLeftRight  = new(false, nameof(ScaredLeftRight));
+        public static STHumanoid Laugh            = new(false, nameof(Laugh));
+        public static STHumanoid Applause         = new(false, nameof(Applause));
+        public static STHumanoid Disappointed     = new(false, nameof(Disappointed));
+        public static STHumanoid Shrug            = new(false, nameof(Shrug));
+        public static STHumanoid SwingArms_Subtle = new(false, nameof(SwingArms_Subtle));
+        public static STHumanoid HeadTilt_Stretch = new(false, nameof(HeadTilt_Stretch));
+        public static STHumanoid RollShoulder     = new(false, nameof(RollShoulder));
 
         private STHumanoid(bool isSTC, string name) : base(isSTC, name) { }
         private STHumanoid(int id, string name, bool setSpecial) : base(id, name, setSpecial) { }

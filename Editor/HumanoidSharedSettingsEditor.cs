@@ -216,8 +216,9 @@ namespace VirtualBeings.Beings.Humanoid
                     new(STHumanoid.Applause.ID, AddS("ST_Stand_Applause", STCrossfadeTime)),
                     new(STHumanoid.Disappointed.ID, AddS("ST_Stand_Disapointed", STCrossfadeTime)),
                     new(STHumanoid.Shrug.ID, AddS("ST_Stand_Shrug", STCrossfadeTime)),
-                    // new(STHumanoid.Neutral.ID, AddS("ST_Stand_Neutral", STCrossfadeTime)),
-
+                    new(STHumanoid.SwingArms_Subtle.ID, AddS("ST_Stand_SwingArms_Subtle", STCrossfadeTime)),
+                    new(STHumanoid.HeadTilt_Stretch.ID, AddS("ST_Stand_HeadTilt_Stretch", STCrossfadeTime)),
+                    new(STHumanoid.RollShoulder.ID, AddS("ST_Stand_RollShoulder", STCrossfadeTime)),
                 }
             );
 
@@ -397,18 +398,21 @@ namespace VirtualBeings.Beings.Humanoid
                 }
             }
 
-            int UST_None                = USTHumanoid.None.ID;
-            int UST_Neutral             = USTHumanoid.Neutral.ID;
-            int UST_SaluteBriefL        = USTHumanoid.SaluteBriefLeft.ID;
-            int UST_SaluteBriefR        = USTHumanoid.SaluteBriefRight.ID;
-            int UST_ApplauseQuick       = USTHumanoid.ApplauseQuick.ID;
-            int UST_DismissingGesture   = USTHumanoid.DismissingGesture.ID;
-            int UST_VictoryGesture      = USTHumanoid.VictoryGesture.ID;
-            int UST_JumpScared          = USTHumanoid.JumpScared.ID;
-            int UST_ScratchHead         = USTHumanoid.ScratchHead.ID;
-            int UST_WipeForehead          = USTHumanoid.WipeForehead.ID;
+            int UST_None              = USTHumanoid.None.ID;
+            int UST_Neutral           = USTHumanoid.Neutral.ID;
+            int UST_SaluteBriefL      = USTHumanoid.SaluteBriefLeft.ID;
+            int UST_SaluteBriefR      = USTHumanoid.SaluteBriefRight.ID;
+            int UST_ApplauseQuick     = USTHumanoid.ApplauseQuick.ID;
+            int UST_DismissingGesture = USTHumanoid.DismissingGesture.ID;
+            int UST_VictoryGesture    = USTHumanoid.VictoryGesture.ID;
+            int UST_JumpScared        = USTHumanoid.JumpScared.ID;
+            int UST_ScratchHead       = USTHumanoid.ScratchHead.ID;
+            int UST_WipeForehead      = USTHumanoid.WipeForehead.ID;
+            int UST_SwingArms         = USTHumanoid.SwingArms_Subtle.ID;
+            int UST_HeadTiltStretch   = USTHumanoid.HeadTilt_Stretch.ID;
+            int UST_RollShoulder      = USTHumanoid.RollShoulder.ID;
 
-            USTInfo[] USTInfos = new USTInfo[USTHumanoid.All.Count];
+            USTInfo[] USTInfos              = new USTInfo[USTHumanoid.All.Count];
             USTInfos[UST_None]              = new USTInfo { StateHash = Animator.StringToHash("UST_None") };
             USTInfos[UST_Neutral]           = new USTInfo { StateHash = Animator.StringToHash("UST_None") };
             USTInfos[UST_SaluteBriefL]      = new USTInfo { StateHash = Animator.StringToHash("UST_SaluteBriefLeft") };
@@ -419,6 +423,9 @@ namespace VirtualBeings.Beings.Humanoid
             USTInfos[UST_JumpScared]        = new USTInfo { StateHash = Animator.StringToHash("UST_Jump_Scared") };
             USTInfos[UST_ScratchHead]       = new USTInfo { StateHash = Animator.StringToHash("UST_Head_Scratch") };
             USTInfos[UST_WipeForehead]      = new USTInfo { StateHash = Animator.StringToHash("UST_Wipe_Forehead") };
+            USTInfos[UST_SwingArms]         = new USTInfo { StateHash = Animator.StringToHash("UST_SwingArms_Subtle") };
+            USTInfos[UST_HeadTiltStretch]   = new USTInfo { StateHash = Animator.StringToHash("UST_HeadTilt_Stretch") };
+            USTInfos[UST_RollShoulder]      = new USTInfo { StateHash = Animator.StringToHash("UST_RollShoulder") };
 
             // ---------------------------------------
             // Write our results to sharedSettings

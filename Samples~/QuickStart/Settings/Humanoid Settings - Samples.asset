@@ -25,7 +25,7 @@ MonoBehaviour:
   _minCorpulence: -30
   _maxCorpulence: 50
   _beingSpeediness: 0.5
-  _maxBlendShapeWeight: 100
+  _maxBlendShapeWeight: 1
   _stayPredictableForNInstantiations: 6
   _predictability01: 0.75
   _neuroticism01: 0.5
@@ -40,7 +40,7 @@ MonoBehaviour:
       rid: 8065694557485137921
     Salience01: 0.5
   _physicalInformation:
-    Clearance: 0.55
+    Clearance: 1.25
     Height: 1.8
     Width: 0.5
     Length: 0.3
