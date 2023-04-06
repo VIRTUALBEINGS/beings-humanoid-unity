@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1373263514, guid: f458912201050ed4ca3895672c158549, type: 3}
+  m_Name: Being Installer Settings - HDRP Samples
+  m_EditorClassIdentifier: 
+  VirtualBeingsSettings: {fileID: 11400000, guid: 14fb0e48ff3117041bf2b74e2ba7fe5d,
+    type: 2}
+  BeingManagerSettings:
+    SpawnableBeings:
+    - BeingSharedSettings: {fileID: 11400000, guid: 297f97e2583d8f940b094e67db2e8603,
+        type: 2}
+      BeingInstances:
+      - Type: 2
+        BeingPrefab: {fileID: 5303719828828844838, guid: 357fa48566e827743a89b384312e5d8c,
+          type: 3}
+        BeingSettings: {fileID: 11400000, guid: 6c26be29210102e4fab2eea585585d2b,
+          type: 2}
+      - Type: 0
+        BeingPrefab: {fileID: 5645833239924581447, guid: b9345d70ce7dd0344a747a1d6e67ddc1,
+          type: 3}
+        BeingSettings: {fileID: 11400000, guid: 6c26be29210102e4fab2eea585585d2b,
+          type: 2}
+      - Type: 0
+        BeingPrefab: {fileID: 3036994631150513234, guid: 6598f2106024b5940935ac71f28f1ffc,
+          type: 3}
+        BeingSettings: {fileID: 11400000, guid: 6c26be29210102e4fab2eea585585d2b,
+          type: 2}
+  SoundManagerSettings:
+    DefaultFadeOutDuration: 0.3
+    AmbientFadeOutDuration: 5
+    DefaultFadeInDuration: 1
+  NavigableTerrainSettings:
+    LayerMaskGrounding:
+      serializedVersion: 2
+      m_Bits: 2049
+    DynamicAIObstacleRefreshPeriod: 0.5

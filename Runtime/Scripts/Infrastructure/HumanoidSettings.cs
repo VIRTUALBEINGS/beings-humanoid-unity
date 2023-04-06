@@ -14,6 +14,11 @@ using VirtualBeings.Tech.BehaviorComposition;
 namespace VirtualBeings.Beings.Humanoid
 {
     [Serializable]
+    [CreateAssetMenu(
+        fileName = "New Humanoid Settings",
+        menuName = "VIRTUAL BEINGS/Humanoid Settings",
+        order = 1
+    )]
     public class HumanoidSettings : HumanoidBeingSettingsBase, ISerializationCallbackReceiver
     {
         [Space, SerializeField, Obfuscation(Exclude = true)]
@@ -38,20 +43,5 @@ namespace VirtualBeings.Beings.Humanoid
             _ = STHumanoid.None;
             _ = TransitionTypeHumanoid.Default;
         }
-
-#if UNITY_EDITOR
-        [MenuItem("Assets/Create/VirtualBeings/Humanoid Settings")]
-        public static void CreateMyAsset()
-        {
-            HumanoidSettings asset = CreateInstance<HumanoidSettings>();
-
-            AssetDatabase.CreateAsset(asset, "Assets/New Humanoid Settings.asset");
-            AssetDatabase.SaveAssets();
-
-            EditorUtility.FocusProjectWindow();
-
-            Selection.activeObject = asset;
-        }
-#endif
     }
 }

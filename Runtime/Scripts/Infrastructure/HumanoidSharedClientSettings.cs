@@ -12,6 +12,11 @@ using VirtualBeings.Tech.UnityIntegration;
 
 namespace VirtualBeings.Beings.Humanoid
 {
+    [CreateAssetMenu(
+        fileName = "New Humanoid Shared Client Settings",
+        menuName = "VIRTUAL BEINGS/Humanoid Shared Client Settings",
+        order = 1
+    )]
     public class HumanoidSharedClientSettings : HumanoidSharedServerSettings, ISerializationCallbackReceiver
     {
         public override IFOVProvider FOVProvider => _FOVProvider;
@@ -36,20 +41,5 @@ namespace VirtualBeings.Beings.Humanoid
 
             _dictVocalAnimations = new Dictionary<int, IVocalAnimationList>();
         }
-
-#if UNITY_EDITOR
-        [MenuItem("Assets/Create/VirtualBeings/HumanoidSharedClientSettings")]
-        public static void CreateMyAsset()
-        {
-            HumanoidSharedClientSettings asset = CreateInstance<HumanoidSharedClientSettings>();
-
-            AssetDatabase.CreateAsset(asset, "Assets/NewHumanoidSharedClientSettings.asset");
-            AssetDatabase.SaveAssets();
-
-            EditorUtility.FocusProjectWindow();
-
-            Selection.activeObject = asset;
-        }
-#endif
     }
 }

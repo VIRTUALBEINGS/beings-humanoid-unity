@@ -6,12 +6,10 @@
 using System.Collections;
 using UnityEngine;
 using VirtualBeings.BehaviorComposition.Activities;
-using VirtualBeings.Beings.Humanoid.Factories;
 using VirtualBeings.Tech.BehaviorComposition;
-using VirtualBeings.Tech.Beings.Humanoid;
 using VirtualBeings.Tech.Shared;
 
-namespace VirtualBeings.Beings.Humanoid
+namespace VirtualBeings.Tech.Beings.Humanoid
 {
     public class DebugHumanoid : HumanoidRootActivity<DebugHumanoid>
     {

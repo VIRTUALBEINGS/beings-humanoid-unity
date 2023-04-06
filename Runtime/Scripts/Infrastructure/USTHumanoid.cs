@@ -24,6 +24,7 @@ namespace VirtualBeings.Beings.Humanoid
         public static USTHumanoid SwingArms_Subtle  = new(nameof(SwingArms_Subtle));
         public static USTHumanoid HeadTilt_Stretch  = new(nameof(HeadTilt_Stretch));
         public static USTHumanoid RollShoulder      = new(nameof(RollShoulder));
+        public static USTHumanoid TwistTorso_Subtle = new(nameof(TwistTorso_Subtle));
 
         private USTHumanoid(string name) : base(name) { }
         private USTHumanoid(int id, string name, bool setSpecial) : base(id, name, setSpecial) { }

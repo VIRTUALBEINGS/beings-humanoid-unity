@@ -4,19 +4,23 @@
 // ======================================================================
 
 using System;
-using UnityEditor;
 using UnityEngine;
-using VirtualBeings.BehaviorComposition;
 using VirtualBeings.Tech.ActiveCognition;
 using VirtualBeings.Tech.BehaviorComposition;
-using VirtualBeings.Tech.Beings.Humanoid;
 
-namespace VirtualBeings.Beings.Humanoid.Factories
+namespace VirtualBeings.Tech.Beings.Humanoid
 {
+    [CreateAssetMenu(
+        fileName = "Humanoid Root Activity - Debug Animation - New.asset",
+        menuName = "VIRTUAL BEINGS/Humanoid Root Activities/Debug Animation",
+        order = 1
+    )]
     public class FactoryDebugHumanoid : RootActivityFactory
     {
         [SerializeField]
         private DebugSettings _settings;
+
+        public override bool HasMotiveAssociated => false;
 
         public override void Generate(Mind mind, bool reinitMotive, out IRootActivity rootActivity, out Motive motive)
         {
@@ -29,22 +33,5 @@ namespace VirtualBeings.Beings.Humanoid.Factories
         {
             public GameObject DebugAnimationPrefab;
         }
-
-        #if UNITY_EDITOR
-
-        [MenuItem("Assets/Create/VirtualBeings/Humanoid Root Activities/Debug Animation")]
-        public static void CreateMyAsset()
-        {
-            FactoryDebugHumanoid asset = CreateInstance<FactoryDebugHumanoid>();
-
-            AssetDatabase.CreateAsset(asset, "Assets/Root Activity - Humanoid Debug Animation - New.asset");
-            AssetDatabase.SaveAssets();
-
-            EditorUtility.FocusProjectWindow();
-
-            Selection.activeObject = asset;
-        }
-
-        #endif
     }
 }

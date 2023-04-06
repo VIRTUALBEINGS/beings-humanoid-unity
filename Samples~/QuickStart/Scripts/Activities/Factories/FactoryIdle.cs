@@ -13,38 +13,27 @@ using VirtualBeings.Tech.Beings.Humanoid;
 
 namespace VirtualBeings.Beings.Humanoid
 {
-    public class MotiveIdle : MotiveName
-    {
-        public override string Name => "IDLE";
-    }
-
+    [CreateAssetMenu(
+        fileName = "Humanoid Root Activity - Idle - New",
+        menuName = "VIRTUAL BEINGS/Humanoid Root Activities/Idle",
+        order = 1
+    )]
     public class FactoryIdle : RootActivityFactory
     {
         [SerializeField]
         private IdleSettings _settings;
 
-        public override MotiveName MotiveName => new MotiveIdle();
+        public override bool HasMotiveAssociated => false;
 
-        public override void Generate(Mind mind, bool reinitMotive, out IRootActivity floaterRootActivity, out Motive motive)
+        public override void Generate(
+            Mind mind,
+            bool reinitMotive,
+            out IRootActivity floaterRootActivity,
+            out Motive motive
+        )
         {
-            motive = new Motive(mind, MotiveName, true, 1 / 200f, 1 / 2000f);
-            ((HumanoidSelf)mind.Self).AddMotive(motive);
+            motive = null;
             floaterRootActivity = new Idle((HumanoidMind)mind, _settings);
         }
-
-#if UNITY_EDITOR
-        [MenuItem("Assets/Create/VirtualBeings/Humanoid Root Activities/Idle")]
-        public static void CreateMyAsset()
-        {
-            FactoryIdle asset = CreateInstance<FactoryIdle>();
-
-            AssetDatabase.CreateAsset(asset, "Assets/Humanoid Root Activity - Idle - New.asset");
-            AssetDatabase.SaveAssets();
-
-            EditorUtility.FocusProjectWindow();
-
-            Selection.activeObject = asset;
-        }
-#endif
     }
 }

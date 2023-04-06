@@ -214,11 +214,13 @@ namespace VirtualBeings.Beings.Humanoid
                     new(STHumanoid.ScaredLeftRight.ID, AddS("ST_Stand_Scared_Looking_Around", STCrossfadeTime)),
                     new(STHumanoid.Laugh.ID, AddS("ST_Stand_Laugh", STCrossfadeTime)),
                     new(STHumanoid.Applause.ID, AddS("ST_Stand_Applause", STCrossfadeTime)),
-                    new(STHumanoid.Disappointed.ID, AddS("ST_Stand_Disapointed", STCrossfadeTime)),
+                    new(STHumanoid.Disappointed.ID, AddS("ST_Stand_Disappointed", STCrossfadeTime)),
                     new(STHumanoid.Shrug.ID, AddS("ST_Stand_Shrug", STCrossfadeTime)),
                     new(STHumanoid.SwingArms_Subtle.ID, AddS("ST_Stand_SwingArms_Subtle", STCrossfadeTime)),
                     new(STHumanoid.HeadTilt_Stretch.ID, AddS("ST_Stand_HeadTilt_Stretch", STCrossfadeTime)),
                     new(STHumanoid.RollShoulder.ID, AddS("ST_Stand_RollShoulder", STCrossfadeTime)),
+                    new(STHumanoid.SatisfiedJumpy.ID, AddS("ST_Stand_Satisfied_Jumpy", STCrossfadeTime)),
+                    new(STHumanoid.TwistTorso_Subtle.ID, AddS("ST_Stand_TwistTorso_Subtle", STCrossfadeTime)),
                 }
             );
 
@@ -411,21 +413,23 @@ namespace VirtualBeings.Beings.Humanoid
             int UST_SwingArms         = USTHumanoid.SwingArms_Subtle.ID;
             int UST_HeadTiltStretch   = USTHumanoid.HeadTilt_Stretch.ID;
             int UST_RollShoulder      = USTHumanoid.RollShoulder.ID;
+            int UST_TwistTorso_Subtle = USTHumanoid.TwistTorso_Subtle.ID;
 
             USTInfo[] USTInfos              = new USTInfo[USTHumanoid.All.Count];
-            USTInfos[UST_None]              = new USTInfo { StateHash = Animator.StringToHash("UST_None") };
-            USTInfos[UST_Neutral]           = new USTInfo { StateHash = Animator.StringToHash("UST_None") };
-            USTInfos[UST_SaluteBriefL]      = new USTInfo { StateHash = Animator.StringToHash("UST_SaluteBriefLeft") };
-            USTInfos[UST_SaluteBriefR]      = new USTInfo { StateHash = Animator.StringToHash("UST_SaluteBriefRight") };
-            USTInfos[UST_ApplauseQuick]     = new USTInfo { StateHash = Animator.StringToHash("UST_Applause_Quick") };
-            USTInfos[UST_DismissingGesture] = new USTInfo { StateHash = Animator.StringToHash("UST_Dismissing_Gesture") };
-            USTInfos[UST_VictoryGesture]    = new USTInfo { StateHash = Animator.StringToHash("UST_Victory_Gesture") };
-            USTInfos[UST_JumpScared]        = new USTInfo { StateHash = Animator.StringToHash("UST_Jump_Scared") };
-            USTInfos[UST_ScratchHead]       = new USTInfo { StateHash = Animator.StringToHash("UST_Head_Scratch") };
-            USTInfos[UST_WipeForehead]      = new USTInfo { StateHash = Animator.StringToHash("UST_Wipe_Forehead") };
-            USTInfos[UST_SwingArms]         = new USTInfo { StateHash = Animator.StringToHash("UST_SwingArms_Subtle") };
-            USTInfos[UST_HeadTiltStretch]   = new USTInfo { StateHash = Animator.StringToHash("UST_HeadTilt_Stretch") };
-            USTInfos[UST_RollShoulder]      = new USTInfo { StateHash = Animator.StringToHash("UST_RollShoulder") };
+            USTInfos[UST_None]              = new USTInfo("UST_None");
+            USTInfos[UST_Neutral]           = new USTInfo("UST_None");
+            USTInfos[UST_SaluteBriefL]      = new USTInfo("UST_SaluteBriefLeft");
+            USTInfos[UST_SaluteBriefR]      = new USTInfo("UST_SaluteBriefRight");
+            USTInfos[UST_ApplauseQuick]     = new USTInfo("UST_Applause_Quick");
+            USTInfos[UST_DismissingGesture] = new USTInfo("UST_Dismissing_Gesture");
+            USTInfos[UST_VictoryGesture]    = new USTInfo("UST_Victory_Gesture");
+            USTInfos[UST_JumpScared]        = new USTInfo("UST_Jump_Scared");
+            USTInfos[UST_ScratchHead]       = new USTInfo("UST_Head_Scratch");
+            USTInfos[UST_WipeForehead]      = new USTInfo("UST_Wipe_Forehead");
+            USTInfos[UST_SwingArms]         = new USTInfo("UST_SwingArms_Subtle");
+            USTInfos[UST_HeadTiltStretch]   = new USTInfo("UST_HeadTilt_Stretch");
+            USTInfos[UST_RollShoulder]      = new USTInfo("UST_RollShoulder");
+            USTInfos[UST_TwistTorso_Subtle] = new USTInfo("UST_TwistTorso_Subtle");
 
             // ---------------------------------------
             // Write our results to sharedSettings

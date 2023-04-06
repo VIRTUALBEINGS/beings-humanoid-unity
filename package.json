@@ -1,6 +1,6 @@
 {
   "name": "com.virtualbeings.beings.humanoid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "VIRTUAL BEINGS - Humanoid",
   "description": "Humanoid Being Package",
   "unity": "2021.3",
@@ -13,7 +13,7 @@
     "VIRTUAL BEINGS"
   ],
   "dependencies": {
-    "com.virtualbeings.tech.virtualbeingstech": "1.1.0"
+    "com.virtualbeings.tech.virtualbeingstech": "1.1.2"
   },
   "author": {
     "name": "Virtual Beings",
@@ -25,6 +25,11 @@
       "displayName": "QuickStart",
       "description": "Contains a simple scene that spawn a Humanoid Being, doing a simple activity.",
       "path": "Samples~/QuickStart"
+    },
+	{
+      "displayName": "Humanoid HDRP",
+      "description": "Contains multiple samples that showcase important features from KuteEngine and Humanoid. In HDRP.",
+      "path": "Samples~/Humanoid HDRP"
     }
   ]
 }
