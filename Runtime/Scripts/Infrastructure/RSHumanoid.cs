@@ -3,6 +3,7 @@
 // Copyright 2011-2023 Virtual Beings SAS.
 // ======================================================================
 
+using Unity.Plastic.Newtonsoft.Json;
 using VirtualBeings.Tech.BehaviorComposition;
 using VirtualBeings.Tech.Beings.Humanoid;
 
@@ -14,6 +15,12 @@ namespace VirtualBeings.Beings.Humanoid
         public static new RSHumanoid Stand = new((int)IRSEnums.Stand, nameof(Stand), true);
 
         public static RSHumanoid Walk = new(nameof(Walk), 0, isMoving: true);
+
+        public static RSHumanoid Dance_LowEnergy = new(nameof(Dance_LowEnergy), 0, isStanding: true);
+        public static RSHumanoid Dance_Robot = new(nameof(Dance_Robot), 0, isStanding: true);
+        public static RSHumanoid Dance_Wave = new(nameof(Dance_Wave), 0, isStanding: true);
+        public static RSHumanoid Dance_Samba = new(nameof(Dance_Samba), 0, isStanding: true);
+        public static RSHumanoid Dance_GangnamStyle = new(nameof(Dance_GangnamStyle), 0, isStanding: true);
 
         private RSHumanoid(
             string name,

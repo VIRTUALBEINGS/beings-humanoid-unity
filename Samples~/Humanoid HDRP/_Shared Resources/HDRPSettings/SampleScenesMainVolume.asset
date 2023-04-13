@@ -40,23 +40,6 @@ MonoBehaviour:
   opacity:
     m_OverrideState: 0
     m_Value: 1
---- !u!114 &-8736887994819602677
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a7ff42a8c5be6646ad3975f3a54c1eb, type: 3}
-  m_Name: DiffusionProfileList
-  m_EditorClassIdentifier: 
-  active: 1
-  diffusionProfiles:
-    m_OverrideState: 1
-    m_Value:
-    - {fileID: 11400000, guid: 5ec3d67890a98134b9d3f52fc6820243, type: 2}
 --- !u!114 &-6817724952160312252
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -73,9 +56,6 @@ MonoBehaviour:
   mode:
     m_OverrideState: 1
     m_Value: 2
-  useFullACES:
-    m_OverrideState: 0
-    m_Value: 0
   toeStrength:
     m_OverrideState: 0
     m_Value: 0
@@ -100,33 +80,6 @@ MonoBehaviour:
   lutContribution:
     m_OverrideState: 0
     m_Value: 1
-  neutralHDRRangeReductionMode:
-    m_OverrideState: 0
-    m_Value: 2
-  acesPreset:
-    m_OverrideState: 0
-    m_Value: 3
-  fallbackMode:
-    m_OverrideState: 0
-    m_Value: 1
-  hueShiftAmount:
-    m_OverrideState: 0
-    m_Value: 0
-  detectPaperWhite:
-    m_OverrideState: 0
-    m_Value: 0
-  paperWhite:
-    m_OverrideState: 0
-    m_Value: 300
-  detectBrightnessLimits:
-    m_OverrideState: 0
-    m_Value: 1
-  minNits:
-    m_OverrideState: 0
-    m_Value: 0.005
-  maxNits:
-    m_OverrideState: 0
-    m_Value: 1000
 --- !u!114 &-4151792930034644520
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -208,10 +161,10 @@ MonoBehaviour:
     m_Value: 64
   m_VolumetricFogBudget:
     m_OverrideState: 0
-    m_Value: 0.5
+    m_Value: 0.33
   m_ResolutionDepthRatio:
     m_OverrideState: 0
-    m_Value: 0.5
+    m_Value: 0.666
   directionalLightsOnly:
     m_OverrideState: 0
     m_Value: 0
@@ -454,7 +407,7 @@ MonoBehaviour:
   - {fileID: -829218031367751736}
   - {fileID: -3386581528596751971}
   - {fileID: -3367225601360105735}
-  - {fileID: -8736887994819602677}
+  - {fileID: 6939323352752354120}
 --- !u!114 &1951243546833669858
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -579,6 +532,26 @@ MonoBehaviour:
   m_DenoiserRadius:
     m_OverrideState: 1
     m_Value: 0.65
+--- !u!114 &6939323352752354120
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a7ff42a8c5be6646ad3975f3a54c1eb, type: 3}
+  m_Name: DiffusionProfileOverride
+  m_EditorClassIdentifier: 
+  active: 1
+  diffusionProfiles:
+    m_OverrideState: 1
+    m_Value:
+    - {fileID: 11400000, guid: 36c2d4cd20416c2429948faffe6e0bb8, type: 2}
+    - {fileID: 11400000, guid: 5ec3d67890a98134b9d3f52fc6820243, type: 2}
+    - {fileID: 11400000, guid: 16ecb409e4d5e0446bbfd9accd4f10bb, type: 2}
+    - {fileID: 11400000, guid: 7fc0e759127d8674abafead8b3f2790a, type: 2}
 --- !u!114 &7506113426527028795
 MonoBehaviour:
   m_ObjectHideFlags: 3

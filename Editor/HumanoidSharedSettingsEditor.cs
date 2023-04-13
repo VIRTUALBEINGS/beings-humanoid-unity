@@ -158,9 +158,14 @@ namespace VirtualBeings.Beings.Humanoid
             // ---------------------------------------
             int nRS = RSHumanoid.All.Count;
 
-            int RS_None = RSHumanoid.None.ID;
-            int RS_Stand = RSHumanoid.Stand.ID;
-            int RS_Walk = RSHumanoid.Walk.ID;
+            int RS_None               = RSHumanoid.None.ID;
+            int RS_Stand              = RSHumanoid.Stand.ID;
+            int RS_Walk               = RSHumanoid.Walk.ID;
+            int RS_Dance_LowEnergy    = RSHumanoid.Dance_LowEnergy.ID;
+            int RS_Dance_Robot        = RSHumanoid.Dance_Robot.ID;
+            int RS_Dance_Wave         = RSHumanoid.Dance_Wave.ID;
+            int RS_Dance_Samba        = RSHumanoid.Dance_Samba.ID;
+            int RS_Dance_GangnamStyle = RSHumanoid.Dance_GangnamStyle.ID;
 
             // ---------------------------------------
             RSInfo[] RSInfos = new RSInfo[nRS];
@@ -231,6 +236,41 @@ namespace VirtualBeings.Beings.Humanoid
                 new RSInfo.ST_and_int[] { }
             );
 
+            RSInfos[RS_Dance_LowEnergy] = new RSInfo(
+                Animator.StringToHash("Root_Dance_LowEnergy"),
+                Animator.StringToHash("BA_State_Stand"),
+                new int[] { },
+                new RSInfo.ST_and_int[] { }
+            );
+
+            RSInfos[RS_Dance_Robot] = new RSInfo(
+                Animator.StringToHash("Root_Dance_Robot"),
+                Animator.StringToHash("BA_State_Stand"),
+                new int[] { },
+                new RSInfo.ST_and_int[] { }
+            );
+
+            RSInfos[RS_Dance_Wave] = new RSInfo(
+                Animator.StringToHash("Root_Dance_Wave"),
+                Animator.StringToHash("BA_State_Stand"),
+                new int[] { },
+                new RSInfo.ST_and_int[] { }
+            );
+
+            RSInfos[RS_Dance_Samba] = new RSInfo(
+                Animator.StringToHash("Root_Dance_Samba"),
+                Animator.StringToHash("BA_State_Stand"),
+                new int[] { },
+                new RSInfo.ST_and_int[] { }
+            );
+
+            RSInfos[RS_Dance_GangnamStyle] = new RSInfo(
+                Animator.StringToHash("Root_Dance_GangNamStyle"),
+                Animator.StringToHash("BA_State_Stand"),
+                new int[] { },
+                new RSInfo.ST_and_int[] { }
+            );
+
             STTransitionInfo[] STTransitionInfos = new STTransitionInfo[STTransitionInfosL.Count];
             for (int i = 0; i < STTransitionInfosL.Count; i++)
             {
@@ -294,6 +334,11 @@ namespace VirtualBeings.Beings.Humanoid
             // -> Stand
             InsertDefaultOT(RS_Stand, RS_Stand);
             InsertDefaultOT(RS_Stand, RS_Walk);
+            InsertNamedOT(RS_Stand, RS_Dance_LowEnergy, "Dance_LowEnergy_to_Stand");
+            InsertNamedOT(RS_Stand, RS_Dance_Robot, "Dance_Robot_to_Stand");
+            InsertNamedOT(RS_Stand, RS_Dance_Wave, "Dance_Wave_to_Stand");
+            InsertNamedOT(RS_Stand, RS_Dance_Samba, "Dance_Samba_to_Stand");
+            InsertNamedOT(RS_Stand, RS_Dance_GangnamStyle, "Dance_GangNamStyle_to_Stand");
 
             // ---------------------------------------
             // -> Walk
@@ -326,6 +371,12 @@ namespace VirtualBeings.Beings.Humanoid
                     )
                 )
             );
+
+            InsertNamedOT(RS_Dance_LowEnergy, RS_Stand, "Stand_to_Dance_LowEnergy");
+            InsertNamedOT(RS_Dance_Robot, RS_Stand, "Stand_to_Dance_Robot");
+            InsertNamedOT(RS_Dance_Wave, RS_Stand, "Stand_to_Dance_Wave");
+            InsertNamedOT(RS_Dance_Samba, RS_Stand, "Stand_to_Dance_Samba");
+            InsertNamedOT(RS_Dance_GangnamStyle, RS_Stand, "Stand_to_Dance_GangNamStyle");
 
             // RStoRSMatrix[RS_Hover * nRS + RS_Stand] = new RStoRSMatrixEntry(
             // RSHumanoid.Stand.ID,

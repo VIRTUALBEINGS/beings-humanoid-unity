@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbff021fa71cdaa4eb64fbdd5c6a7dfe, type: 3}
+  m_Name: Humanoid Settings - Samples Dance
+  m_EditorClassIdentifier: 
+  _defaultExecutionType: 0
+  _names:
+  - NoName
+  _gender: 0
+  _placeOfBirth: Furrywick
+  _age: -1
+  _defaultRootScale: 0
+  _defaultEyeSize: 0
+  _defaultEyeSquintIntensity: 0
+  _defaultEyeSquintLeftRight: 0
+  _minCorpulence: -30
+  _maxCorpulence: 50
+  _beingSpeediness: 0.5
+  _maxBlendShapeWeight: 100
+  _stayPredictableForNInstantiations: 6
+  _predictability01: 0.75
+  _neuroticism01: 0.5
+  _neediness01: 0.5
+  _impulsiveness01: 0.5
+  _agreeableness01: 0.5
+  _resentfulnessPeriod: 600
+  RootActivities:
+  - {fileID: 11400000, guid: ad8fff0695ff24742823df17ba8d0506, type: 2}
+  _motives:
+  - RootActivityFactory: {fileID: 11400000, guid: ad8fff0695ff24742823df17ba8d0506,
+      type: 2}
+    Salience01: 0.5
+  _physicalInformation:
+    Clearance: 0.55
+    Height: 1.8
+    Width: 0.5
+    Length: 0.3
+    DefaultS0Height: 1
+    MinS0Height: 0.2
+    DefaultS3Height: 1.5
+    MinS3Height: 0.2
+    DefaultMouthHeight: 1.65
+    MaxBodyRadius: 0.9
+  _smellTrackerSettings:
+    _senseOfSmell01: 0.33
+    _maxSmellDistance: 1
+  _touchTrackerSettings:
+    TouchReactionInfos:
+    - BodyPart: 4
+      TouchEnjoyment01: 0
+      SensitivityThreshold01: 0.1
+    - BodyPart: 8
+      TouchEnjoyment01: 0.4
+      SensitivityThreshold01: 0.2
+    - BodyPart: 10
+      TouchEnjoyment01: 0.2
+      SensitivityThreshold01: 0.15
+    - BodyPart: 11
+      TouchEnjoyment01: 0.2
+      SensitivityThreshold01: 0.15
+    - BodyPart: 14
+      TouchEnjoyment01: 0.25
+      SensitivityThreshold01: 0.05
+    - BodyPart: 15
+      TouchEnjoyment01: 0.25
+      SensitivityThreshold01: 0.05
+    - BodyPart: 18
+      TouchEnjoyment01: 0.25
+      SensitivityThreshold01: 0.05
+    - BodyPart: 19
+      TouchEnjoyment01: 0.25
+      SensitivityThreshold01: 0.05
+    - BodyPart: 9
+      TouchEnjoyment01: 0.95
+      SensitivityThreshold01: 0.2
+    MinBlinkTimeFromHit: 0.2
+    MaxBlinkTimeFromHit: 0.75
+    BlinkShutTime: 0.05
+    TouchPleasureCoolOffTime: 30
+    TouchPleasureDampTime: 5
+    TouchDispleasureCoolOffTime: 240
+    TouchDispleasureDampTime: 2
+    AverageHitDispleasure: 0.33
+  _eatTrackerSettings:
+    _dailyCalorieNeed: 270
+    _dailyDrinkNeed: 250
+    _drinkIntakePerGulp: 4
+    _desirabilityThresholdForFood: 0.1
+    _desirabilityThresholdForDrink: 0.1
+    _averageFeedDeltaUntilSatisfied: 0.2
+    _averageDrinkDeltaUntilSatisfied: 0.2

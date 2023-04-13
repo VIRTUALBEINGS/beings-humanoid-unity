@@ -41,8 +41,9 @@ ModelImporter:
       that will be discarded.\n\t'RightHandIndex2' has scale animation that will
       be discarded.\n\t'RightHandIndex3' has scale animation that will be discarded.\n\t'RightHandMiddle1'
       has scale animation that will be discarded.\n\t'RightHandMiddle2' has scale
-      animation that will be discarded.\n\t'RightHandRing1' has scale animation that
-      will be discarded.\n\t'RightHandRing2' has scale animation that will be discarded.\n\t'RightHandRing3'
+      animation that will be discarded.\n\t'RightHandMiddle3' has scale animation
+      that will be discarded.\n\t'RightHandRing1' has scale animation that will be
+      discarded.\n\t'RightHandRing2' has scale animation that will be discarded.\n\t'RightHandRing3'
       has scale animation that will be discarded.\n\t'RightHandPinky1' has scale
       animation that will be discarded.\n\t'RightHandPinky3' has translation animation
       that will be discarded.\n\t'RightHandPinky3' has scale animation that will
@@ -76,7 +77,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 1

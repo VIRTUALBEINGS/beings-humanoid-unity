@@ -77,5 +77,18 @@ namespace VirtualBeings.Beings.Humanoid
         {
             return new(FSHumanoid.ASSERTIVE, FTTHumanoid.Default, secondary, intensity01, randomization01);
         }
+
+        public static ExpressionWrapper PUFFED_CHEEKS(float intensity01 = 1f, float randomization01 = 1f)
+        {
+            return new(FSHumanoid.PUFFED_CHEEKS, FTTHumanoid.Default, intensity01, randomization01);
+        }
+        public static ExpressionWrapper PUFFED_CHEEKS(
+            FSHumanoid secondary,
+            float intensity01 = 1f,
+            float randomization01 = 1f
+        )
+        {
+            return new(FSHumanoid.PUFFED_CHEEKS, FTTHumanoid.Default, secondary, intensity01, randomization01);
+        }
     }
 }

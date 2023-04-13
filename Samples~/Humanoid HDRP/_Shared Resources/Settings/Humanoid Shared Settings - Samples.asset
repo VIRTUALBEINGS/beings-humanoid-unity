@@ -723,7 +723,7 @@ MonoBehaviour:
   MinHeadRotationSpeedEyes: 0.1
   MinHeadRotationAccelerationEyes: 0.5
   MaxHeadRotationAccelerationSpeedupFactorEyes: 10000
-  NRS: 3
+  NRS: 8
   RSInfos:
   - StateHash: 0
     AttitudeHash: 0
@@ -781,7 +781,37 @@ MonoBehaviour:
     AttitudeHash: 1701333581
     SerializableSupportedAttitudes: 
     SerializableSupportedSTs: []
+  - StateHash: -767537577
+    AttitudeHash: 1701333581
+    SerializableSupportedAttitudes: 
+    SerializableSupportedSTs: []
+  - StateHash: 854609740
+    AttitudeHash: 1701333581
+    SerializableSupportedAttitudes: 
+    SerializableSupportedSTs: []
+  - StateHash: -730711027
+    AttitudeHash: 1701333581
+    SerializableSupportedAttitudes: 
+    SerializableSupportedSTs: []
+  - StateHash: 1012976724
+    AttitudeHash: 1701333581
+    SerializableSupportedAttitudes: 
+    SerializableSupportedSTs: []
+  - StateHash: 739155922
+    AttitudeHash: 1701333581
+    SerializableSupportedAttitudes: 
+    SerializableSupportedSTs: []
   RStoRSMatrix:
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
   - Next: 0
     I: -1
   - Next: 0
@@ -793,13 +823,113 @@ MonoBehaviour:
   - Next: 1
     I: 0
   - Next: 2
-    I: 6
+    I: 11
+  - Next: 3
+    I: 12
+  - Next: 4
+    I: 13
+  - Next: 5
+    I: 14
+  - Next: 6
+    I: 15
+  - Next: 7
+    I: 16
   - Next: 0
     I: -1
   - Next: 1
     I: 1
   - Next: 2
+    I: 7
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
     I: 2
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: 3
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: 4
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: 5
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: 6
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
   RSTransitionInfos:
   - Hash: -1518848078
     TransitionType: 0
@@ -812,6 +942,56 @@ MonoBehaviour:
     MaxAngle: 180
     MaxCrossFadeDurationOfTransitionParameters: -1
   - Hash: -1518848078
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -1184030185
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -21853865
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -733653636
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -505611189
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: 304966749
     TransitionType: 0
     CrossFadeDuration: 0.5
     TransitionOffset: 0
@@ -846,7 +1026,7 @@ MonoBehaviour:
     CrossFadeDuration: 0
     TransitionOffset: 0
     ExitTime: -1
-    NextExpressiveVariation: 3
+    NextExpressiveVariation: 8
     NextExitTimeVariation: -1
     MaxDistance: 0
     MaxAngle: 180
@@ -856,7 +1036,7 @@ MonoBehaviour:
     CrossFadeDuration: 0
     TransitionOffset: 0
     ExitTime: -1
-    NextExpressiveVariation: 4
+    NextExpressiveVariation: 9
     NextExitTimeVariation: -1
     MaxDistance: 0
     MaxAngle: 180
@@ -866,7 +1046,57 @@ MonoBehaviour:
     CrossFadeDuration: 0
     TransitionOffset: 0
     ExitTime: -1
-    NextExpressiveVariation: 5
+    NextExpressiveVariation: 10
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -1500300924
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: 345847742
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: 1614438973
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: 437105830
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -597329776
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
     NextExitTimeVariation: -1
     MaxDistance: 0
     MaxAngle: 180
@@ -1085,7 +1315,7 @@ MonoBehaviour:
   - StateHash: 1097936416
   - StateHash: -2144483665
   - StateHash: -1984720289
-  NFS: 8
+  NFS: 9
   FSInfos:
   - StateHash: 1661338727
     Name: Face_Neutral
@@ -1137,7 +1367,47 @@ MonoBehaviour:
     SerializableSupportedSTs:
     - FST: 2
       I: 8
+  - StateHash: 1533027614
+    Name: Face_PuffedCheeks
+    SupportsFreeEntryAndExit: 1
+    SerializableSupportedSTs:
+    - FST: 2
+      I: 9
   FStoFSMatrix:
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
   - Next: 0
     I: -1
   - Next: 0
@@ -1286,5 +1556,7 @@ MonoBehaviour:
     Name: Face_Assertive
   - Hash: 1419456760
     Name: Face_Confused
+  - Hash: 1533027614
+    Name: Face_PuffedCheeks
   _maxDistFromOrigin: 5
   _maxAngleFromForward: 135

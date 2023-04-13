@@ -20,6 +20,7 @@ namespace VirtualBeings.Beings.Humanoid
         public static new FSHumanoid ASSERTIVE = new((int)IFSEnums.ASSERTIVE, nameof(ASSERTIVE), 0.75f, false, true);
 
         public static FSHumanoid CONFUSED = new(nameof(CONFUSED), 0.75f, false);
+        public static FSHumanoid PUFFED_CHEEKS = new(nameof(PUFFED_CHEEKS), 0.5f, false);
 
         private FSHumanoid(string name, float vivacity, bool eyesClosed) : base(name, vivacity, eyesClosed)
         {

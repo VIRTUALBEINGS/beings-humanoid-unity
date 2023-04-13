@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: PlasticDiffusionProfile
   m_EditorClassIdentifier: 
   profile:
-    scatteringDistance: {r: 0.20400028, g: 0.6373826, b: 0.8960326, a: 1}
-    scatteringDistanceMultiplier: 10
+    scatteringDistance: {r: 0.6901961, g: 2.1490197, b: 2.9960785, a: 1}
     transmissionTint: {r: 0.19999997, g: 0.2586647, b: 0.75686276, a: 1}
     texturingMode: 0
     transmissionMode: 0
-    thicknessRemap: {x: 0, y: 8.152544}
+    thicknessRemap: {x: 0, y: 12.349992}
     worldScale: 1
     ior: 1.4
     hash: 1075168592

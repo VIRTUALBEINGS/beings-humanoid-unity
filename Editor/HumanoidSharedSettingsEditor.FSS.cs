@@ -27,15 +27,17 @@ namespace VirtualBeings.Beings.Humanoid
             int FS_SAD          = FSHumanoid.SAD.ID;
             int FS_ASSERTIVE    = FSHumanoid.ASSERTIVE.ID;
             int FS_CONFUSED     = FSHumanoid.CONFUSED.ID;
+            int FS_PUFFEDCHEEKS = FSHumanoid.PUFFED_CHEEKS.ID;
 
-            const string STATE_NEUTRAL        = "Face_Neutral";
-            const string STATE_SHY            = "Face_Shy";
-            const string STATE_SATISFIED      = "Face_Satisfied";
-            const string STATE_INTERESTED     = "Face_Interested";
-            const string STATE_AVERSE        = "Face_Averse";
-            const string STATE_SAD            = "Face_Sad";
-            const string STATE_ASSERTIVE      = "Face_Assertive";
-            const string STATE_CONFUSED       = "Face_Confused";
+            const string STATE_NEUTRAL      = "Face_Neutral";
+            const string STATE_SHY          = "Face_Shy";
+            const string STATE_SATISFIED    = "Face_Satisfied";
+            const string STATE_INTERESTED   = "Face_Interested";
+            const string STATE_AVERSE       = "Face_Averse";
+            const string STATE_SAD          = "Face_Sad";
+            const string STATE_ASSERTIVE    = "Face_Assertive";
+            const string STATE_CONFUSED     = "Face_Confused";
+            const string STATE_PUFFEDCHEEKS = "Face_PuffedCheeks";
 
             // ---------------------------------------
             FSInfo[] FSInfos = new FSInfo[nFS];
@@ -148,19 +150,27 @@ namespace VirtualBeings.Beings.Humanoid
             );
 
             FSInfos[FS_CONFUSED] = new FSInfo(
-               Animator.StringToHash(STATE_CONFUSED),
-               STATE_CONFUSED,
-               true,
-               new FSInfo.FST_and_int[]
-               {
+                Animator.StringToHash(STATE_CONFUSED),
+                STATE_CONFUSED,
+                true,
+                new FSInfo.FST_and_int[]
+                {
                     new(
                         FSTHumanoid.Neutral.ID,
                         AddS(new FSTTransitionInfo(STATE_CONFUSED))
                     ),
-               }
-           );
+                }
+            );
 
-            
+            FSInfos[FS_PUFFEDCHEEKS] = new FSInfo(
+                Animator.StringToHash(STATE_PUFFEDCHEEKS),
+                STATE_PUFFEDCHEEKS,
+                true,
+                new FSInfo.FST_and_int[]
+                {
+                    new(FSTHumanoid.Neutral.ID, AddS(new FSTTransitionInfo(STATE_PUFFEDCHEEKS)))
+                }
+            );
 
             // copy List(T) FSTTransitionInfosL into array
             FSTTransitionInfo[] FSTTransitionInfos = new FSTTransitionInfo[FSTTransitionInfosL.Count];

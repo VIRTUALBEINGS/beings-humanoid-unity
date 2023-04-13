@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 583b57e5e690d9f4991e4b2bc537d958
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 21300
   internalIDToNameTable: []
   externalObjects: {}
   materials:
@@ -54,7 +54,7 @@ ModelImporter:
       keepOriginalPositionXZ: 1
       heightFromFeet: 0
       mirror: 0
-      bodyMask: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
       transformMask:
@@ -71,17 +71,17 @@ ModelImporter:
       - path: HumanoidRig/BSDriverHolder/BSDriver_eyes_03
         weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_01
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_02
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_03
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_04
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_05
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_06
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_prop_01
         weight: 0
       - path: HumanoidRig/BSDriverHolder/BSDriver_prop_02
@@ -223,7 +223,7 @@ ModelImporter:
       - path: Wolf3D_Body
         weight: 0
       maskType: 1
-      maskSource: {fileID: 31900000, guid: 827ccdbb3191b6145a384a5d37e655e3, type: 2}
+      maskSource: {fileID: 31900000, guid: 8ed5f94a61cff41429a0e706276280c3, type: 2}
       additiveReferencePoseFrame: 1
     isReadable: 0
   meshes:
@@ -260,7 +260,6 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1076,7 +1075,6 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

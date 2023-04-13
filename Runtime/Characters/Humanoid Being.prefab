@@ -2745,7 +2745,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8845764415493987836}
   - component: {fileID: 3180204389632739206}
-  - component: {fileID: 308768447655099864}
   - component: {fileID: 6187296134210204030}
   m_Layer: 0
   m_Name: Humanoid Being
@@ -2791,278 +2790,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &308768447655099864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8181254309971691334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -738082310, guid: f458912201050ed4ca3895672c158549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beingSharedSettings: {fileID: 11400000, guid: a23548cdd124ff44da3db38990da4c09,
-    type: 2}
-  _beingStepDone: 1
-  _colliderStepDone: 1
-  _driverStepDone: 1
-  BlendShapeDrivers:
-  - Bone: {fileID: 8924493836364688087}
-    BlendShapeIndex: 1
-    Origin: 0
-  - Bone: {fileID: 8924493836364688087}
-    BlendShapeIndex: 2
-    Origin: 1
-  - Bone: {fileID: 8924493836364688087}
-    BlendShapeIndex: 3
-    Origin: 2
-  - Bone: {fileID: 8924493836364688087}
-    BlendShapeIndex: 4
-    Origin: 3
-  - Bone: {fileID: 8924493836364688087}
-    BlendShapeIndex: 5
-    Origin: 4
-  - Bone: {fileID: 8924493836364688087}
-    BlendShapeIndex: 6
-    Origin: 5
-  - Bone: {fileID: 8924493836364688087}
-    BlendShapeIndex: 7
-    Origin: 6
-  - Bone: {fileID: 8924493836364688087}
-    BlendShapeIndex: 8
-    Origin: 7
-  - Bone: {fileID: 8924493836364688087}
-    BlendShapeIndex: 9
-    Origin: 8
-  - Bone: {fileID: 1799964844636519994}
-    BlendShapeIndex: 10
-    Origin: 0
-  - Bone: {fileID: 1799964844636519994}
-    BlendShapeIndex: 11
-    Origin: 1
-  - Bone: {fileID: 1799964844636519994}
-    BlendShapeIndex: 12
-    Origin: 2
-  - Bone: {fileID: 1799964844636519994}
-    BlendShapeIndex: 13
-    Origin: 3
-  - Bone: {fileID: 1799964844636519994}
-    BlendShapeIndex: 14
-    Origin: 4
-  - Bone: {fileID: 1799964844636519994}
-    BlendShapeIndex: 15
-    Origin: 5
-  - Bone: {fileID: 1799964844636519994}
-    BlendShapeIndex: 26
-    Origin: 6
-  - Bone: {fileID: 1799964844636519994}
-    BlendShapeIndex: 27
-    Origin: 7
-  - Bone: {fileID: 1799964844636519994}
-    BlendShapeIndex: 28
-    Origin: 8
-  - Bone: {fileID: 1263281162509898880}
-    BlendShapeIndex: 51
-    Origin: 0
-  - Bone: {fileID: 1263281162509898880}
-    BlendShapeIndex: 52
-    Origin: 1
-  - Bone: {fileID: 1263281162509898880}
-    BlendShapeIndex: 53
-    Origin: 2
-  - Bone: {fileID: 1263281162509898880}
-    BlendShapeIndex: 31
-    Origin: 3
-  - Bone: {fileID: 1263281162509898880}
-    BlendShapeIndex: 38
-    Origin: 4
-  - Bone: {fileID: 1263281162509898880}
-    BlendShapeIndex: 39
-    Origin: 5
-  - Bone: {fileID: 1263281162509898880}
-    BlendShapeIndex: 64
-    Origin: 6
-  - Bone: {fileID: 1263281162509898880}
-    BlendShapeIndex: 65
-    Origin: 7
-  - Bone: {fileID: 1263281162509898880}
-    BlendShapeIndex: 29
-    Origin: 8
-  - Bone: {fileID: 3228067141006418134}
-    BlendShapeIndex: 30
-    Origin: 0
-  - Bone: {fileID: 3228067141006418134}
-    BlendShapeIndex: 54
-    Origin: 1
-  - Bone: {fileID: 3228067141006418134}
-    BlendShapeIndex: 55
-    Origin: 2
-  - Bone: {fileID: 3228067141006418134}
-    BlendShapeIndex: 56
-    Origin: 3
-  - Bone: {fileID: 3228067141006418134}
-    BlendShapeIndex: 57
-    Origin: 4
-  - Bone: {fileID: 3228067141006418134}
-    BlendShapeIndex: 58
-    Origin: 5
-  - Bone: {fileID: 3228067141006418134}
-    BlendShapeIndex: 59
-    Origin: 6
-  - Bone: {fileID: 3228067141006418134}
-    BlendShapeIndex: 32
-    Origin: 7
-  - Bone: {fileID: 3228067141006418134}
-    BlendShapeIndex: 33
-    Origin: 8
-  - Bone: {fileID: 1111914813579588451}
-    BlendShapeIndex: 60
-    Origin: 0
-  - Bone: {fileID: 1111914813579588451}
-    BlendShapeIndex: 61
-    Origin: 1
-  - Bone: {fileID: 1111914813579588451}
-    BlendShapeIndex: 36
-    Origin: 2
-  - Bone: {fileID: 1111914813579588451}
-    BlendShapeIndex: 37
-    Origin: 3
-  - Bone: {fileID: 1111914813579588451}
-    BlendShapeIndex: 62
-    Origin: 4
-  - Bone: {fileID: 1111914813579588451}
-    BlendShapeIndex: 63
-    Origin: 5
-  - Bone: {fileID: 1111914813579588451}
-    BlendShapeIndex: 48
-    Origin: 6
-  - Bone: {fileID: 1111914813579588451}
-    BlendShapeIndex: 49
-    Origin: 7
-  - Bone: {fileID: 1111914813579588451}
-    BlendShapeIndex: 50
-    Origin: 8
-  - Bone: {fileID: 3567049855063435927}
-    BlendShapeIndex: 34
-    Origin: 0
-  - Bone: {fileID: 3567049855063435927}
-    BlendShapeIndex: 35
-    Origin: 1
-  - Bone: {fileID: 3567049855063435927}
-    BlendShapeIndex: 66
-    Origin: 2
-  - Bone: {fileID: 3567049855063435927}
-    BlendShapeIndex: 0
-    Origin: 3
-  - Bone: {fileID: 3567049855063435927}
-    BlendShapeIndex: 16
-    Origin: 4
-  - Bone: {fileID: 4350832729148761525}
-    BlendShapeIndex: 67
-    Origin: 0
-  - Bone: {fileID: 4350832729148761525}
-    BlendShapeIndex: 40
-    Origin: 1
-  - Bone: {fileID: 4350832729148761525}
-    BlendShapeIndex: 44
-    Origin: 2
-  - Bone: {fileID: 4350832729148761525}
-    BlendShapeIndex: 46
-    Origin: 3
-  - Bone: {fileID: 4350832729148761525}
-    BlendShapeIndex: 42
-    Origin: 4
-  - Bone: {fileID: 4350832729148761525}
-    BlendShapeIndex: 22
-    Origin: 5
-  - Bone: {fileID: 4350832729148761525}
-    BlendShapeIndex: 24
-    Origin: 6
-  - Bone: {fileID: 4350832729148761525}
-    BlendShapeIndex: 68
-    Origin: 7
-  - Bone: {fileID: 4350832729148761525}
-    BlendShapeIndex: 41
-    Origin: 8
-  - Bone: {fileID: 8816679887626754421}
-    BlendShapeIndex: 45
-    Origin: 0
-  - Bone: {fileID: 8816679887626754421}
-    BlendShapeIndex: 47
-    Origin: 1
-  - Bone: {fileID: 8816679887626754421}
-    BlendShapeIndex: 43
-    Origin: 2
-  - Bone: {fileID: 8816679887626754421}
-    BlendShapeIndex: 23
-    Origin: 3
-  - Bone: {fileID: 8816679887626754421}
-    BlendShapeIndex: 25
-    Origin: 4
-  - Bone: {fileID: 8816679887626754421}
-    BlendShapeIndex: 17
-    Origin: 5
-  - Bone: {fileID: 8816679887626754421}
-    BlendShapeIndex: 18
-    Origin: 6
-  - Bone: {fileID: 8816679887626754421}
-    BlendShapeIndex: 19
-    Origin: 7
-  - Bone: {fileID: 8816679887626754421}
-    BlendShapeIndex: 20
-    Origin: 8
-  - Bone: {fileID: 368726368951552176}
-    BlendShapeIndex: 21
-    Origin: 0
-  - Bone: {fileID: 368726368951552176}
-    BlendShapeIndex: 69
-    Origin: 1
-  - Bone: {fileID: 368726368951552176}
-    BlendShapeIndex: 70
-    Origin: 2
-  - Bone: {fileID: 368726368951552176}
-    BlendShapeIndex: 71
-    Origin: 3
-  LayerDrivers: []
-  VariableDrivers:
-  - Name: Detach_AL
-    Bone: {fileID: 6615625144313673150}
-    Origin: 0
-  - Name: Detach_LL
-    Bone: {fileID: 6615625144313673150}
-    Origin: 1
-  - Name: Detach_AR
-    Bone: {fileID: 6615625144313673150}
-    Origin: 2
-  - Name: Detach_LR
-    Bone: {fileID: 6615625144313673150}
-    Origin: 6
-  - Name: PreserveOffsetForNeckAndHead
-    Bone: {fileID: 6615625144313673150}
-    Origin: 7
-  - Name: OverrideBlink
-    Bone: {fileID: 6615625144313673150}
-    Origin: 8
-  - Name: OverrideEyes
-    Bone: {fileID: 5748681146672901189}
-    Origin: 0
-  - Name: OverrideMouth
-    Bone: {fileID: 5748681146672901189}
-    Origin: 1
-  - Name: OverrideLookAt
-    Bone: {fileID: 5748681146672901189}
-    Origin: 2
-  - Name: OverrideUpperBody
-    Bone: {fileID: 5748681146672901189}
-    Origin: 6
-  FactorForPositionDrivenBlendshapes: 1.002
-  FactorForRotationDrivenBlendshapes: 0.17452008
-  FactorForPositionDrivenLayerWeights: 1.002
-  FactorForRotationDrivenLayerWeights: 0.17452008
-  Being: {fileID: 6187296134210204030}
-  SkinnedMeshRenderer: {fileID: 5750363121468928675}
 --- !u!114 &6187296134210204030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3075,7 +2802,8 @@ MonoBehaviour:
   m_Script: {fileID: 877240235, guid: f458912201050ed4ca3895672c158549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _postProcessAnimation: {fileID: 308768447655099864}
+  _postProcessAnimation:
+    rid: 1908692019637649408
   _gameObjectsForNavmesh: []
   _exclusionsFromInteractionDB: []
   _colliderChain: []
@@ -3140,6 +2868,273 @@ MonoBehaviour:
       - {fileID: 641349804544150035}
       - {fileID: 2865361951475406207}
   HumanoidBeingSettings: {fileID: 0}
+  HumanoidSharedSettings: {fileID: 11400000, guid: 1c2649cd184f2e141b63c05801226c57,
+    type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1908692019637649408
+      type: {class: PostProcessAnimationHumanoid, ns: VirtualBeings.Tech.UnityIntegration,
+        asm: VirtualBeingsTech}
+      data:
+        _beingStepDone: 1
+        _colliderStepDone: 1
+        _driverStepDone: 1
+        BlendShapeDrivers:
+        - Bone: {fileID: 8924493836364688087}
+          BlendShapeIndex: 1
+          Origin: 0
+        - Bone: {fileID: 8924493836364688087}
+          BlendShapeIndex: 2
+          Origin: 1
+        - Bone: {fileID: 8924493836364688087}
+          BlendShapeIndex: 3
+          Origin: 2
+        - Bone: {fileID: 8924493836364688087}
+          BlendShapeIndex: 4
+          Origin: 3
+        - Bone: {fileID: 8924493836364688087}
+          BlendShapeIndex: 5
+          Origin: 4
+        - Bone: {fileID: 8924493836364688087}
+          BlendShapeIndex: 6
+          Origin: 5
+        - Bone: {fileID: 8924493836364688087}
+          BlendShapeIndex: 7
+          Origin: 6
+        - Bone: {fileID: 8924493836364688087}
+          BlendShapeIndex: 8
+          Origin: 7
+        - Bone: {fileID: 8924493836364688087}
+          BlendShapeIndex: 9
+          Origin: 8
+        - Bone: {fileID: 1799964844636519994}
+          BlendShapeIndex: 10
+          Origin: 0
+        - Bone: {fileID: 1799964844636519994}
+          BlendShapeIndex: 11
+          Origin: 1
+        - Bone: {fileID: 1799964844636519994}
+          BlendShapeIndex: 12
+          Origin: 2
+        - Bone: {fileID: 1799964844636519994}
+          BlendShapeIndex: 13
+          Origin: 3
+        - Bone: {fileID: 1799964844636519994}
+          BlendShapeIndex: 14
+          Origin: 4
+        - Bone: {fileID: 1799964844636519994}
+          BlendShapeIndex: 15
+          Origin: 5
+        - Bone: {fileID: 1799964844636519994}
+          BlendShapeIndex: 26
+          Origin: 6
+        - Bone: {fileID: 1799964844636519994}
+          BlendShapeIndex: 27
+          Origin: 7
+        - Bone: {fileID: 1799964844636519994}
+          BlendShapeIndex: 28
+          Origin: 8
+        - Bone: {fileID: 1263281162509898880}
+          BlendShapeIndex: 51
+          Origin: 0
+        - Bone: {fileID: 1263281162509898880}
+          BlendShapeIndex: 52
+          Origin: 1
+        - Bone: {fileID: 1263281162509898880}
+          BlendShapeIndex: 53
+          Origin: 2
+        - Bone: {fileID: 1263281162509898880}
+          BlendShapeIndex: 31
+          Origin: 3
+        - Bone: {fileID: 1263281162509898880}
+          BlendShapeIndex: 38
+          Origin: 4
+        - Bone: {fileID: 1263281162509898880}
+          BlendShapeIndex: 39
+          Origin: 5
+        - Bone: {fileID: 1263281162509898880}
+          BlendShapeIndex: 64
+          Origin: 6
+        - Bone: {fileID: 1263281162509898880}
+          BlendShapeIndex: 65
+          Origin: 7
+        - Bone: {fileID: 1263281162509898880}
+          BlendShapeIndex: 29
+          Origin: 8
+        - Bone: {fileID: 3228067141006418134}
+          BlendShapeIndex: 30
+          Origin: 0
+        - Bone: {fileID: 3228067141006418134}
+          BlendShapeIndex: 54
+          Origin: 1
+        - Bone: {fileID: 3228067141006418134}
+          BlendShapeIndex: 55
+          Origin: 2
+        - Bone: {fileID: 3228067141006418134}
+          BlendShapeIndex: 56
+          Origin: 3
+        - Bone: {fileID: 3228067141006418134}
+          BlendShapeIndex: 57
+          Origin: 4
+        - Bone: {fileID: 3228067141006418134}
+          BlendShapeIndex: 58
+          Origin: 5
+        - Bone: {fileID: 3228067141006418134}
+          BlendShapeIndex: 59
+          Origin: 6
+        - Bone: {fileID: 3228067141006418134}
+          BlendShapeIndex: 32
+          Origin: 7
+        - Bone: {fileID: 3228067141006418134}
+          BlendShapeIndex: 33
+          Origin: 8
+        - Bone: {fileID: 1111914813579588451}
+          BlendShapeIndex: 60
+          Origin: 0
+        - Bone: {fileID: 1111914813579588451}
+          BlendShapeIndex: 61
+          Origin: 1
+        - Bone: {fileID: 1111914813579588451}
+          BlendShapeIndex: 36
+          Origin: 2
+        - Bone: {fileID: 1111914813579588451}
+          BlendShapeIndex: 37
+          Origin: 3
+        - Bone: {fileID: 1111914813579588451}
+          BlendShapeIndex: 62
+          Origin: 4
+        - Bone: {fileID: 1111914813579588451}
+          BlendShapeIndex: 63
+          Origin: 5
+        - Bone: {fileID: 1111914813579588451}
+          BlendShapeIndex: 48
+          Origin: 6
+        - Bone: {fileID: 1111914813579588451}
+          BlendShapeIndex: 49
+          Origin: 7
+        - Bone: {fileID: 1111914813579588451}
+          BlendShapeIndex: 50
+          Origin: 8
+        - Bone: {fileID: 3567049855063435927}
+          BlendShapeIndex: 34
+          Origin: 0
+        - Bone: {fileID: 3567049855063435927}
+          BlendShapeIndex: 35
+          Origin: 1
+        - Bone: {fileID: 3567049855063435927}
+          BlendShapeIndex: 66
+          Origin: 2
+        - Bone: {fileID: 3567049855063435927}
+          BlendShapeIndex: 0
+          Origin: 3
+        - Bone: {fileID: 3567049855063435927}
+          BlendShapeIndex: 16
+          Origin: 4
+        - Bone: {fileID: 4350832729148761525}
+          BlendShapeIndex: 67
+          Origin: 0
+        - Bone: {fileID: 4350832729148761525}
+          BlendShapeIndex: 40
+          Origin: 1
+        - Bone: {fileID: 4350832729148761525}
+          BlendShapeIndex: 44
+          Origin: 2
+        - Bone: {fileID: 4350832729148761525}
+          BlendShapeIndex: 46
+          Origin: 3
+        - Bone: {fileID: 4350832729148761525}
+          BlendShapeIndex: 42
+          Origin: 4
+        - Bone: {fileID: 4350832729148761525}
+          BlendShapeIndex: 22
+          Origin: 5
+        - Bone: {fileID: 4350832729148761525}
+          BlendShapeIndex: 24
+          Origin: 6
+        - Bone: {fileID: 4350832729148761525}
+          BlendShapeIndex: 68
+          Origin: 7
+        - Bone: {fileID: 4350832729148761525}
+          BlendShapeIndex: 41
+          Origin: 8
+        - Bone: {fileID: 8816679887626754421}
+          BlendShapeIndex: 45
+          Origin: 0
+        - Bone: {fileID: 8816679887626754421}
+          BlendShapeIndex: 47
+          Origin: 1
+        - Bone: {fileID: 8816679887626754421}
+          BlendShapeIndex: 43
+          Origin: 2
+        - Bone: {fileID: 8816679887626754421}
+          BlendShapeIndex: 23
+          Origin: 3
+        - Bone: {fileID: 8816679887626754421}
+          BlendShapeIndex: 25
+          Origin: 4
+        - Bone: {fileID: 8816679887626754421}
+          BlendShapeIndex: 17
+          Origin: 5
+        - Bone: {fileID: 8816679887626754421}
+          BlendShapeIndex: 18
+          Origin: 6
+        - Bone: {fileID: 8816679887626754421}
+          BlendShapeIndex: 19
+          Origin: 7
+        - Bone: {fileID: 8816679887626754421}
+          BlendShapeIndex: 20
+          Origin: 8
+        - Bone: {fileID: 368726368951552176}
+          BlendShapeIndex: 21
+          Origin: 0
+        - Bone: {fileID: 368726368951552176}
+          BlendShapeIndex: 69
+          Origin: 1
+        - Bone: {fileID: 368726368951552176}
+          BlendShapeIndex: 70
+          Origin: 2
+        - Bone: {fileID: 368726368951552176}
+          BlendShapeIndex: 71
+          Origin: 3
+        LayerDrivers: []
+        VariableDrivers:
+        - Name: Detach_AL
+          Bone: {fileID: 6615625144313673150}
+          Origin: 0
+        - Name: Detach_LL
+          Bone: {fileID: 6615625144313673150}
+          Origin: 1
+        - Name: Detach_AR
+          Bone: {fileID: 6615625144313673150}
+          Origin: 2
+        - Name: Detach_LR
+          Bone: {fileID: 6615625144313673150}
+          Origin: 6
+        - Name: PreserveOffsetForNeckAndHead
+          Bone: {fileID: 6615625144313673150}
+          Origin: 7
+        - Name: OverrideBlink
+          Bone: {fileID: 6615625144313673150}
+          Origin: 8
+        - Name: OverrideEyes
+          Bone: {fileID: 5748681146672901189}
+          Origin: 0
+        - Name: OverrideMouth
+          Bone: {fileID: 5748681146672901189}
+          Origin: 1
+        - Name: OverrideLookAt
+          Bone: {fileID: 5748681146672901189}
+          Origin: 2
+        - Name: OverrideUpperBody
+          Bone: {fileID: 5748681146672901189}
+          Origin: 6
+        FactorForPositionDrivenBlendshapes: 1.002
+        FactorForRotationDrivenBlendshapes: 0.17452008
+        FactorForPositionDrivenLayerWeights: 1.002
+        FactorForRotationDrivenLayerWeights: 0.17452008
+        Being: {fileID: 6187296134210204030}
+        SkinnedMeshRenderer: {fileID: 5750363121468928675}
 --- !u!1 &8272908230046228591
 GameObject:
   m_ObjectHideFlags: 0

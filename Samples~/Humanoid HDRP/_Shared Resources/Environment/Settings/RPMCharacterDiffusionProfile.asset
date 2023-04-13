@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   profile:
     scatteringDistance: {r: 0.20400028, g: 0.6373826, b: 0.8960326, a: 1}
-    scatteringDistanceMultiplier: 3
     transmissionTint: {r: 0.73050904, g: 0.7480144, b: 0.8962264, a: 1}
     texturingMode: 0
     transmissionMode: 1
