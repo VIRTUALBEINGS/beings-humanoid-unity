@@ -22,7 +22,12 @@
   },
   "samples": [
     {
-      "displayName": "Humanoid HDRP",
+      "displayName": "QuickStart - URP",
+      "description": "Contains a simple scene that spawn a Humanoid Being, doing a simple activity. In URP.",
+      "path": "Samples~/QuickStart"
+    },
+	{
+      "displayName": "Humanoid - HDRP",
       "description": "Contains multiple samples that showcase important features from KuteEngine and Humanoid. In HDRP.",
       "path": "Samples~/Humanoid HDRP"
     }
