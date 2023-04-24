@@ -3,7 +3,6 @@
 // Copyright 2011-2023 Virtual Beings SAS.
 // ======================================================================
 
-using Unity.Plastic.Newtonsoft.Json;
 using VirtualBeings.Tech.BehaviorComposition;
 using VirtualBeings.Tech.Beings.Humanoid;
 
