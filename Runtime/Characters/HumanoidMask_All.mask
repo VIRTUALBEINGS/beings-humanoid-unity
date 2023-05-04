@@ -171,5 +171,17 @@ AvatarMask:
     m_Weight: 1
   - m_Path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
     m_Weight: 1
-  - m_Path: Wolf3D_Body
+  - m_Path: HumanoidRig/root
+    m_Weight: 1
+  - m_Path: HumanoidRig/root/RotationOffsetParent_NeckBase
+    m_Weight: 1
+  - m_Path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.L
+    m_Weight: 1
+  - m_Path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.R
+    m_Weight: 1
+  - m_Path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Head
+    m_Weight: 1
+  - m_Path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Neck
+    m_Weight: 1
+  - m_Path: Wolf3D_Body3
     m_Weight: 1

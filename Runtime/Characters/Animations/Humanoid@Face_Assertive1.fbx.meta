@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 3d5ce689a0285c04a8403da3191a5eb5
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: -623603649343465320
@@ -57,7 +57,7 @@ ModelImporter:
       keepOriginalPositionXZ: 1
       heightFromFeet: 0
       mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      bodyMask: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
       curves: []
       events: []
       transformMask:
@@ -86,9 +86,9 @@ ModelImporter:
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_06
         weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_prop_01
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_prop_02
-        weight: 0
+        weight: 1
       - path: HumanoidRig/Hips
         weight: 0
       - path: HumanoidRig/Hips/LeftUpLeg
@@ -172,9 +172,9 @@ ModelImporter:
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/HeadTop_End
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/LeftEye
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/RightEye
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
@@ -223,7 +223,19 @@ ModelImporter:
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
         weight: 0
-      - path: Wolf3D_Body
+      - path: HumanoidRig/root
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.L
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.R
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Head
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Neck
+        weight: 1
+      - path: Wolf3D_Body3
         weight: 0
       maskType: 1
       maskSource: {fileID: 31900000, guid: 8ed5f94a61cff41429a0e706276280c3, type: 2}
@@ -263,7 +275,6 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1072,13 +1083,13 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: a78a9cb91af38674ca2f0d06c32c5828, type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: a78a9cb91af38674ca2f0d06c32c5828,
+    type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
   avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

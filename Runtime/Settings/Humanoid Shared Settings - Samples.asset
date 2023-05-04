@@ -723,7 +723,7 @@ MonoBehaviour:
   MinHeadRotationSpeedEyes: 0.1
   MinHeadRotationAccelerationEyes: 0.5
   MaxHeadRotationAccelerationSpeedupFactorEyes: 10000
-  NRS: 3
+  NRS: 8
   RSInfos:
   - StateHash: 0
     AttitudeHash: 0
@@ -767,7 +767,37 @@ MonoBehaviour:
       I: 15
     - ST: 18
       I: 16
+    - ST: 19
+      I: 17
+    - ST: 20
+      I: 18
+    - ST: 21
+      I: 19
+    - ST: 22
+      I: 20
+    - ST: 23
+      I: 21
   - StateHash: -393220353
+    AttitudeHash: 1701333581
+    SerializableSupportedAttitudes: 
+    SerializableSupportedSTs: []
+  - StateHash: -767537577
+    AttitudeHash: 1701333581
+    SerializableSupportedAttitudes: 
+    SerializableSupportedSTs: []
+  - StateHash: 854609740
+    AttitudeHash: 1701333581
+    SerializableSupportedAttitudes: 
+    SerializableSupportedSTs: []
+  - StateHash: -730711027
+    AttitudeHash: 1701333581
+    SerializableSupportedAttitudes: 
+    SerializableSupportedSTs: []
+  - StateHash: 1012976724
+    AttitudeHash: 1701333581
+    SerializableSupportedAttitudes: 
+    SerializableSupportedSTs: []
+  - StateHash: 739155922
     AttitudeHash: 1701333581
     SerializableSupportedAttitudes: 
     SerializableSupportedSTs: []
@@ -780,16 +810,126 @@ MonoBehaviour:
     I: -1
   - Next: 0
     I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
   - Next: 1
     I: 0
   - Next: 2
-    I: 6
+    I: 11
+  - Next: 3
+    I: 12
+  - Next: 4
+    I: 13
+  - Next: 5
+    I: 14
+  - Next: 6
+    I: 15
+  - Next: 7
+    I: 16
   - Next: 0
     I: -1
   - Next: 1
     I: 1
   - Next: 2
+    I: 7
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
     I: 2
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: 3
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: 4
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: 5
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: 6
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
   RSTransitionInfos:
   - Hash: -1518848078
     TransitionType: 0
@@ -804,6 +944,56 @@ MonoBehaviour:
   - Hash: -1518848078
     TransitionType: 0
     CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -1518848078
+    TransitionType: 0
+    CrossFadeDuration: 0.05
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -1518848078
+    TransitionType: 0
+    CrossFadeDuration: 0.05
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -1518848078
+    TransitionType: 0
+    CrossFadeDuration: 0.05
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -1518848078
+    TransitionType: 0
+    CrossFadeDuration: 0.04
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -1518848078
+    TransitionType: 0
+    CrossFadeDuration: 0.05
     TransitionOffset: 0
     ExitTime: -1
     NextExpressiveVariation: -1
@@ -836,7 +1026,7 @@ MonoBehaviour:
     CrossFadeDuration: 0
     TransitionOffset: 0
     ExitTime: -1
-    NextExpressiveVariation: 3
+    NextExpressiveVariation: 8
     NextExitTimeVariation: -1
     MaxDistance: 0
     MaxAngle: 180
@@ -846,7 +1036,7 @@ MonoBehaviour:
     CrossFadeDuration: 0
     TransitionOffset: 0
     ExitTime: -1
-    NextExpressiveVariation: 4
+    NextExpressiveVariation: 9
     NextExitTimeVariation: -1
     MaxDistance: 0
     MaxAngle: 180
@@ -856,7 +1046,57 @@ MonoBehaviour:
     CrossFadeDuration: 0
     TransitionOffset: 0
     ExitTime: -1
-    NextExpressiveVariation: 5
+    NextExpressiveVariation: 10
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -1500300924
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: 345847742
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: 1614438973
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: 437105830
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -597329776
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
     NextExitTimeVariation: -1
     MaxDistance: 0
     MaxAngle: 180
@@ -997,8 +1237,8 @@ MonoBehaviour:
     NextExitTimeVariation: -1
     Suppress: 1
     MaxCrossFadeDurationOfTransitionParameters: -1
-  - Hash: 1266548293
-    Name: ST_Stand_Disapointed
+  - Hash: 1351884538
+    Name: ST_Stand_Disappointed
     CrossFadeDuration: 0.5
     TransitionOffset: 0
     IsUninterruptible: 0
@@ -1008,6 +1248,51 @@ MonoBehaviour:
     MaxCrossFadeDurationOfTransitionParameters: -1
   - Hash: 1214368743
     Name: ST_Stand_Shrug
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    IsUninterruptible: 0
+    ExitTime: -1
+    NextExitTimeVariation: -1
+    Suppress: 1
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: 207838657
+    Name: ST_Stand_SwingArms_Subtle
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    IsUninterruptible: 0
+    ExitTime: -1
+    NextExitTimeVariation: -1
+    Suppress: 1
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -1767932669
+    Name: ST_Stand_HeadTilt_Stretch
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    IsUninterruptible: 0
+    ExitTime: -1
+    NextExitTimeVariation: -1
+    Suppress: 1
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -1194478942
+    Name: ST_Stand_RollShoulder
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    IsUninterruptible: 0
+    ExitTime: -1
+    NextExitTimeVariation: -1
+    Suppress: 1
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: 1079347425
+    Name: ST_Stand_Satisfied_Jumpy
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    IsUninterruptible: 0
+    ExitTime: -1
+    NextExitTimeVariation: -1
+    Suppress: 1
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: 721620350
+    Name: ST_Stand_TwistTorso_Subtle
     CrossFadeDuration: 0.5
     TransitionOffset: 0
     IsUninterruptible: 0
@@ -1026,7 +1311,11 @@ MonoBehaviour:
   - StateHash: -1808847049
   - StateHash: -1210683453
   - StateHash: 1161534933
-  NFS: 8
+  - StateHash: -611512606
+  - StateHash: 1097936416
+  - StateHash: -2144483665
+  - StateHash: -1984720289
+  NFS: 18
   FSInfos:
   - StateHash: 1661338727
     Name: Face_Neutral
@@ -1036,53 +1325,305 @@ MonoBehaviour:
       I: 0
     - FST: 4
       I: 1
+    - FST: 5
+      I: 2
+    - FST: 6
+      I: 3
+    - FST: 7
+      I: 4
+    - FST: 8
+      I: 5
+    - FST: 9
+      I: 6
+    - FST: 10
+      I: 7
   - StateHash: 30044593
     Name: Face_Shy
     SupportsFreeEntryAndExit: 1
-    SerializableSupportedSTs:
-    - FST: 2
-      I: 2
+    SerializableSupportedSTs: []
   - StateHash: 1490751724
     Name: Face_Satisfied
     SupportsFreeEntryAndExit: 1
-    SerializableSupportedSTs:
-    - FST: 2
-      I: 3
+    SerializableSupportedSTs: []
   - StateHash: -1374982781
     Name: Face_Interested
     SupportsFreeEntryAndExit: 1
-    SerializableSupportedSTs:
-    - FST: 2
-      I: 4
+    SerializableSupportedSTs: []
   - StateHash: -1812574299
     Name: Face_Averse
     SupportsFreeEntryAndExit: 1
-    SerializableSupportedSTs:
-    - FST: 2
-      I: 5
+    SerializableSupportedSTs: []
   - StateHash: -1290885599
     Name: Face_Sad
     SupportsFreeEntryAndExit: 1
-    SerializableSupportedSTs:
-    - FST: 2
-      I: 6
+    SerializableSupportedSTs: []
   - StateHash: -2020707048
     Name: Face_Assertive
     SupportsFreeEntryAndExit: 1
-    SerializableSupportedSTs:
-    - FST: 2
-      I: 7
+    SerializableSupportedSTs: []
   - StateHash: 1419456760
     Name: Face_Confused
     SupportsFreeEntryAndExit: 1
-    SerializableSupportedSTs:
-    - FST: 2
-      I: 8
+    SerializableSupportedSTs: []
+  - StateHash: 1533027614
+    Name: Face_PuffedCheeks
+    SupportsFreeEntryAndExit: 1
+    SerializableSupportedSTs: []
+  - StateHash: 902223374
+    Name: Face_Grimace
+    SupportsFreeEntryAndExit: 1
+    SerializableSupportedSTs: []
+  - StateHash: -2045553772
+    Name: Face_EyesSquinted
+    SupportsFreeEntryAndExit: 1
+    SerializableSupportedSTs: []
+  - StateHash: 380952183
+    Name: Face_EyebrowsRaise
+    SupportsFreeEntryAndExit: 1
+    SerializableSupportedSTs: []
+  - StateHash: 844297745
+    Name: Face_SeriousLook
+    SupportsFreeEntryAndExit: 1
+    SerializableSupportedSTs: []
+  - StateHash: 557761200
+    Name: Face_SmileSubtle
+    SupportsFreeEntryAndExit: 1
+    SerializableSupportedSTs: []
+  - StateHash: -1868851921
+    Name: Face_SmileWide
+    SupportsFreeEntryAndExit: 1
+    SerializableSupportedSTs: []
+  - StateHash: 155406487
+    Name: Face_Annoyed
+    SupportsFreeEntryAndExit: 1
+    SerializableSupportedSTs: []
+  - StateHash: 89300655
+    Name: Face_Bored
+    SupportsFreeEntryAndExit: 1
+    SerializableSupportedSTs: []
+  - StateHash: -1509105939
+    Name: Face_Curious
+    SupportsFreeEntryAndExit: 1
+    SerializableSupportedSTs: []
   FStoFSMatrix:
   - Next: 0
     I: -1
   - Next: 0
     I: -1
+  - Next: 2
+    I: 4
+  - Next: 0
+    I: -1
+  - Next: 4
+    I: 5
+  - Next: 5
+    I: 6
+  - Next: 6
+    I: 7
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: 0
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: 1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: 2
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: 3
   - Next: 0
     I: -1
   - Next: 0
@@ -1207,25 +1748,364 @@ MonoBehaviour:
     I: -1
   - Next: 0
     I: -1
-  FSTransitionInfos: []
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 0
+    I: -1
+  FSTransitionInfos:
+  - Hash: -1671784706
+    TransitionType: 0
+    NextExpressiveVariation: -1
+  - Hash: 758272708
+    TransitionType: 0
+    NextExpressiveVariation: -1
+  - Hash: -173723210
+    TransitionType: 0
+    NextExpressiveVariation: -1
+  - Hash: 1970679213
+    TransitionType: 0
+    NextExpressiveVariation: -1
+  - Hash: -96682801
+    TransitionType: 0
+    NextExpressiveVariation: -1
+  - Hash: 414963090
+    TransitionType: 0
+    NextExpressiveVariation: -1
+  - Hash: 2078147809
+    TransitionType: 0
+    NextExpressiveVariation: -1
+  - Hash: 627693883
+    TransitionType: 0
+    NextExpressiveVariation: -1
   FSTTransitionInfos:
-  - Hash: 2064001316
-    Name: Face_ST_RollingEyes
-  - Hash: -935583827
-    Name: Face_ST_MouthPuckerSides
-  - Hash: 30044593
-    Name: Face_Shy
-  - Hash: 1490751724
-    Name: Face_Satisfied
-  - Hash: -1374982781
-    Name: Face_Interested
-  - Hash: -1812574299
-    Name: Face_Averse
-  - Hash: -1290885599
-    Name: Face_Sad
-  - Hash: -2020707048
-    Name: Face_Assertive
-  - Hash: 1419456760
-    Name: Face_Confused
+  - Hash: -1593827
+    Name: FST_RollingEyes
+  - Hash: -481514496
+    Name: FST_MouthPuckerSides
+  - Hash: 81035104
+    Name: FST_Grimace
+  - Hash: 1951421979
+    Name: FST_PuffedCheeksBlow
+  - Hash: -1966802085
+    Name: FST_Rage
+  - Hash: -389115707
+    Name: FST_SuspiciousLook
+  - Hash: -2056008545
+    Name: FST_Wink
+  - Hash: -1625524705
+    Name: FST_Laugh
+  LookSettings:
+    MaxSpeed: 250
+    MaxTorque: 2500
+    SlowdownRadius: 15
+    Epsilon: 0.1
+  SteeringAccelerationFactors:
+    LookWeight: 512
+    HeadWeight: 512
+    BodyWeight: 512
+    EyesWeight: 512
+    ClampLookWeight: 512
   _maxDistFromOrigin: 5
   _maxAngleFromForward: 135

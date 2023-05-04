@@ -20,12 +20,12 @@ MonoBehaviour:
         type: 2}
       BeingInstances:
       - Type: 0
-        BeingPrefab: {fileID: 5645833239924581447, guid: b9345d70ce7dd0344a747a1d6e67ddc1,
+        BeingPrefab: {fileID: 8191373529197598385, guid: 11e0b69639f3484479d5ab9e58038995,
           type: 3}
         BeingSettings: {fileID: 11400000, guid: 5b87b7b452d325d48b18fa949c8a813d,
           type: 2}
       - Type: 0
-        BeingPrefab: {fileID: 5303719828828844838, guid: 357fa48566e827743a89b384312e5d8c,
+        BeingPrefab: {fileID: 5645833239924581447, guid: b9345d70ce7dd0344a747a1d6e67ddc1,
           type: 3}
         BeingSettings: {fileID: 11400000, guid: 5b87b7b452d325d48b18fa949c8a813d,
           type: 2}

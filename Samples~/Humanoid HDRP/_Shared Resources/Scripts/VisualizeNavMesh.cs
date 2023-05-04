@@ -7,7 +7,7 @@ using System.Collections;
 using UnityEngine;
 using VirtualBeings.Tech.UnityIntegration;
 
-namespace VirtualBeings.Demo
+namespace VirtualBeings.Beings.Humanoid.Samples.Shared
 {
     [DisallowMultipleComponent]
     [RequireComponent(typeof(VisualizePathfinding_))]

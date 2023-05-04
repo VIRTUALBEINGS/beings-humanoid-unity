@@ -86,9 +86,9 @@ ModelImporter:
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_06
         weight: 0
       - path: HumanoidRig/BSDriverHolder/BSDriver_prop_01
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_prop_02
-        weight: 0
+        weight: 1
       - path: HumanoidRig/Hips
         weight: 0
       - path: HumanoidRig/Hips/LeftUpLeg
@@ -172,9 +172,9 @@ ModelImporter:
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/HeadTop_End
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/LeftEye
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/RightEye
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
@@ -223,7 +223,19 @@ ModelImporter:
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
         weight: 0
-      - path: Wolf3D_Body
+      - path: HumanoidRig/root
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.L
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.R
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Head
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Neck
+        weight: 1
+      - path: Wolf3D_Body3
         weight: 0
       maskType: 1
       maskSource: {fileID: 31900000, guid: 827ccdbb3191b6145a384a5d37e655e3, type: 2}

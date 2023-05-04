@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DefaultVolumeProfile: {fileID: 11400000, guid: b3314d5ccfbe87c47b0b4df28247d911,
     type: 2}
-  m_LookDevVolumeProfile: {fileID: 11400000, guid: 4f9b483ccca9ed648bdffb2860d60ac0,
-    type: 2}
+  m_LookDevVolumeProfile: {fileID: 0}
   m_RenderingPathDefaultCameraFrameSettings:
     bitDatas:
       data1: 72198260625768269
@@ -88,10 +87,7 @@ MonoBehaviour:
   shaderVariantLogLevel: 0
   lensAttenuationMode: 0
   diffusionProfileSettingsList:
-  - {fileID: 11400000, guid: 36c2d4cd20416c2429948faffe6e0bb8, type: 2}
-  - {fileID: 11400000, guid: 16ecb409e4d5e0446bbfd9accd4f10bb, type: 2}
   - {fileID: 11400000, guid: 5ec3d67890a98134b9d3f52fc6820243, type: 2}
-  - {fileID: 11400000, guid: 7fc0e759127d8674abafead8b3f2790a, type: 2}
   rendererListCulling: 0
   DLSSProjectId: 000000
   useDLSSCustomProjectId: 0
@@ -103,4 +99,4 @@ MonoBehaviour:
     serializedProfiles: []
     serializedBakeSettings: []
     serializedBakingSets: []
-  m_Version: 5
+  m_Version: 3

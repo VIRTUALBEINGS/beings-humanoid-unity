@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _obstacleType: 1
+  _overrideRefreshPeriod: -1
 --- !u!1 &633433110
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _obstacleType: 1
+  _overrideRefreshPeriod: -1
 --- !u!65 &946018093
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1040,20 +1042,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beb089384cd71a9479d99b209b9c9564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoundingBoxForNavServer: {fileID: 633433112}
-  BoundsOfPlayerArea:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+  NavigableCollider: {fileID: 633433112}
+  NavigationIsInLocalSpace: 0
+  NavigationAreaMargin: 1
+  NavigationAreaRefreshRate: -1
   SpawningPoints: []
-  IndexOfVisualizedDebugMesh: 0
+  EnableNavigableMeshDebugging: 0
   NavigableTerrainSettings:
     Epsilon: 0.002
     TimeInMsPerFrameForNavMeshProcessing: 1
-    YValueForDebugMesh: 0.01
-    UpdateFrequencyForBeingsInSeconds: 0.33
-    AssignableCharacterLayers:
-      serializedVersion: 2
-      m_Bits: 1
+    LineSegmentVisualizer: {fileID: 0}
   _interactableID: 0
 --- !u!4 &1660172451
 Transform:

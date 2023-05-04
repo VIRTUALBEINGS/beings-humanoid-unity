@@ -6,11 +6,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 using VirtualBeings.Tech.Shared;
 using VirtualBeings.Tech.UnityIntegration;
 
-namespace VirtualBeings.Demo
+namespace VirtualBeings.Beings.Humanoid.Samples.Shared
 {
     [DisallowMultipleComponent]
     public class VisualizePathfinding_ : MonoBehaviour
@@ -170,8 +169,6 @@ namespace VirtualBeings.Demo
                     yield return null;
                 }
             }
-
-            yield return null;
         }
     }
 }

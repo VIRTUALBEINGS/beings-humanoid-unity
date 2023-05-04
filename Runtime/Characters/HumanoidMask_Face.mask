@@ -7,7 +7,7 @@ AvatarMask:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: HumanoidMask_Face
-  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Mask: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_Elements:
   - m_Path: 
     m_Weight: 1
@@ -34,9 +34,9 @@ AvatarMask:
   - m_Path: HumanoidRig/BSDriverHolder/BSDriver_face_06
     m_Weight: 1
   - m_Path: HumanoidRig/BSDriverHolder/BSDriver_prop_01
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: HumanoidRig/BSDriverHolder/BSDriver_prop_02
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: HumanoidRig/Hips
     m_Weight: 0
   - m_Path: HumanoidRig/Hips/LeftUpLeg
@@ -120,9 +120,9 @@ AvatarMask:
   - m_Path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/HeadTop_End
     m_Weight: 0
   - m_Path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/LeftEye
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/RightEye
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder
     m_Weight: 0
   - m_Path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
@@ -171,5 +171,17 @@ AvatarMask:
     m_Weight: 0
   - m_Path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
     m_Weight: 0
-  - m_Path: Wolf3D_Body
+  - m_Path: HumanoidRig/root
+    m_Weight: 1
+  - m_Path: HumanoidRig/root/RotationOffsetParent_NeckBase
+    m_Weight: 1
+  - m_Path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.L
+    m_Weight: 1
+  - m_Path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.R
+    m_Weight: 1
+  - m_Path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Head
+    m_Weight: 1
+  - m_Path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Neck
+    m_Weight: 1
+  - m_Path: Wolf3D_Body3
     m_Weight: 0

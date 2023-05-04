@@ -5,12 +5,12 @@
 
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
+using VirtualBeings.Beings.Humanoid.Samples.Shared;
 using VirtualBeings.Tech.BehaviorComposition;
 using VirtualBeings.Tech.UnityIntegration;
 
-namespace VirtualBeings.Beings.Humanoid.Sample.Look
+namespace VirtualBeings.Beings.Humanoid.Samples.LookSample
 {
     public class CameraController : MonoBehaviour
     {
@@ -34,10 +34,22 @@ namespace VirtualBeings.Beings.Humanoid.Sample.Look
         {
             Animator animator = GetComponentInChildren<Animator>();
 
-            Animator interactable1Animator = GameObject.Find("Interactable Cube 1").GetComponentInChildren<Animator>(true);
-            Animator interactable2Animator = GameObject.Find("Interactable Cube 2").GetComponentInChildren<Animator>(true);
-            Animator interactable3Animator = GameObject.Find("Interactable Cube 3").GetComponentInChildren<Animator>(true);
+            InteractableController interactableCube1 = Container.InteractionDB.FindFirst(typeof(InteractableController), 
+                (i) => i.TopLevelParent.name.Equals("Interactable Cube 1")) as InteractableController;
+            InteractableController interactableCube2 = Container.InteractionDB.FindFirst(typeof(InteractableController), 
+                (i) => i.TopLevelParent.name.Equals("Interactable Cube 2")) as InteractableController;
+            InteractableController interactableCube3 = Container.InteractionDB.FindFirst(typeof(InteractableController), 
+                (i) => i.TopLevelParent.name.Equals("Interactable Cube 3")) as InteractableController;
 
+
+            Animator interactable1Animator = interactableCube1?.GetComponentInChildren<Animator>(true);
+            Animator interactable2Animator = interactableCube2?.GetComponentInChildren<Animator>(true);
+            Animator interactable3Animator = interactableCube3?.GetComponentInChildren<Animator>(true);
+
+            if(interactable1Animator == null || interactable2Animator == null || interactable3Animator == null)
+            {
+                yield break;
+            }
             string[] triggers = new string[]
             {
                 "Trigger1",

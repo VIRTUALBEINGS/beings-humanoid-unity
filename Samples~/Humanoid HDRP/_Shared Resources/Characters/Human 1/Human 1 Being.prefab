@@ -583,7 +583,7 @@ Animator:
   m_GameObject: {fileID: 5303719828828844838}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 3aa8b683813ba3d4b82c5414e4497f19, type: 3}
-  m_Controller: {fileID: 9100000, guid: b5c2ba1372afe3e46940f8612897570f, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -606,12 +606,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _postProcessAnimation:
-    rid: 1908692015276621825
+    rid: 1908692269244612608
   _gameObjectsForNavmesh: []
   _exclusionsFromInteractionDB: []
   _colliderChain: []
   _impenetrableColliders: []
-  _voice: {fileID: 1174367370920909635}
+  _voice: {fileID: 7573793866939348601}
   _voiceSecondary: {fileID: 0}
   _clips_secondaryVocalization: []
   _rig:
@@ -676,7 +676,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 1908692015276621825
+    - rid: 1908692269244612608
       type: {class: PostProcessAnimationHumanoid, ns: VirtualBeings.Tech.UnityIntegration,
         asm: VirtualBeingsTech}
       data:
@@ -1010,7 +1010,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4997852937805155959}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1174367370920909635
+--- !u!82 &7573793866939348601
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -8,13 +8,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using VirtualBeings.Beings.Humanoid;
 using VirtualBeings.Tech.ActiveCognition;
 using VirtualBeings.Tech.BehaviorComposition;
 using VirtualBeings.Tech.BehaviorComposition.Humanoids;
+using VirtualBeings.Tech.Beings.Humanoid;
 using VirtualBeings.Tech.UnityIntegration;
 
-namespace VirtualBeings.Tech.Beings.Humanoid
+namespace VirtualBeings.Beings.Humanoid.Samples.LookSample
 {
     [Serializable]
     public class LookSettings { }
@@ -25,7 +25,7 @@ namespace VirtualBeings.Tech.Beings.Humanoid
 
         public LookSettings LookSettings { get; }
 
-        private Locomotion _locomotion;
+        private Stay _stay;
         private Face _face;
         private LookSimple _lookSimple;
         private LookAround _lookAround;
@@ -37,7 +37,7 @@ namespace VirtualBeings.Tech.Beings.Humanoid
 
             Initialize += () =>
             {
-                _locomotion = new Locomotion(this);
+                _stay = new Stay(this);
 
                 float bodyWeight = Rand.Range(.02f, .06f);
                 float headWeight = Rand.Range(.55f, .8f);
@@ -46,6 +46,7 @@ namespace VirtualBeings.Tech.Beings.Humanoid
                 {
                     BodyWeight01 = bodyWeight,
                     HeadWeight01 = headWeight,
+                    ClampLookWeight01 = 0f,
                 };
 
                 _lookSimple.MaxDistractionDuration = 0f;
@@ -54,6 +55,7 @@ namespace VirtualBeings.Tech.Beings.Humanoid
                 {
                     BodyWeight01 = bodyWeight,
                     HeadWeight01 = headWeight,
+                    ClampLookWeight01 = 0f,
                 };
 
                 _lookAround.OnNewLookTarget += (_, _) => OnLookTargetModification();
@@ -68,7 +70,7 @@ namespace VirtualBeings.Tech.Beings.Humanoid
 
         protected override IEnumerator MainProcess()
         {
-            _locomotion.Start(BodyResetType.ResetToDefault);
+            _stay.Start();
             _face.Start();
 
             // Wait one frame for the being to see all of the cubes around him
@@ -114,7 +116,7 @@ namespace VirtualBeings.Tech.Beings.Humanoid
 
             //yield return new SuspendWhile(() => _locomotion.IsInST() || _locomotion.IsInUST());
             //yield return new SuspendForDuration(0.25f, 0.5f);
-            yield return new SuspendWhile(() => _locomotion.IsInST() || _locomotion.IsInUST(), 0f, 0f, Rand.Range(1.5f, 2.5f));
+            yield return new SuspendWhile(() => _stay.IsInST() || _stay.IsInUST(), 0f, 0f, Rand.Range(1.5f, 2.5f));
         }
 
         private IEnumerator PhaseTwo()
@@ -165,7 +167,7 @@ namespace VirtualBeings.Tech.Beings.Humanoid
                 USTHumanoid.TwistTorso_Subtle,
             };
 
-            _locomotion.DoUST(usts[Rand.Range(0, usts.Length)], transitionLeftRight: Rand.sign);
+            _stay.DoUST(usts[Rand.Range(0, usts.Length)], transitionLeftRight: Rand.sign);
         }
 
         private void OnLookTargetModification()

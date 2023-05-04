@@ -32,7 +32,7 @@ MonoBehaviour:
     supportTransparentDepthPostpass: 1
     colorBufferFormat: 74
     supportCustomPass: 1
-    customBufferFormat: 12
+    customBufferFormat: 8
     supportedLitShaderMode: 2
     planarReflectionResolution:
       m_Values: 000100000004000000080000
@@ -40,7 +40,7 @@ MonoBehaviour:
         m_Id: With3Levels
     supportDecals: 1
     supportDecalLayers: 0
-    supportSurfaceGradient: 0
+    supportSurfaceGradient: 1
     decalNormalBufferHP: 0
     msaaSampleCount: 1
     supportMotionVectors: 1
@@ -122,8 +122,8 @@ MonoBehaviour:
       useMipBias: 0
       enableDLSS: 0
       DLSSPerfQualitySetting: 0
-      DLSSUseOptimalSettings: 0
-      DLSSSharpness: 0
+      DLSSUseOptimalSettings: 1
+      DLSSSharpness: 0.5
       maxPercentage: 100
       minPercentage: 100
       dynResType: 1
@@ -140,7 +140,7 @@ MonoBehaviour:
       singlePass: 1
       occlusionMesh: 1
       cameraJitter: 0
-      allowMotionBlur: 0
+      allowMotionBlur: 1
     postProcessQualitySettings:
       NearBlurSampleCount: 030000000500000008000000
       NearBlurMaxRadius:
@@ -208,16 +208,16 @@ MonoBehaviour:
       - 50
       RTGIFullResolution: 000001
       RTGIClampValue:
-      - 0.5
-      - 0.8
-      - 1.5
+      - 2
+      - 3
+      - 5
       RTGIRaySteps: 200000003000000040000000
       RTGIDenoise: 010101
       RTGIHalfResDenoise: 010000
       RTGIDenoiserRadius:
-      - 0.75
-      - 0.5
-      - 0.25
+      - 1
+      - 1
+      - 1
       RTGISecondDenoise: 010101
       RTRMinSmoothness:
       - 0.6
@@ -277,7 +277,7 @@ MonoBehaviour:
     - format: 0
       sizeInMegaBytes: 128
   m_UseRenderGraph: 1
-  m_Version: 22
+  m_Version: 21
   m_ObsoleteFrameSettings:
     overrides: 0
     enableShadow: 0

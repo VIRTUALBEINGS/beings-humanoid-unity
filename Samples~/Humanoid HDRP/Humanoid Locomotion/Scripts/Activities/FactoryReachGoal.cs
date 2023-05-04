@@ -6,8 +6,9 @@
 using UnityEngine;
 using VirtualBeings.Tech.ActiveCognition;
 using VirtualBeings.Tech.BehaviorComposition;
+using VirtualBeings.Tech.Beings.Humanoid;
 
-namespace VirtualBeings.Tech.Beings.Humanoid
+namespace VirtualBeings.Beings.Humanoid.Samples.LocomotionSample
 {
     [CreateAssetMenu(
         fileName = "Humanoid Root Activity - Reach Goal - New.asset",

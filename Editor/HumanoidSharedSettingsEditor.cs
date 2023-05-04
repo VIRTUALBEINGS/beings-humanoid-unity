@@ -8,6 +8,7 @@ using UnityEngine;
 using VirtualBeings.Tech.BehaviorComposition;
 using VirtualBeings.Tech.UnityIntegration;
 using VirtualBeings.Tech.Utils;
+using static System.TimeZoneInfo;
 
 namespace VirtualBeings.Beings.Humanoid
 {
@@ -305,7 +306,7 @@ namespace VirtualBeings.Beings.Humanoid
 
             RStoRSMatrixEntry DefaultTransition(int RS) => new(RS, AddDefaultTransition(RS));
 
-            RStoRSMatrixEntry NamedTransition(int RS, string OT)
+            RStoRSMatrixEntry NamedTransition(int RS, string OT, float crossFadeDuration = -1f)
             {
                 Debug.Log($"{OT}: {Animator.StringToHash(OT)}");
                 return new(
@@ -314,7 +315,7 @@ namespace VirtualBeings.Beings.Humanoid
                         new RSTransitionInfo(
                             Animator.StringToHash(OT),
                             TransitionTypeHumanoid.Default.ID,
-                            RSInterruptionTime
+                            crossFadeDuration > 0 ? crossFadeDuration : RSInterruptionTime
                         )
                     )
                 );
@@ -325,20 +326,27 @@ namespace VirtualBeings.Beings.Humanoid
                 RStoRSMatrix[from * nRS + to] = DefaultTransition(to);
             }
 
-            void InsertNamedOT(int to, int from, string transitionName)
+            void InsertNamedOT(int to, int from, string transitionName, float crossFadeDuration = -1f)
             {
-                RStoRSMatrix[from * nRS + to] = NamedTransition(to, transitionName);
+                RStoRSMatrix[from * nRS + to] = NamedTransition(to, transitionName, crossFadeDuration);
             }
 
             // ---------------------------------------
             // -> Stand
             InsertDefaultOT(RS_Stand, RS_Stand);
             InsertDefaultOT(RS_Stand, RS_Walk);
-            InsertNamedOT(RS_Stand, RS_Dance_LowEnergy, "Dance_LowEnergy_to_Stand");
-            InsertNamedOT(RS_Stand, RS_Dance_Robot, "Dance_Robot_to_Stand");
-            InsertNamedOT(RS_Stand, RS_Dance_Wave, "Dance_Wave_to_Stand");
-            InsertNamedOT(RS_Stand, RS_Dance_Samba, "Dance_Samba_to_Stand");
-            InsertNamedOT(RS_Stand, RS_Dance_GangnamStyle, "Dance_GangNamStyle_to_Stand");
+
+            //InsertNamedOT(RS_Stand, RS_Dance_LowEnergy, "Dance_LowEnergy_to_Stand");
+            //InsertNamedOT(RS_Stand, RS_Dance_Robot, "Dance_Robot_to_Stand");
+            //InsertNamedOT(RS_Stand, RS_Dance_Wave, "Dance_Wave_to_Stand");
+            //InsertNamedOT(RS_Stand, RS_Dance_Samba, "Dance_Samba_to_Stand");
+            //InsertNamedOT(RS_Stand, RS_Dance_GangnamStyle, "Dance_GangNamStyle_to_Stand");
+
+            InsertNamedOT(RS_Stand, RS_Dance_LowEnergy, "Stand", .05f);
+            InsertNamedOT(RS_Stand, RS_Dance_Robot, "Stand", .05f);
+            InsertNamedOT(RS_Stand, RS_Dance_Wave, "Stand", .05f);
+            InsertNamedOT(RS_Stand, RS_Dance_Samba, "Stand", .04f);
+            InsertNamedOT(RS_Stand, RS_Dance_GangnamStyle, "Stand", .05f);
 
             // ---------------------------------------
             // -> Walk

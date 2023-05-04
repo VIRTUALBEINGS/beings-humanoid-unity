@@ -6,15 +6,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using VirtualBeings.Beings.Humanoid.Sample.Look;
+using VirtualBeings.Beings.Humanoid.Samples.Shared;
 using VirtualBeings.Tech.BehaviorComposition;
 using VirtualBeings.Tech.UnityIntegration;
 
-namespace VirtualBeings.Beings.Humanoid.Sample.LocomotionSample
+namespace VirtualBeings.Beings.Humanoid.Samples.LocomotionSample
 {
     public class CameraFollow : MonoBehaviour
     {
-        [SerializeField] private float zOffset = -12;
         [SerializeField] private Camera _mainCamera, _secondaryCamera;
 
         private Container Container => Container.Instance;

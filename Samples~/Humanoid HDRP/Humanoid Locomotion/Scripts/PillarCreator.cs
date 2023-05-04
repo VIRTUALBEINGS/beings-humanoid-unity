@@ -3,12 +3,10 @@
 // Copyright 2011-2023 Virtual Beings SAS.
 // ======================================================================
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using VirtualBeings.Tech.UnityIntegration;
 
-namespace VirtualBeings.Beings.Humanoid.Sample.LocomotionSample
+namespace VirtualBeings.Beings.Humanoid.Samples.LocomotionSample
 {
     public class PillarCreator : MonoBehaviour
     {
@@ -25,7 +23,6 @@ namespace VirtualBeings.Beings.Humanoid.Sample.LocomotionSample
         [Space]
         [SerializeField, Range(0f, 1f)] private float _offsetPosFoundation01 = 0.5f;
         [SerializeField, Range(0f, 1f)] private float _offsetPosEachPillar01 = 0.5f;
-        [SerializeField, Range(0f, 90f)] private float _offsetYRotEachPillar = 20f;
 
         void Start()
         {

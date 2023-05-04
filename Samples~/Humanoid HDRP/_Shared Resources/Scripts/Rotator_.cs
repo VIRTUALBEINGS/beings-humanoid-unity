@@ -5,7 +5,7 @@
 
 using UnityEngine;
 
-namespace VirtualBeings.Demo
+namespace VirtualBeings.Beings.Humanoid.Samples.Shared
 {
     [DisallowMultipleComponent]
     public class Rotator_ : MonoBehaviour

@@ -5,11 +5,11 @@
 
 using System;
 using System.Collections;
-using VirtualBeings.Beings.Humanoid;
 using VirtualBeings.Tech.BehaviorComposition;
+using VirtualBeings.Tech.Beings.Humanoid;
 using VirtualBeings.Tech.UnityIntegration;
 
-namespace VirtualBeings.Tech.Beings.Humanoid
+namespace VirtualBeings.Beings.Humanoid.Samples.LocomotionSample
 {
     [Serializable]
     public class ReachGoalSettings { }
@@ -18,15 +18,17 @@ namespace VirtualBeings.Tech.Beings.Humanoid
     {
         public override ExecutionType ExecutionType { get; protected set; } = ExecutionType.Default;
 
-        Locomotion _locomotion;
-        ReachGoalSettings _settings;
+        private Stay _stay;
+        private Locomotion _locomotion;
+        private ReachGoalSettings _settings;
 
         public ReachGoal(IHumanoidActivity parent, ReachGoalSettings settings) : base(parent, null)
         {
             _settings = settings;
             Initialize += () =>
             {
-                _locomotion = new Locomotion(this);
+                _locomotion = new(this);
+                _stay = new(this);
             };
         }
 
@@ -35,7 +37,7 @@ namespace VirtualBeings.Tech.Beings.Humanoid
             float[] spawnDelaysByBeingID = new float[] { 4f, 0f, 2f };
             yield return new SuspendForDuration(spawnDelaysByBeingID[Being.BeingID]);
 
-            _locomotion.Start(BodyResetType.ResetToDefault);
+            _stay.Start();
             new ShowUST(this, _locomotion, 1.5f, 2f).Start();
 
             GoalInteractable goal = Container.Instance.InteractionDB.FindFirst(typeof(IInteractable), i => i is GoalInteractable) as GoalInteractable;
@@ -44,9 +46,7 @@ namespace VirtualBeings.Tech.Beings.Humanoid
             {
                 if (goal != null)
                 {
-                    _locomotion.MoveTo(RSHumanoid.Walk, () => goal.RootPosition);
-                    yield return new SuspendUntil(() => _locomotion.IsMoving());
-                    yield return new SuspendUntil(() => !_locomotion.IsMoving());
+                    yield return _locomotion.Start(RSHumanoid.Walk, () => goal.RootPosition);
                 }
 
                 yield return null;

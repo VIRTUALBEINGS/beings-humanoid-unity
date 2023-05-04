@@ -1,3 +1,8 @@
+// ======================================================================
+// This file contains proprietary technology owned by Virtual Beings SAS.
+// Copyright 2011-2023 Virtual Beings SAS.
+// ======================================================================
+
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -5,24 +10,27 @@ using UnityEngine;
 using VirtualBeings.Tech.BehaviorComposition;
 using VirtualBeings.Tech.UnityIntegration;
 
-public class SpotFollowBeing : MonoBehaviour
+namespace VirtualBeings.Beings.Humanoid.Samples.DanceSample
 {
-    public int BeingID;
-    private Being BeingToFollow;
-
-    Container Container => Container.Instance;
-
-    // Update is called once per frame
-    void Update()
+    public class SpotFollowBeing : MonoBehaviour
     {
-        if (BeingToFollow == null)
-        {
-            BeingToFollow = Container.BeingManager.Beings.FirstOrDefault(b => b.BeingID == BeingID);
-        }
+        public int BeingID;
+        private Being BeingToFollow;
 
-        if (BeingToFollow != null)
+        Container Container => Container.Instance;
+
+        // Update is called once per frame
+        void Update()
         {
-            transform.LookAt(BeingToFollow.transform);
+            if (BeingToFollow == null)
+            {
+                BeingToFollow = Container.BeingManager.Beings.FirstOrDefault(b => b.BeingID == BeingID);
+            }
+
+            if (BeingToFollow != null)
+            {
+                transform.LookAt(BeingToFollow.transform);
+            }
         }
     }
 }

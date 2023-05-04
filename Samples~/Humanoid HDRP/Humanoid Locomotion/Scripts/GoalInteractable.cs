@@ -5,10 +5,10 @@
 
 using VirtualBeings.Tech.UnityIntegration;
 
-namespace VirtualBeings.Tech.Beings.Humanoid
+namespace VirtualBeings.Beings.Humanoid.Samples.LocomotionSample
 {
     public class GoalInteractable : InteractableController
     {
-       
+
     }
 }

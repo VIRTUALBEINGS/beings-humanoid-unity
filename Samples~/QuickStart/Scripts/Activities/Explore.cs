@@ -29,15 +29,16 @@ namespace VirtualBeings.Beings.Humanoid.Sample.QuickStart
             Initialize += () =>
             {
                 _goal = new Vector3(0f, 0f, 0f);
-                _locomotion = new Locomotion(this);
+                _locomotion = new(this);
+                _stay = new(this);
                 _lookSimple = new LookSimple(this, targetIInteractable: null, false, false, 0.7f, null);
-                _face = new Face(this);
+                _face = new(this);
             };
         }
 
         protected override IEnumerator MainProcess()
         {
-            _locomotion.Start(BodyResetType.ResetToDefault);
+            _stay.Start();
             _lookSimple.Start();
             _face.Start();
 
@@ -49,15 +50,14 @@ namespace VirtualBeings.Beings.Humanoid.Sample.QuickStart
                 FSHumanoid randomExpression = _randomExpressions[Rand.Range(0, _randomExpressions.Length)];
                 _face.DoExpression(randomExpression, Rand.Range(2f, 4f), Rand.Range(0.5f, 1f));
 
-                _locomotion.MoveTo(RSHumanoid.Walk, () => _goal);
-                yield return new SuspendWhile(() => _locomotion.IsMoving());
+                yield return _locomotion.Start(RSHumanoid.Walk, () => _goal);
 
                 yield return new SuspendForDuration(Rand.Range(0.5f, 1f));
 
                 if(Rand.Bool)
                 {
                     STHumanoid randomST = _randomSTs[Rand.Range(0, _randomSTs.Length)];
-                    _locomotion.RequestST(randomST, transitionLeftRight: Rand.sign); // Some ST ignore left / right
+                    _stay.RequestST(randomST, transitionLeftRight: Rand.sign); // Some ST ignore left / right
                 }
                 else
                 {
@@ -65,7 +65,7 @@ namespace VirtualBeings.Beings.Humanoid.Sample.QuickStart
                     _locomotion.DoUST(randomUST, transitionLeftRight: Rand.sign); // Some UST ignore left / right
                 }
 
-                yield return new SuspendWhile(() => _locomotion.IsInTransition());
+                yield return new SuspendWhile(() => _stay.IsInTransition());
             }
         }
 
@@ -95,7 +95,8 @@ namespace VirtualBeings.Beings.Humanoid.Sample.QuickStart
         };
 
         private Vector3 _goal;
-        //private MoveTo _moveTo;
+
+        private Stay _stay;
         private Locomotion _locomotion;
         private Face _face;
         private LookSimple _lookSimple;

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 4e2592514b9cb494baeea6ce8dc291ee
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 21300
   internalIDToNameTable: []
   externalObjects: {}
   materials:
@@ -61,15 +61,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: HumanoidRig
-        weight: 1
+        weight: 0
       - path: HumanoidRig/BSDriverHolder
         weight: 0
       - path: HumanoidRig/BSDriverHolder/BSDriver_eyes_01
         weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_eyes_02
-        weight: 1
+        weight: 0
       - path: HumanoidRig/BSDriverHolder/BSDriver_eyes_03
-        weight: 1
+        weight: 0
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_01
         weight: 0
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_02
@@ -83,144 +83,156 @@ ModelImporter:
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_06
         weight: 0
       - path: HumanoidRig/BSDriverHolder/BSDriver_prop_01
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_prop_02
-        weight: 0
+        weight: 1
       - path: HumanoidRig/Hips
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/LeftUpLeg
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/LeftUpLeg/LeftLeg
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/LeftUpLeg/LeftLeg/LeftFoot
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftToe_End
         weight: 0
       - path: HumanoidRig/Hips/RightUpLeg
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/RightUpLeg/RightLeg
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/RightUpLeg/RightLeg/RightFoot
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightToe_End
         weight: 0
       - path: HumanoidRig/Hips/Spine
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex4
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle4
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky4
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing4
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb4
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/HeadTop_End
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/LeftEye
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/RightEye
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex4
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle4
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky4
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing4
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
         weight: 0
-      - path: Wolf3D_Body
+      - path: HumanoidRig/root
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.L
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.R
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Head
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Neck
+        weight: 1
+      - path: Wolf3D_Body3
         weight: 0
       maskType: 1
       maskSource: {fileID: 31900000, guid: 827ccdbb3191b6145a384a5d37e655e3, type: 2}
@@ -260,7 +272,6 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1076,7 +1087,6 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

@@ -6,7 +6,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace VirtualBeings.Demo
+namespace VirtualBeings.Beings.Humanoid.Samples.Shared
 {
     public class SmashingBall : MonoBehaviour
     {

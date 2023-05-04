@@ -11,6 +11,8 @@ namespace VirtualBeings.Beings.Humanoid
     {
         public static new FTTHumanoid Default = new(0, nameof(Default), true);
 
+        public static FTTHumanoid WithFOT = new(nameof(WithFOT));
+
         private FTTHumanoid(string name) : base(name) { }
         private FTTHumanoid(int id, string name, bool setNone) : base(id, name, setNone) { }
     }
