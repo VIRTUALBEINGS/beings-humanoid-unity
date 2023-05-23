@@ -20,7 +20,7 @@ MonoBehaviour:
         type: 2}
       BeingInstances:
       - Type: 0
-        BeingPrefab: {fileID: 5032148008155999951, guid: 0de0204577856a54f9de56c267406768,
+        BeingPrefab: {fileID: 8869152814298255760, guid: 0de0204577856a54f9de56c267406768,
           type: 3}
         BeingSettings: {fileID: 11400000, guid: d1676288b01cf3f45bc1223bf1b522c4,
           type: 2}
