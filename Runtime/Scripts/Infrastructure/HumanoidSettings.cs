@@ -19,19 +19,10 @@ namespace VirtualBeings.Beings.Humanoid
         menuName = "VIRTUAL BEINGS/Humanoid Settings",
         order = 1
     )]
-    public class HumanoidSettings : HumanoidBeingSettingsBase, ISerializationCallbackReceiver
+    public class HumanoidSettings : HumanoidBeingSettingsBase
     {
-        [Space, SerializeField, Obfuscation(Exclude = true)]
-        private Dictionary<int, IVocalAnimationList> _dictVocalAnimations;
-        public override Dictionary<int, IVocalAnimationList> DictVocalAnimations => _dictVocalAnimations;
-
-        public override void OnAfterDeserialize() { }
-
-        public override void OnBeforeSerialize() { }
-
         public override void InitializeAnimationStateBase()
         {
-            _ = AdditiveHumanoidExpression.None;
             _ = BodyAttitudeHumanoid.None;
             _ = BodyPoseHumanoid.None;
 

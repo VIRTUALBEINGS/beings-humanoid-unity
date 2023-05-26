@@ -26,10 +26,9 @@ namespace VirtualBeings.Tech.Humanoid.Sample.Faces
 
         public override string MotiveName => "LOOK SAMPLE";
 
-        public override void Generate(Mind mind, bool reinitMotive, out IRootActivity rootActivity, out Motive motive)
+        public override void Generate(Mind mind, bool reinitMotive, out IRootActivity rootActivity)
         {
-            motive = new Motive(mind, this, true, 1 / 200f, 1 / 2000f);
-            ((HumanoidSelf)mind.Self).AddMotive(motive);
+            Motive motive = new Motive(mind, this, true, 1 / 200f, 1 / 2000f);
             rootActivity = new Faces((HumanoidMind)mind, _settings);
         }
     }

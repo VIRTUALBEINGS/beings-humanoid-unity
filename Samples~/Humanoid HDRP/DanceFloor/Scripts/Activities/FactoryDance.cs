@@ -24,10 +24,9 @@ namespace VirtualBeings.Beings.Humanoid.Samples.DanceSample
 
         public override string MotiveName => "DANCE";
 
-        public override void Generate(Mind mind, bool reinitMotive, out IRootActivity rootActivity, out Motive motive)
+        public override void Generate(Mind mind, bool reinitMotive, out IRootActivity rootActivity)
         {
-            motive = new Motive(mind, this, true, 1 / 200f, 1 / 2000f);
-            ((HumanoidSelf)mind.Self).AddMotive(motive);
+            Motive motive = new Motive(mind, this, true, 1 / 200f, 1 / 2000f);
             rootActivity = new Dance((HumanoidMind)mind, _settings);
         }
     }

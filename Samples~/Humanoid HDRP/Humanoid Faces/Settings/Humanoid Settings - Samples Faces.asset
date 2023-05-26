@@ -39,6 +39,107 @@ MonoBehaviour:
   - RootActivityFactory: {fileID: 11400000, guid: 5b5321abbceaee944876eb038c8d36db,
       type: 2}
     Salience01: 0.5
+  _vocalizations:
+  - VocalizationType: 2
+    RS: 
+    ST: 
+    TargetRS: 
+    TargetTransitionType: 
+    FS: None
+    FST: Rage
+    TargetFS: 
+    FTT: 
+    _vocalizations:
+    - AudioClip: {fileID: 8300000, guid: 5e32f64376992b04cb49276e32392a55, type: 3}
+      AnimationMultiplier: 1
+      SoundType: 0
+      Poignancy01: 0
+      VocalAnnoyingnessSummand: 0
+    - AudioClip: {fileID: 8300000, guid: a30e5c03e51d2ee4ea9afd5412a9ad4c, type: 3}
+      AnimationMultiplier: 1
+      SoundType: 0
+      Poignancy01: 0
+      VocalAnnoyingnessSummand: 0
+  - VocalizationType: 2
+    RS: 
+    ST: 
+    TargetRS: 
+    TargetTransitionType: 
+    FS: None
+    FST: LaughFeminine
+    TargetFS: 
+    FTT: 
+    _vocalizations:
+    - AudioClip: {fileID: 8300000, guid: c3c7b525c49255740b7c2abe9319460c, type: 3}
+      AnimationMultiplier: 1
+      SoundType: 0
+      Poignancy01: 0
+      VocalAnnoyingnessSummand: 0
+  - VocalizationType: 2
+    RS: 
+    ST: 
+    TargetRS: 
+    TargetTransitionType: 
+    FS: None
+    FST: GotIdea
+    TargetFS: 
+    FTT: 
+    _vocalizations:
+    - AudioClip: {fileID: 8300000, guid: 7d2331484cb81da4eb579c25054d59fc, type: 3}
+      AnimationMultiplier: 1
+      SoundType: 0
+      Poignancy01: 0
+      VocalAnnoyingnessSummand: 0
+  - VocalizationType: 3
+    RS: 
+    ST: 
+    TargetRS: 
+    TargetTransitionType: 
+    FS: None
+    FST: 
+    TargetFS: Assertive
+    FTT: Rage
+    _vocalizations:
+    - AudioClip: {fileID: 8300000, guid: 81b32ae9be46bc54f89bf3abf51f6f07, type: 3}
+      AnimationMultiplier: 0.5
+      SoundType: 0
+      Poignancy01: 0
+      VocalAnnoyingnessSummand: 0
+    - AudioClip: {fileID: 8300000, guid: 81b32ae9be46bc54f89bf3abf51f6f07, type: 3}
+      AnimationMultiplier: 0.5
+      SoundType: 0
+      Poignancy01: 0
+      VocalAnnoyingnessSummand: 0
+  - VocalizationType: 3
+    RS: 
+    ST: 
+    TargetRS: 
+    TargetTransitionType: 
+    FS: None
+    FST: 
+    TargetFS: Satisfied
+    FTT: Laugh
+    _vocalizations:
+    - AudioClip: {fileID: 8300000, guid: b2f320feb40a30241af23deef06e393c, type: 3}
+      AnimationMultiplier: 1
+      SoundType: 0
+      Poignancy01: 0
+      VocalAnnoyingnessSummand: 0
+  - VocalizationType: 3
+    RS: 
+    ST: 
+    TargetRS: 
+    TargetTransitionType: 
+    FS: Satisfied
+    FST: 
+    TargetFS: Interested
+    FTT: Exclamation
+    _vocalizations:
+    - AudioClip: {fileID: 8300000, guid: 7d2331484cb81da4eb579c25054d59fc, type: 3}
+      AnimationMultiplier: 1
+      SoundType: 0
+      Poignancy01: 0
+      VocalAnnoyingnessSummand: 0.05
   _physicalInformation:
     Clearance: 0.55
     Height: 1.8

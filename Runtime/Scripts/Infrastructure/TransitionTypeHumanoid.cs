@@ -47,6 +47,8 @@ namespace VirtualBeings.Beings.Humanoid
             true
         );
 
+        public static TransitionTypeHumanoid Surprised = new(nameof(Surprised));
+
         public static new TransitionTypeHumanoid FromID(int id) =>
             (TransitionTypeHumanoid)TransitionTypeHumanoidBase.FromID(id);
 

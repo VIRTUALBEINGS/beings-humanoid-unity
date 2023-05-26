@@ -15,11 +15,13 @@ namespace VirtualBeings.Beings.Humanoid
 
         public static RSHumanoid Walk = new(nameof(Walk), 0, isMoving: true);
 
-        public static RSHumanoid Dance_LowEnergy = new(nameof(Dance_LowEnergy), 0, isStanding: true);
-        public static RSHumanoid Dance_Robot = new(nameof(Dance_Robot), 0, isStanding: true);
-        public static RSHumanoid Dance_Wave = new(nameof(Dance_Wave), 0, isStanding: true);
-        public static RSHumanoid Dance_Samba = new(nameof(Dance_Samba), 0, isStanding: true);
+        public static RSHumanoid Dance_LowEnergy    = new(nameof(Dance_LowEnergy), 0, isStanding: true);
+        public static RSHumanoid Dance_Robot        = new(nameof(Dance_Robot), 0, isStanding: true);
+        public static RSHumanoid Dance_Wave         = new(nameof(Dance_Wave), 0, isStanding: true);
+        public static RSHumanoid Dance_Samba        = new(nameof(Dance_Samba), 0, isStanding: true);
         public static RSHumanoid Dance_GangnamStyle = new(nameof(Dance_GangnamStyle), 0, isStanding: true);
+
+        public static RSHumanoid Sit  = new(nameof(Sit), 0, isSitting: true);
 
         private RSHumanoid(
             string name,

@@ -6,6 +6,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using VirtualBeings.Tech.ActiveCognition;
 using VirtualBeings.Tech.BehaviorComposition;
 using VirtualBeings.Tech.Beings.Humanoid;
 using VirtualBeings.Tech.UnityIntegration;
@@ -17,11 +18,9 @@ namespace VirtualBeings.Beings.Humanoid.Sample.QuickStart
 
     public class Explore : HumanoidRootActivity<Explore>
     {
-        public override ExecutionType ExecutionType { get; protected set; } = ExecutionType.Default;
-
         public ExploreSettings ExploreSettings { get; }
 
-        public Explore(IHumanoidActivity parent, ExploreSettings exploreSettings) : base(parent, null)
+        public Explore(HumanoidMind parent, Motive motive, ExploreSettings exploreSettings) : base(parent, motive)
         {
             ExploreSettings = exploreSettings;
             OnCalculatePriority = () => Priority_7_Idle;
@@ -31,7 +30,7 @@ namespace VirtualBeings.Beings.Humanoid.Sample.QuickStart
                 _goal = new Vector3(0f, 0f, 0f);
                 _locomotion = new(this);
                 _stay = new(this);
-                _lookSimple = new LookSimple(this, targetIInteractable: null, false, false, 0.7f, null);
+                _lookSimple = new LookSimple(this, targetInteractable: null, false, false, 0.7f, null);
                 _face = new(this);
             };
         }
@@ -65,7 +64,7 @@ namespace VirtualBeings.Beings.Humanoid.Sample.QuickStart
                     _locomotion.DoUST(randomUST, transitionLeftRight: Rand.sign); // Some UST ignore left / right
                 }
 
-                yield return new SuspendWhile(() => _stay.IsInTransition());
+                yield return new SuspendWhile(() => _stay.IsInTransition);
             }
         }
 

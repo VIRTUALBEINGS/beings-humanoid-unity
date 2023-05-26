@@ -13,15 +13,13 @@ namespace VirtualBeings.Tech.Beings.Humanoid
 {
     public class DebugHumanoid : HumanoidRootActivity<DebugHumanoid>
     {
-        public override ExecutionType ExecutionType { get; protected set; } = ExecutionType.Default;
-
         public FactoryDebugHumanoid.DebugSettings DebugSettings { get; }
 
         private ActuatorViewer _actuatorViewer;
         private DebugAnimationUI _debugAnimationUI;
         private GameObject _instanceDebugUI;
 
-        public DebugHumanoid(IHumanoidActivity parent, FactoryDebugHumanoid.DebugSettings settings)
+        public DebugHumanoid(HumanoidMind parent, FactoryDebugHumanoid.DebugSettings settings)
             : base(parent, null)
         {
             DebugSettings = settings;

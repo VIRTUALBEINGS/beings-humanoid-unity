@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
 using VirtualBeings.Tech.BehaviorComposition;
+using VirtualBeings.Tech.Utils;
 
 namespace VirtualBeings.Beings.Humanoid
 {
@@ -71,50 +72,59 @@ namespace VirtualBeings.Beings.Humanoid
             // instantiates null fields of custom classes and because FSInfo implements ISerializationCallbackReceiver)
             // OBS: each of the Animator states referenced here must *exist* and have the *tag* 'TransitionBehavior' (checked automatically below)
 
-            void AddBasicFS(int fsID, string fsName, bool supportsFreeEntryAndExit = true)
+            void AddFS(int fsID, string fsName, bool supportsFreeEntryAndExit, params Pair<int, string>[] fsts)
             {
+                FSInfo.FST_and_int[] supportedFSTs = new FSInfo.FST_and_int[fsts.Length];
+                int                  cpt = 0;
+                foreach (Pair<int,string> fst in fsts)
+                {
+                    FSInfo.FST_and_int info = new(fst.First, AddS(new FSTTransitionInfo(fst.Second)));
+                    supportedFSTs[cpt++] = info;
+                }
+
                 FSInfos[fsID] = new FSInfo(
                     Animator.StringToHash(fsName),
                     fsName,
                     supportsFreeEntryAndExit,
-                    new FSInfo.FST_and_int[] { }
+                    supportedFSTs
                 );
             }
 
-            FSInfos[FS_NEUTRAL] = new FSInfo(
-                Animator.StringToHash(STATE_NEUTRAL),
+            AddFS(
+                FS_NEUTRAL,
                 STATE_NEUTRAL,
                 true,
-                new FSInfo.FST_and_int[]
-                {
-                    new(FSTHumanoid.RollingEyes.ID, AddS(new FSTTransitionInfo("FST_RollingEyes"))),
-                    new(FSTHumanoid.MouthPuckerSides.ID, AddS(new FSTTransitionInfo("FST_MouthPuckerSides"))),
-                    new(FSTHumanoid.Grimace.ID, AddS(new FSTTransitionInfo("FST_Grimace"))),
-                    new(FSTHumanoid.PuffedCheeksBlow.ID, AddS(new FSTTransitionInfo("FST_PuffedCheeksBlow"))),
-                    new(FSTHumanoid.Rage.ID, AddS(new FSTTransitionInfo("FST_Rage"))),
-                    new(FSTHumanoid.SuspiciousLook.ID, AddS(new FSTTransitionInfo("FST_SuspiciousLook"))),
-                    new(FSTHumanoid.Wink.ID, AddS(new FSTTransitionInfo("FST_Wink"))),
-                    new(FSTHumanoid.Laugh.ID, AddS(new FSTTransitionInfo("FST_Laugh"))),
-                }
+                new Pair<int, string>(FSTHumanoid.RollingEyes.ID, "FST_RollingEyes"),
+                new Pair<int, string>(FSTHumanoid.MouthPuckerSides.ID, "FST_MouthPuckerSides"),
+                new Pair<int, string>(FSTHumanoid.Grimace.ID, "FST_Grimace"),
+                new Pair<int, string>(FSTHumanoid.PuffedCheeksBlow.ID, "FST_PuffedCheeksBlow"),
+                new Pair<int, string>(FSTHumanoid.Rage.ID, "FST_Rage"),
+                new Pair<int, string>(FSTHumanoid.SuspiciousLook.ID, "FST_SuspiciousLook"),
+                new Pair<int, string>(FSTHumanoid.Wink.ID, "FST_Wink"),
+                new Pair<int, string>(FSTHumanoid.Laugh.ID, "FST_Laugh"),
+                new Pair<int, string>(FSTHumanoid.LaughFeminine.ID, "FST_Neutral_LaughFeminine"),
+                new Pair<int, string>(FSTHumanoid.Nod.ID, "FST_Neutral_Nod"),
+                new Pair<int, string>(FSTHumanoid.HeadShake.ID, "FST_Head_Shake"),
+                new Pair<int, string>(FSTHumanoid.GotIdea.ID, "FST_Neutral_GotIdea")
             );
 
-            AddBasicFS(FS_SHY, STATE_SHY);
-            AddBasicFS(FS_SATISFIED, STATE_SATISFIED);
-            AddBasicFS(FS_INTERESTED, STATE_INTERESTED);
-            AddBasicFS(FS_AVERSE, STATE_AVERSE);
-            AddBasicFS(FS_SAD, STATE_SAD);
-            AddBasicFS(FS_ASSERTIVE, STATE_ASSERTIVE);
-            AddBasicFS(FS_Confused, STATE_CONFUSED);
-            AddBasicFS(FS_PuffedCheeks, STATE_PUFFED_CHEEKS);
-            AddBasicFS(FS_Grimace, STATE_GRIMACE);
-            AddBasicFS(FS_EyesSquinted, STATE_EYES_SQUINTED);
-            AddBasicFS(FS_EyebrowsRaise, STATE_EYEBROWS_RAISE);
-            AddBasicFS(FS_SeriousLook, STATE_SERIOUS_LOOK);
-            AddBasicFS(FS_SmileSubtle, STATE_SMILE_SUBTLE);
-            AddBasicFS(FS_SmileWide, STATE_SMILE_WIDE);
-            AddBasicFS(FS_Annoyed, STATE_ANNOYED);
-            AddBasicFS(FS_Bored, STATE_BORED);
-            AddBasicFS(FS_Curious, STATE_CURIOUS);
+            AddFS(FS_SHY, STATE_SHY, true);
+            AddFS(FS_SATISFIED, STATE_SATISFIED, true);
+            AddFS(FS_INTERESTED, STATE_INTERESTED, true);
+            AddFS(FS_AVERSE, STATE_AVERSE, true);
+            AddFS(FS_SAD, STATE_SAD, true);
+            AddFS(FS_ASSERTIVE, STATE_ASSERTIVE, true);
+            AddFS(FS_Confused, STATE_CONFUSED, true);
+            AddFS(FS_PuffedCheeks, STATE_PUFFED_CHEEKS, true);
+            AddFS(FS_Grimace, STATE_GRIMACE, true);
+            AddFS(FS_EyesSquinted, STATE_EYES_SQUINTED, true);
+            AddFS(FS_EyebrowsRaise, STATE_EYEBROWS_RAISE, true);
+            AddFS(FS_SeriousLook, STATE_SERIOUS_LOOK, true);
+            AddFS(FS_SmileSubtle, STATE_SMILE_SUBTLE, true);
+            AddFS(FS_SmileWide, STATE_SMILE_WIDE, true);
+            AddFS(FS_Annoyed, STATE_ANNOYED, true);
+            AddFS(FS_Bored, STATE_BORED, true);
+            AddFS(FS_Curious, STATE_CURIOUS, true);
 
             // copy List(T) FSTTransitionInfosL into array
             FSTTransitionInfo[] FSTTransitionInfos = new FSTTransitionInfo[FSTTransitionInfosL.Count];
@@ -189,7 +199,56 @@ namespace VirtualBeings.Beings.Humanoid
             InsertNamedFOT(FS_SATISFIED, FS_NEUTRAL, "Face_Neutral_to_Satisfied");
             InsertNamedFOT(FS_AVERSE, FS_NEUTRAL, "Face_Neutral_to_Averse");
             InsertNamedFOT(FS_SAD, FS_NEUTRAL, "Face_Neutral_to_Sad");
-            InsertNamedFOT(FS_ASSERTIVE, FS_NEUTRAL, "Face_Neutral_to_Assertive");
+
+             FStoFSMatrix[FS_NEUTRAL * nFS + FS_ASSERTIVE] = new(
+                FS_ASSERTIVE,
+                AddP(
+                    new FSTransitionInfo(
+                        Animator.StringToHash("Face_Neutral_to_Assertive"),
+                        nextExpressiveVariation:
+                        AddP(
+                            new FSTransitionInfo(
+                                Animator.StringToHash("Face_Neutral_to_Assertive_Rage"),
+                                FTTHumanoid.Rage.ID
+                            )
+                        )
+                    )
+                )
+            );
+            FStoFSMatrix[FS_NEUTRAL * nFS + FS_SATISFIED] = new(
+                FS_SATISFIED,
+                AddP(
+                    new FSTransitionInfo(
+                        Animator.StringToHash("Face_Neutral_to_Satisfied"),
+                        nextExpressiveVariation:
+                        AddP(
+                            new FSTransitionInfo(
+                                Animator.StringToHash("Face_Neutral_to_Satisfied_Laugh"),
+                                FTTHumanoid.Laugh.ID
+                            )
+                        )
+                    )
+                )
+            );
+            FStoFSMatrix[FS_ASSERTIVE * nFS + FS_SATISFIED] = new(
+                FS_SATISFIED,
+                AddP(
+                    new FSTransitionInfo(
+                        Animator.StringToHash("Face_Assertive_to_Satisfied_Laugh"),
+                        FTTHumanoid.Laugh.ID
+                    )
+                )
+            );
+
+            FStoFSMatrix[FS_SATISFIED * nFS + FS_INTERESTED] = new(
+                FS_INTERESTED,
+                AddP(
+                    new FSTransitionInfo(
+                        Animator.StringToHash("Face_Satisfied_to_Interested_Exclamation"),
+                        FTTHumanoid.Exclamation.ID
+                    )
+                )
+            );
 
             // ---------------------------------------
 

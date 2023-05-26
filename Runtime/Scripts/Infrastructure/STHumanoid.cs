@@ -22,6 +22,7 @@ namespace VirtualBeings.Beings.Humanoid
         public static STHumanoid Greet             = new(nameof(Greet));
         public static STHumanoid GreetActive       = new(nameof(GreetActive));
         public static STHumanoid Reacting          = new(nameof(Reacting));
+        public static STHumanoid Angry_Gesture     = new(nameof(Angry_Gesture));
         public static STHumanoid Angry_CrossArms   = new(nameof(Angry_CrossArms));
         public static STHumanoid StretchArms       = new(nameof(StretchArms));
         public static STHumanoid InspectCurious    = new(nameof(InspectCurious));

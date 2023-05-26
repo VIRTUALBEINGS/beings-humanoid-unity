@@ -161,6 +161,7 @@ namespace VirtualBeings.Beings.Humanoid
 
             int RS_None               = RSHumanoid.None.ID;
             int RS_Stand              = RSHumanoid.Stand.ID;
+            int RS_Sit                = RSHumanoid.Sit.ID;
             int RS_Walk               = RSHumanoid.Walk.ID;
             int RS_Dance_LowEnergy    = RSHumanoid.Dance_LowEnergy.ID;
             int RS_Dance_Robot        = RSHumanoid.Dance_Robot.ID;
@@ -213,6 +214,7 @@ namespace VirtualBeings.Beings.Humanoid
                     new(STHumanoid.GreetActive.ID, AddS("ST_Stand_Greet_Active", STCrossfadeTime)),
                     new(STHumanoid.Greet.ID, AddS("ST_Stand_Greet", STCrossfadeTime)),
                     new(STHumanoid.Reacting.ID, AddS("ST_Stand_Reacting", STCrossfadeTime)),
+                    new(STHumanoid.Angry_Gesture.ID,AddS("ST_Stand_AngryGesture", STCrossfadeTime)),
                     new(STHumanoid.Angry_CrossArms.ID, AddS("ST_Stand_Angry_CrossArms", STCrossfadeTime)),
                     new(STHumanoid.StretchArms.ID, AddS("ST_Stand_StretchArms", STCrossfadeTime)),
                     new(STHumanoid.InspectCurious.ID, AddS("ST_Stand_Inspect_Curious", STCrossfadeTime)),
@@ -232,6 +234,13 @@ namespace VirtualBeings.Beings.Humanoid
 
             RSInfos[RS_Walk] = new RSInfo(
                 Animator.StringToHash("Root_Walk"),
+                Animator.StringToHash("BA_State_Stand"),
+                new int[] { },
+                new RSInfo.ST_and_int[] { }
+            );
+
+            RSInfos[RS_Sit] = new RSInfo(
+                Animator.StringToHash("Root_Sit"),
                 Animator.StringToHash("BA_State_Stand"),
                 new int[] { },
                 new RSInfo.ST_and_int[] { }
@@ -299,16 +308,17 @@ namespace VirtualBeings.Beings.Humanoid
             // NB: none of the entries below initialize RStoRSMatrixEntry.Variations because it can't be serialized;
             // instead Variations is reconstructed from the linked list of 'RSTransitionInfo.NextExpressiveVariation's in BirdBeing
 
-            int AddDefaultTransition(int RS) =>
+            int AddDefaultTransition(int RS, float crossFadeDuration) =>
                 AddP(
-                    new RSTransitionInfo(RSInfos[RS].StateHash, TransitionTypeHumanoid.Default.ID, RSInterruptionTime)
+                    new RSTransitionInfo(RSInfos[RS].StateHash, TransitionTypeHumanoid.Default.ID,
+                        crossFadeDuration >= 0f ? crossFadeDuration : RSInterruptionTime)
                 );
 
-            RStoRSMatrixEntry DefaultTransition(int RS) => new(RS, AddDefaultTransition(RS));
+            RStoRSMatrixEntry DefaultTransition(int RS, float crossfadeDuration) =>
+                new(RS, AddDefaultTransition(RS, crossfadeDuration));
 
             RStoRSMatrixEntry NamedTransition(int RS, string OT, float crossFadeDuration = -1f)
             {
-                Debug.Log($"{OT}: {Animator.StringToHash(OT)}");
                 return new(
                     RS,
                     AddP(
@@ -321,9 +331,9 @@ namespace VirtualBeings.Beings.Humanoid
                 );
             }
 
-            void InsertDefaultOT(int to, int from)
+            void InsertDefaultOT(int to, int from, float crossFadeDuration = -1f)
             {
-                RStoRSMatrix[from * nRS + to] = DefaultTransition(to);
+                RStoRSMatrix[from * nRS + to] = DefaultTransition(to, crossFadeDuration);
             }
 
             void InsertNamedOT(int to, int from, string transitionName, float crossFadeDuration = -1f)
@@ -335,6 +345,7 @@ namespace VirtualBeings.Beings.Humanoid
             // -> Stand
             InsertDefaultOT(RS_Stand, RS_Stand);
             InsertDefaultOT(RS_Stand, RS_Walk);
+            InsertDefaultOT(RS_Stand, RS_Sit);
 
             //InsertNamedOT(RS_Stand, RS_Dance_LowEnergy, "Dance_LowEnergy_to_Stand");
             //InsertNamedOT(RS_Stand, RS_Dance_Robot, "Dance_Robot_to_Stand");
@@ -380,11 +391,19 @@ namespace VirtualBeings.Beings.Humanoid
                 )
             );
 
+            // ------------------------------
+            // -> Dances
             InsertNamedOT(RS_Dance_LowEnergy, RS_Stand, "Stand_to_Dance_LowEnergy");
             InsertNamedOT(RS_Dance_Robot, RS_Stand, "Stand_to_Dance_Robot");
             InsertNamedOT(RS_Dance_Wave, RS_Stand, "Stand_to_Dance_Wave");
             InsertNamedOT(RS_Dance_Samba, RS_Stand, "Stand_to_Dance_Samba");
             InsertNamedOT(RS_Dance_GangnamStyle, RS_Stand, "Stand_to_Dance_GangNamStyle");
+
+            // ------------------------------
+            // -> Sit
+            InsertDefaultOT(RS_Sit, RS_Sit);
+            InsertDefaultOT(RS_Sit, RS_Stand);
+            InsertDefaultOT(RS_Sit, RS_Walk);
 
             // RStoRSMatrix[RS_Hover * nRS + RS_Stand] = new RStoRSMatrixEntry(
             // RSHumanoid.Stand.ID,
@@ -459,36 +478,29 @@ namespace VirtualBeings.Beings.Humanoid
                 }
             }
 
-            int UST_None              = USTHumanoid.None.ID;
-            int UST_Neutral           = USTHumanoid.Neutral.ID;
-            int UST_SaluteBriefL      = USTHumanoid.SaluteBriefLeft.ID;
-            int UST_SaluteBriefR      = USTHumanoid.SaluteBriefRight.ID;
-            int UST_ApplauseQuick     = USTHumanoid.ApplauseQuick.ID;
-            int UST_DismissingGesture = USTHumanoid.DismissingGesture.ID;
-            int UST_VictoryGesture    = USTHumanoid.VictoryGesture.ID;
-            int UST_JumpScared        = USTHumanoid.JumpScared.ID;
-            int UST_ScratchHead       = USTHumanoid.ScratchHead.ID;
-            int UST_WipeForehead      = USTHumanoid.WipeForehead.ID;
-            int UST_SwingArms         = USTHumanoid.SwingArms_Subtle.ID;
-            int UST_HeadTiltStretch   = USTHumanoid.HeadTilt_Stretch.ID;
-            int UST_RollShoulder      = USTHumanoid.RollShoulder.ID;
-            int UST_TwistTorso_Subtle = USTHumanoid.TwistTorso_Subtle.ID;
-
             USTInfo[] USTInfos              = new USTInfo[USTHumanoid.All.Count];
-            USTInfos[UST_None]              = new USTInfo("UST_None");
-            USTInfos[UST_Neutral]           = new USTInfo("UST_None");
-            USTInfos[UST_SaluteBriefL]      = new USTInfo("UST_SaluteBriefLeft");
-            USTInfos[UST_SaluteBriefR]      = new USTInfo("UST_SaluteBriefRight");
-            USTInfos[UST_ApplauseQuick]     = new USTInfo("UST_Applause_Quick");
-            USTInfos[UST_DismissingGesture] = new USTInfo("UST_Dismissing_Gesture");
-            USTInfos[UST_VictoryGesture]    = new USTInfo("UST_Victory_Gesture");
-            USTInfos[UST_JumpScared]        = new USTInfo("UST_Jump_Scared");
-            USTInfos[UST_ScratchHead]       = new USTInfo("UST_Head_Scratch");
-            USTInfos[UST_WipeForehead]      = new USTInfo("UST_Wipe_Forehead");
-            USTInfos[UST_SwingArms]         = new USTInfo("UST_SwingArms_Subtle");
-            USTInfos[UST_HeadTiltStretch]   = new USTInfo("UST_HeadTilt_Stretch");
-            USTInfos[UST_RollShoulder]      = new USTInfo("UST_RollShoulder");
-            USTInfos[UST_TwistTorso_Subtle] = new USTInfo("UST_TwistTorso_Subtle");
+
+            void AddUST(USTHumanoid ust, string ustName)
+            {
+                USTInfos[ust.ID] = new USTInfo(ustName);
+            }
+
+            AddUST(USTHumanoid.None, "UST_None");
+            AddUST(USTHumanoid.Neutral, "UST_None");
+            AddUST(USTHumanoid.SaluteBriefLeft, "UST_SaluteBriefLeft");
+            AddUST(USTHumanoid.SaluteBriefRight, "UST_SaluteBriefRight");
+            AddUST(USTHumanoid.ApplauseQuick, "UST_Applause_Quick");
+            AddUST(USTHumanoid.DismissingGesture, "UST_Dismissing_Gesture");
+            AddUST(USTHumanoid.VictoryGesture, "UST_Victory_Gesture");
+            AddUST(USTHumanoid.JumpScared, "UST_Jump_Scared");
+            AddUST(USTHumanoid.ScratchHead, "UST_Head_Scratch");
+            AddUST(USTHumanoid.WipeForehead, "UST_Wipe_Forehead");
+            AddUST(USTHumanoid.SwingArms_Subtle, "UST_SwingArms_Subtle");
+            AddUST(USTHumanoid.HeadTilt_Stretch, "UST_HeadTilt_Stretch");
+            AddUST(USTHumanoid.RollShoulder, "UST_RollShoulder");
+            AddUST(USTHumanoid.TwistTorso_Subtle, "UST_TwistTorso_Subtle");
+            AddUST(USTHumanoid.Angry_Gesture, "UST_AngryGesture");
+            AddUST(USTHumanoid.Suprised_CoveringMouth, "UST_Surprised_CoveringMouth");
 
             // ---------------------------------------
             // Write our results to sharedSettings

@@ -22,10 +22,9 @@ namespace VirtualBeings.Tech.Beings.Humanoid
 
         public override bool HasMotiveAssociated => false;
 
-        public override void Generate(Mind mind, bool reinitMotive, out IRootActivity rootActivity, out Motive motive)
+        public override void Generate(Mind mind, bool reinitMotive, out IRootActivity rootActivity)
         {
-            motive = null;
-            rootActivity = new DebugHumanoid((HumanoidMind)mind, _settings);
+            rootActivity = new DebugHumanoid(mind as HumanoidMind, _settings);
         }
 
         [Serializable]

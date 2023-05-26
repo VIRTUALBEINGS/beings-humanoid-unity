@@ -26,8 +26,7 @@ ModelImporter:
       lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
       retargeting quality.\n\t'Spine' has scale animation that will be discarded.\n\t'Spine1'
       has scale animation that will be discarded.\n\t'Spine2' has scale animation
-      that will be discarded.\n\t'LeftHandPinky2' has scale animation that will be
-      discarded.\n\t'RightHandThumb3' has scale animation that will be discarded.\n\t'LeftUpLeg'
+      that will be discarded.\n\t'Head' has scale animation that will be discarded.\n\t'LeftUpLeg'
       has scale animation that will be discarded.\n\t'LeftLeg' has scale animation
       that will be discarded.\n\t'LeftFoot' has scale animation that will be discarded.\n\t'LeftToeBase'
       has scale animation that will be discarded.\n\t'RightUpLeg' has scale animation
@@ -70,7 +69,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.030630631
+        functionName: AnimationEventDispatcher
+        data: Vocalization
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -234,7 +240,19 @@ ModelImporter:
         weight: 1
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
         weight: 1
-      - path: Wolf3D_Body
+      - path: HumanoidRig/root
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.L
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.R
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Head
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Neck
+        weight: 1
+      - path: Wolf3D_Body3
         weight: 1
       maskType: 1
       maskSource: {fileID: 31900000, guid: 98e6295efb656bc409dc85d4a21fa874, type: 2}

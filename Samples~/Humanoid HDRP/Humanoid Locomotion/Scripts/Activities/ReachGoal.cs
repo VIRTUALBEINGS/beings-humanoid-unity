@@ -16,19 +16,16 @@ namespace VirtualBeings.Beings.Humanoid.Samples.LocomotionSample
 
     public class ReachGoal : HumanoidRootActivity<ReachGoal>
     {
-        public override ExecutionType ExecutionType { get; protected set; } = ExecutionType.Default;
-
         private Stay _stay;
         private Locomotion _locomotion;
         private ReachGoalSettings _settings;
 
-        public ReachGoal(IHumanoidActivity parent, ReachGoalSettings settings) : base(parent, null)
+        public ReachGoal(HumanoidMind parent, ReachGoalSettings settings) : base(parent, null)
         {
             _settings = settings;
-            Initialize += () =>
-            {
+            Initialize += () => {
                 _locomotion = new(this);
-                _stay = new(this);
+                _stay       = new(this);
             };
         }
 
@@ -42,13 +39,13 @@ namespace VirtualBeings.Beings.Humanoid.Samples.LocomotionSample
 
             GoalInteractable goal = Container.Instance.InteractionDB.FindFirst(typeof(IInteractable), i => i is GoalInteractable) as GoalInteractable;
 
+            if (goal != null)
+            {
+                yield return _locomotion.Start(RSHumanoid.Walk, () => goal.RootPosition);
+            }
+
             while (FOREVER)
             {
-                if (goal != null)
-                {
-                    yield return _locomotion.Start(RSHumanoid.Walk, () => goal.RootPosition);
-                }
-
                 yield return null;
             }
         }

@@ -3,6 +3,7 @@
 // Copyright 2011-2023 Virtual Beings SAS.
 // ======================================================================
 
+using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -17,11 +18,10 @@ namespace VirtualBeings.Beings.Humanoid
         menuName = "VIRTUAL BEINGS/Humanoid Shared Client Settings",
         order = 1
     )]
-    public class HumanoidSharedClientSettings : HumanoidSharedServerSettings, ISerializationCallbackReceiver
+
+    public class HumanoidSharedClientSettings : HumanoidSharedServerSettings
     {
         public override IFOVProvider FOVProvider => _FOVProvider;
-
-        public override Dictionary<int, IVocalAnimationList> DictVocalAnimations => _dictVocalAnimations;
 
         [Space, Header("FOV provider"), SerializeField]
         private float _maxDistFromOrigin = 2f;
@@ -31,15 +31,11 @@ namespace VirtualBeings.Beings.Humanoid
         [SerializeField]
         private SphericalFOVProvider _FOVProvider;
 
-        private Dictionary<int, IVocalAnimationList> _dictVocalAnimations;
-
         public override void OnAfterDeserialize()
         {
             base.OnAfterDeserialize();
 
             _FOVProvider = new SphericalFOVProvider(_maxDistFromOrigin, _maxAngleFromForward);
-
-            _dictVocalAnimations = new Dictionary<int, IVocalAnimationList>();
         }
     }
 }

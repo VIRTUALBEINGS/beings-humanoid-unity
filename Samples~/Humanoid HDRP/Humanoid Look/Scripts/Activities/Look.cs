@@ -21,8 +21,6 @@ namespace VirtualBeings.Beings.Humanoid.Samples.LookSample
 
     public class Look : HumanoidRootActivity<Look>
     {
-        public override ExecutionType ExecutionType { get; protected set; } = ExecutionType.Default;
-
         public LookSettings LookSettings { get; }
 
         private Stay _stay;
@@ -30,7 +28,7 @@ namespace VirtualBeings.Beings.Humanoid.Samples.LookSample
         private LookSimple _lookSimple;
         private LookAround _lookAround;
 
-        public Look(IHumanoidActivity parent, LookSettings settings) : base(parent, null)
+        public Look(HumanoidMind parent, LookSettings settings) : base(parent, null)
         {
             LookSettings = settings;
             OnCalculatePriority = () => Priority_7_Idle;
@@ -116,7 +114,7 @@ namespace VirtualBeings.Beings.Humanoid.Samples.LookSample
 
             //yield return new SuspendWhile(() => _locomotion.IsInST() || _locomotion.IsInUST());
             //yield return new SuspendForDuration(0.25f, 0.5f);
-            yield return new SuspendWhile(() => _stay.IsInST() || _stay.IsInUST(), 0f, 0f, Rand.Range(1.5f, 2.5f));
+            yield return new SuspendWhile(() => _stay.IsInST || _stay.IsInUST, 0f, 0f, Rand.Range(1.5f, 2.5f));
         }
 
         private IEnumerator PhaseTwo()

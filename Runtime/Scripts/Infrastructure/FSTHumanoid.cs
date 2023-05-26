@@ -22,6 +22,10 @@ namespace VirtualBeings.Beings.Humanoid
         public static FSTHumanoid SuspiciousLook   = new(nameof(SuspiciousLook));
         public static FSTHumanoid Wink             = new(nameof(Wink));
         public static FSTHumanoid Laugh            = new(nameof(Laugh));
+        public static FSTHumanoid LaughFeminine    = new(nameof(LaughFeminine));
+        public static FSTHumanoid Nod              = new(nameof(Nod));
+        public static FSTHumanoid HeadShake        = new(nameof(HeadShake));
+        public static FSTHumanoid GotIdea          = new(nameof(GotIdea));
 
         private FSTHumanoid(string name) : base(name) { }
         private FSTHumanoid(int id, string name, bool setSpecial) : base(id, name, setSpecial) { }

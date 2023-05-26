@@ -43,14 +43,30 @@ namespace VirtualBeings.Beings.Humanoid.Samples.Shared
             }
         }
 
-        private void SpawnBeing(BeingInstance beingToSpawn, BeingSharedSettings sharedSettings, Transform spawnTransform, int id)
+        private void SpawnBeing(
+            BeingInstance beingToSpawn,
+            BeingSharedSettings sharedSettings,
+            Transform spawnTransform,
+            int id
+        )
         {
-            GameObject beingGO = Instantiate(beingToSpawn.BeingPrefab, spawnTransform.position, spawnTransform.rotation);
+            GameObject beingGO = Instantiate(
+                beingToSpawn.BeingPrefab,
+                spawnTransform.position,
+                spawnTransform.rotation
+            );
 
             _being = beingGO.GetComponent<Being>();
-            BeingData beingData = new BeingData();
+
+            BeingData beingData = new();
             beingData.AssignID(id);
-            BeingInfo beingInfo = new(_being, beingData, beingToSpawn.BeingSettings, sharedSettings, beingToSpawn.Type);
+            BeingInfo beingInfo = new(
+                _being,
+                beingData,
+                beingToSpawn.BeingSettings,
+                sharedSettings,
+                beingToSpawn.Type
+            );
             _beingManager.InitializeAndStartBeing(beingInfo);
         }
     }

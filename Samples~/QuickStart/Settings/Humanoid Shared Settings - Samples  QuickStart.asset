@@ -52,11 +52,9 @@ MonoBehaviour:
   LayerIndexTailAdditive: -1
   LayerIndexEyes: 5
   LayerIndexMouth: 6
-  LayerIndexNeckHeadOnlyAdditiveSynchronized: 7
-  LayerIndexNeckHeadFaceAdditive: 8
   LayerIndexEarBaseAdditive: -1
   LayerIndexEarsAdditive: -1
-  LayerIndexBlink: 9
+  LayerIndexBlink: 7
   LayerIndexBreathing: -1
   LayerIndexBellyFull: -1
   LayerIndexEyeSize: -1
@@ -180,6 +178,10 @@ MonoBehaviour:
   EyesClosedFromHeadTouch_UrgencyFactor01: 0.3
   MaxTimeTillMouthPickup: 2
   MaxTimeTillMouthDestruction: 1
+  MinPitchNeck: -25
+  MaxPitchNeck: 20
+  MaxYawNeck: 25
+  MaxRollNeck: 15
   MinPitchHead: -35
   MaxPitchHead: 35
   MaxYawHead: 60
@@ -723,11 +725,9 @@ MonoBehaviour:
   MinHeadRotationSpeedEyes: 0.1
   MinHeadRotationAccelerationEyes: 0.5
   MaxHeadRotationAccelerationSpeedupFactorEyes: 10000
-  LookSteeringMaxSpeed: 150
-  LookSteeringSlowingDistance: 10
-  HumanoidLookMaxYawRange: 90
-  HumanoidLookMinPitch: -60
-  HumanoidLookMaxPitch: 80
+  EmitterPrefab: {fileID: 6747069666315366121, guid: e7638e9c609951946a02d3833325ceac,
+    type: 3}
+  _vocalizations: []
   NRS: 3
   RSInfos:
   - StateHash: 0
@@ -1232,5 +1232,16 @@ MonoBehaviour:
     Name: Face_Assertive
   - Hash: 1419456760
     Name: Face_Confused
+  LookSettings:
+    MaxSpeed: 250
+    MaxTorque: 2500
+    SlowdownRadius: 15
+    Epsilon: 0.1
+  SteeringAccelerationFactors:
+    LookWeight: 512
+    HeadWeight: 512
+    BodyWeight: 512
+    EyesWeight: 512
+    ClampLookWeight: 512
   _maxDistFromOrigin: 5
   _maxAngleFromForward: 135

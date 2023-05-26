@@ -23,9 +23,7 @@ namespace VirtualBeings.Beings.Humanoid.Samples.DanceSample
     {
         private class StartDanceEvent : VBEvent { }
 
-        public override ExecutionType ExecutionType { get; protected set; } = ExecutionType.Default;
-
-        public Dance(IHumanoidActivity parent, DanceSettings settings) : base(parent, null)
+        public Dance(HumanoidMind parent, DanceSettings settings) : base(parent, null)
         {
             Initialize += () =>
             {
@@ -72,6 +70,9 @@ namespace VirtualBeings.Beings.Humanoid.Samples.DanceSample
             _stay.Start();
             _lookDuringMoveTo.Start();
 
+            _stay.RequestST(STHumanoid.Laugh);
+            yield return new SuspendWhile(() => _stay.IsInTransition);
+
             yield return _locomotion.Start(RSHumanoid.Walk, () => targets[id], allowAvoidance: false);
 
             _lookDuringMoveTo.Interrupt();
@@ -91,7 +92,7 @@ namespace VirtualBeings.Beings.Humanoid.Samples.DanceSample
                     yield return new SuspendForDuration(.4f, .6f);
 
                     _stay.DoUST(USTHumanoid.WipeForehead, .4f, 1f, Rand.sign);
-                    yield return new SuspendWhile(() => _stay.IsInUST(), Rand.Range(.2f, .25f));
+                    yield return new SuspendWhile(() => _stay.IsInUST, Rand.Range(.2f, .25f));
 
                     _stay.DoUST(USTHumanoid.TwistTorso_Subtle, .6f, 1f, Rand.sign);
                 }
@@ -121,7 +122,7 @@ namespace VirtualBeings.Beings.Humanoid.Samples.DanceSample
             _lookSimple.EyeWeight01 = 1f;
             float signedAngleToCam = Being.SignedRootAngleOnXZTo(Camera.main.transform.position);
             _stay.RequestST(STHumanoid.Turn, .6f, 1f, signedAngleToCam / 90f);
-            yield return new SuspendWhile(() => _stay.IsInTransition() && Time.time < timeOfDanceStart + firstPhase + pause);
+            yield return new SuspendWhile(() => _stay.IsInTransition && Time.time < timeOfDanceStart + firstPhase + pause);
 
             _stay.SetTargetRS(RSHumanoid.Dance_Robot, TransitionTypeHumanoid.Default);
             _emoteDuringDance.Start(0);

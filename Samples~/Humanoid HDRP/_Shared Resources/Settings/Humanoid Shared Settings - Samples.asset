@@ -52,11 +52,9 @@ MonoBehaviour:
   LayerIndexTailAdditive: -1
   LayerIndexEyes: 5
   LayerIndexMouth: 6
-  LayerIndexNeckHeadOnlyAdditiveSynchronized: 7
-  LayerIndexNeckHeadFaceAdditive: 8
   LayerIndexEarBaseAdditive: -1
   LayerIndexEarsAdditive: -1
-  LayerIndexBlink: 9
+  LayerIndexBlink: 7
   LayerIndexBreathing: -1
   LayerIndexBellyFull: -1
   LayerIndexEyeSize: -1
@@ -167,27 +165,31 @@ MonoBehaviour:
   InnerNeckRotationCorrectionWeight: 0.75
   InnerNeckPositionCorrectionWeight: 0.5
   MinTimeForFaceExpressionCrossfade: 0.1
-  MaxTimeForFaceExpressionCrossfade: 0.9
-  MinTimeTillNextExpressionVariation: 0.5
-  MaxTimeTillNextExpressionVariation: 2
+  MaxTimeForFaceExpressionCrossfade: 0.3
+  MinTimeTillNextExpressionVariation: 0.2
+  MaxTimeTillNextExpressionVariation: 0.3
   MaxSmoothTimeHead: 0.5
   MinMaxAngularSpeedHead: 40
-  MaxSpeedupFactorHead: 24
+  MaxSpeedupFactorHead: 18
   BoostFactorEyes_MinMultiplier: 1.5
   BoostFactorEyes_MaxMultiplier: 3
-  BoostFactorEyes_MaxAngularSpeed: 360
+  BoostFactorEyes_MaxAngularSpeed: 270
   EyesClosedFromHeadTouch_ScaleFactor: 1
   EyesClosedFromHeadTouch_UrgencyFactor01: 0.3
   MaxTimeTillMouthPickup: 2
   MaxTimeTillMouthDestruction: 1
-  MinPitchHead: -35
-  MaxPitchHead: 35
-  MaxYawHead: 60
+  MinPitchNeck: -25
+  MaxPitchNeck: 20
+  MaxYawNeck: 25
+  MaxRollNeck: 15
+  MinPitchHead: -60
+  MaxPitchHead: 45
+  MaxYawHead: 80
   MaxRollHead: 25
-  MinPitchEyes: -10
-  MaxPitchEyes: 10
+  MinPitchEyes: -25
+  MaxPitchEyes: 25
   MaxYawEyes_Inwards: 10
-  MaxYawEyes_Outwards: 30
+  MaxYawEyes_Outwards: 20
   FactorForObstacleAvoidance: 20
   MaxSpeed01AtObstacle: 0.5
   NormalizedCollisionTimeDiscount: 0.3
@@ -723,7 +725,25 @@ MonoBehaviour:
   MinHeadRotationSpeedEyes: 0.1
   MinHeadRotationAccelerationEyes: 0.5
   MaxHeadRotationAccelerationSpeedupFactorEyes: 10000
-  NRS: 8
+  EmitterPrefab: {fileID: 6747069666315366121, guid: e7638e9c609951946a02d3833325ceac,
+    type: 3}
+  _vocalizations:
+  - VocalizationType: 0
+    RS: Stand
+    ST: Laugh
+    TargetRS: 
+    TargetTransitionType: 
+    FS: 
+    FST: 
+    TargetFS: 
+    FTT: 
+    _vocalizations:
+    - AudioClip: {fileID: 8300000, guid: 7d2331484cb81da4eb579c25054d59fc, type: 3}
+      AnimationMultiplier: 1
+      SoundType: 0
+      Poignancy01: 0
+      VocalAnnoyingnessSummand: 0
+  NRS: 9
   RSInfos:
   - StateHash: 0
     AttitudeHash: 0
@@ -777,6 +797,8 @@ MonoBehaviour:
       I: 20
     - ST: 23
       I: 21
+    - ST: 24
+      I: 22
   - StateHash: -393220353
     AttitudeHash: 1701333581
     SerializableSupportedAttitudes: 
@@ -801,7 +823,13 @@ MonoBehaviour:
     AttitudeHash: 1701333581
     SerializableSupportedAttitudes: 
     SerializableSupportedSTs: []
+  - StateHash: -454293880
+    AttitudeHash: 1701333581
+    SerializableSupportedAttitudes: 
+    SerializableSupportedSTs: []
   RStoRSMatrix:
+  - Next: 0
+    I: -1
   - Next: 0
     I: -1
   - Next: 0
@@ -823,23 +851,25 @@ MonoBehaviour:
   - Next: 1
     I: 0
   - Next: 2
-    I: 11
-  - Next: 3
     I: 12
-  - Next: 4
+  - Next: 3
     I: 13
-  - Next: 5
+  - Next: 4
     I: 14
-  - Next: 6
+  - Next: 5
     I: 15
-  - Next: 7
+  - Next: 6
     I: 16
+  - Next: 7
+    I: 17
+  - Next: 8
+    I: 19
   - Next: 0
     I: -1
   - Next: 1
     I: 1
   - Next: 2
-    I: 7
+    I: 8
   - Next: 1
     I: -1
   - Next: 1
@@ -850,31 +880,19 @@ MonoBehaviour:
     I: -1
   - Next: 1
     I: -1
-  - Next: 0
-    I: -1
-  - Next: 1
-    I: 2
-  - Next: 1
-    I: -1
-  - Next: 0
-    I: -1
-  - Next: 1
-    I: -1
-  - Next: 1
-    I: -1
-  - Next: 1
-    I: -1
-  - Next: 1
-    I: -1
+  - Next: 8
+    I: 20
   - Next: 0
     I: -1
   - Next: 1
     I: 3
   - Next: 1
     I: -1
+  - Next: 0
+    I: -1
   - Next: 1
     I: -1
-  - Next: 0
+  - Next: 1
     I: -1
   - Next: 1
     I: -1
@@ -890,9 +908,11 @@ MonoBehaviour:
     I: -1
   - Next: 1
     I: -1
+  - Next: 0
+    I: -1
   - Next: 1
     I: -1
-  - Next: 0
+  - Next: 1
     I: -1
   - Next: 1
     I: -1
@@ -908,9 +928,11 @@ MonoBehaviour:
     I: -1
   - Next: 1
     I: -1
+  - Next: 0
+    I: -1
   - Next: 1
     I: -1
-  - Next: 0
+  - Next: 1
     I: -1
   - Next: 1
     I: -1
@@ -926,11 +948,59 @@ MonoBehaviour:
     I: -1
   - Next: 1
     I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: -1
   - Next: 1
     I: -1
   - Next: 0
     I: -1
+  - Next: 1
+    I: 7
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 0
+    I: -1
+  - Next: 1
+    I: 2
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 1
+    I: -1
+  - Next: 8
+    I: 18
   RSTransitionInfos:
+  - Hash: -1518848078
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
   - Hash: -1518848078
     TransitionType: 0
     CrossFadeDuration: 0.5
@@ -1026,7 +1096,7 @@ MonoBehaviour:
     CrossFadeDuration: 0
     TransitionOffset: 0
     ExitTime: -1
-    NextExpressiveVariation: 8
+    NextExpressiveVariation: 9
     NextExitTimeVariation: -1
     MaxDistance: 0
     MaxAngle: 180
@@ -1036,7 +1106,7 @@ MonoBehaviour:
     CrossFadeDuration: 0
     TransitionOffset: 0
     ExitTime: -1
-    NextExpressiveVariation: 9
+    NextExpressiveVariation: 10
     NextExitTimeVariation: -1
     MaxDistance: 0
     MaxAngle: 180
@@ -1046,7 +1116,7 @@ MonoBehaviour:
     CrossFadeDuration: 0
     TransitionOffset: 0
     ExitTime: -1
-    NextExpressiveVariation: 10
+    NextExpressiveVariation: 11
     NextExitTimeVariation: -1
     MaxDistance: 0
     MaxAngle: 180
@@ -1092,6 +1162,36 @@ MonoBehaviour:
     MaxAngle: 180
     MaxCrossFadeDurationOfTransitionParameters: -1
   - Hash: -597329776
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -454293880
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -454293880
+    TransitionType: 0
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    ExitTime: -1
+    NextExpressiveVariation: -1
+    NextExitTimeVariation: -1
+    MaxDistance: 0
+    MaxAngle: 180
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -454293880
     TransitionType: 0
     CrossFadeDuration: 0.5
     TransitionOffset: 0
@@ -1167,6 +1267,15 @@ MonoBehaviour:
     MaxCrossFadeDurationOfTransitionParameters: -1
   - Hash: -1412789903
     Name: ST_Stand_Reacting
+    CrossFadeDuration: 0.5
+    TransitionOffset: 0
+    IsUninterruptible: 0
+    ExitTime: -1
+    NextExitTimeVariation: -1
+    Suppress: 1
+    MaxCrossFadeDurationOfTransitionParameters: -1
+  - Hash: -274307535
+    Name: ST_Stand_AngryGesture
     CrossFadeDuration: 0.5
     TransitionOffset: 0
     IsUninterruptible: 0
@@ -1315,6 +1424,8 @@ MonoBehaviour:
   - StateHash: 1097936416
   - StateHash: -2144483665
   - StateHash: -1984720289
+  - StateHash: -683273668
+  - StateHash: -443717307
   NFS: 18
   FSInfos:
   - StateHash: 1661338727
@@ -1337,6 +1448,14 @@ MonoBehaviour:
       I: 6
     - FST: 10
       I: 7
+    - FST: 11
+      I: 8
+    - FST: 12
+      I: 9
+    - FST: 13
+      I: 10
+    - FST: 14
+      I: 11
   - StateHash: 30044593
     Name: Face_Shy
     SupportsFreeEntryAndExit: 1
@@ -1411,7 +1530,7 @@ MonoBehaviour:
   - Next: 0
     I: -1
   - Next: 2
-    I: 4
+    I: 10
   - Next: 0
     I: -1
   - Next: 4
@@ -1419,7 +1538,7 @@ MonoBehaviour:
   - Next: 5
     I: 6
   - Next: 6
-    I: 7
+    I: 8
   - Next: 0
     I: -1
   - Next: 0
@@ -1484,8 +1603,8 @@ MonoBehaviour:
     I: -1
   - Next: 0
     I: -1
-  - Next: 0
-    I: -1
+  - Next: 3
+    I: 12
   - Next: 0
     I: -1
   - Next: 0
@@ -1626,8 +1745,8 @@ MonoBehaviour:
     I: 3
   - Next: 0
     I: -1
-  - Next: 0
-    I: -1
+  - Next: 2
+    I: 11
   - Next: 0
     I: -1
   - Next: 0
@@ -2076,8 +2195,23 @@ MonoBehaviour:
   - Hash: 2078147809
     TransitionType: 0
     NextExpressiveVariation: -1
+  - Hash: 1632435778
+    TransitionType: 2
+    NextExpressiveVariation: -1
   - Hash: 627693883
     TransitionType: 0
+    NextExpressiveVariation: 7
+  - Hash: 1582004341
+    TransitionType: 3
+    NextExpressiveVariation: -1
+  - Hash: -96682801
+    TransitionType: 0
+    NextExpressiveVariation: 9
+  - Hash: -1372469850
+    TransitionType: 3
+    NextExpressiveVariation: -1
+  - Hash: -967649588
+    TransitionType: 4
     NextExpressiveVariation: -1
   FSTTransitionInfos:
   - Hash: -1593827
@@ -2096,10 +2230,18 @@ MonoBehaviour:
     Name: FST_Wink
   - Hash: -1625524705
     Name: FST_Laugh
+  - Hash: -153186860
+    Name: FST_Neutral_LaughFeminine
+  - Hash: 1744294975
+    Name: FST_Neutral_Nod
+  - Hash: 2124925883
+    Name: FST_Head_Shake
+  - Hash: -182304336
+    Name: FST_Neutral_GotIdea
   LookSettings:
-    MaxSpeed: 250
-    MaxTorque: 2500
-    SlowdownRadius: 15
+    MaxSpeed: 200
+    MaxTorque: 2000
+    SlowdownRadius: 20
     Epsilon: 0.1
   SteeringAccelerationFactors:
     LookWeight: 512

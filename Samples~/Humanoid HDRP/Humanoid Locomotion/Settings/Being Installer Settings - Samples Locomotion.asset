@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 1373263514, guid: f458912201050ed4ca3895672c158549, type: 3}
   m_Name: Being Installer Settings - Samples Locomotion
   m_EditorClassIdentifier: 
-  VirtualBeingsSettings: {fileID: 11400000, guid: 14fb0e48ff3117041bf2b74e2ba7fe5d,
-    type: 2}
   BeingManagerSettings:
+    BeingsLayer:
+      m_LayerIndex: 0
     SpawnableBeings:
     - BeingSharedSettings: {fileID: 11400000, guid: 297f97e2583d8f940b094e67db2e8603,
         type: 2}
@@ -22,15 +22,21 @@ MonoBehaviour:
       - Type: 2
         BeingPrefab: {fileID: 5303719828828844838, guid: 357fa48566e827743a89b384312e5d8c,
           type: 3}
+        EmitterPrefab: {fileID: 6747069666315366121, guid: e7638e9c609951946a02d3833325ceac,
+          type: 3}
         BeingSettings: {fileID: 11400000, guid: d3bc2b7b2b49e654b9dbd59fb401de5d,
           type: 2}
       - Type: 2
         BeingPrefab: {fileID: 5645833239924581447, guid: b9345d70ce7dd0344a747a1d6e67ddc1,
           type: 3}
+        EmitterPrefab: {fileID: 6747069666315366121, guid: e7638e9c609951946a02d3833325ceac,
+          type: 3}
         BeingSettings: {fileID: 11400000, guid: d3bc2b7b2b49e654b9dbd59fb401de5d,
           type: 2}
       - Type: 2
         BeingPrefab: {fileID: 3036994631150513234, guid: 6598f2106024b5940935ac71f28f1ffc,
+          type: 3}
+        EmitterPrefab: {fileID: 6747069666315366121, guid: e7638e9c609951946a02d3833325ceac,
           type: 3}
         BeingSettings: {fileID: 11400000, guid: d3bc2b7b2b49e654b9dbd59fb401de5d,
           type: 2}
