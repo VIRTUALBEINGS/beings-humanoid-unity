@@ -888,7 +888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _postProcessAnimation:
-    rid: 4088835355813609475
+    rid: 7051686627431415809
   _gameObjectsForNavmesh: []
   _exclusionsFromInteractionDB: []
   _colliderChain: []
@@ -961,7 +961,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 4088835355813609475
+    - rid: 7051686627431415809
       type: {class: PostProcessAnimationHumanoid, ns: VirtualBeings.Tech.UnityIntegration,
         asm: VirtualBeingsTech}
       data:
@@ -1154,9 +1154,6 @@ MonoBehaviour:
         - Name: Detach_LR
           Bone: {fileID: 6250902540289704276}
           Origin: 6
-        - Name: PreserveOffsetForNeckAndHead
-          Bone: {fileID: 6250902540289704276}
-          Origin: 7
         - Name: OverrideBlink
           Bone: {fileID: 6250902540289704276}
           Origin: 8

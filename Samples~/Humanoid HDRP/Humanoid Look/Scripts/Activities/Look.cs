@@ -49,7 +49,7 @@ namespace VirtualBeings.Beings.Humanoid.Samples.LookSample
 
                 _lookSimple.MaxDistractionDuration = 0f;
 
-                _lookAround = new LookAround(this, firstPhaseDuration: .8f, firstPhaseDurationVariation: 1.1f, maxYaw: 20f)
+                _lookAround = new LookAround(this, maxYaw: 20f)
                 {
                     BodyWeight01 = bodyWeight,
                     HeadWeight01 = headWeight,
@@ -69,7 +69,6 @@ namespace VirtualBeings.Beings.Humanoid.Samples.LookSample
         protected override IEnumerator MainProcess()
         {
             _stay.Start();
-            _face.Start();
 
             // Wait one frame for the being to see all of the cubes around him
             yield return null;
@@ -137,7 +136,7 @@ namespace VirtualBeings.Beings.Humanoid.Samples.LookSample
 
         private IEnumerator PhaseThree()
         {
-            _lookAround.Start(_closestInteractable.SalientPosition);
+            _lookAround.Start();
             yield return null;
 
             ((InteractableController)_closestInteractable).gameObject.SetActive(false);

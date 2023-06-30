@@ -49,8 +49,8 @@ namespace VirtualBeings.Beings.Humanoid
             const string STATE_CONFUSED       = "Face_Confused";
             const string STATE_PUFFED_CHEEKS  = "Face_PuffedCheeks";
             const string STATE_GRIMACE        = "Face_Grimace";
-            const string STATE_EYES_SQUINTED  = "Face_EyesSquinted";
-            const string STATE_EYEBROWS_RAISE = "Face_EyebrowsRaise";
+            const string STATE_EYES_SQUINTED  = "Face_Eyes_Squinted";
+            const string STATE_EYEBROWS_RAISE = "Face_Eyebrows_Raise_Subtle";
             const string STATE_SERIOUS_LOOK   = "Face_SeriousLook";
             const string STATE_SMILE_SUBTLE   = "Face_SmileSubtle";
             const string STATE_SMILE_WIDE     = "Face_SmileWide";
@@ -94,18 +94,22 @@ namespace VirtualBeings.Beings.Humanoid
                 FS_NEUTRAL,
                 STATE_NEUTRAL,
                 true,
-                new Pair<int, string>(FSTHumanoid.RollingEyes.ID, "FST_RollingEyes"),
-                new Pair<int, string>(FSTHumanoid.MouthPuckerSides.ID, "FST_MouthPuckerSides"),
-                new Pair<int, string>(FSTHumanoid.Grimace.ID, "FST_Grimace"),
-                new Pair<int, string>(FSTHumanoid.PuffedCheeksBlow.ID, "FST_PuffedCheeksBlow"),
-                new Pair<int, string>(FSTHumanoid.Rage.ID, "FST_Rage"),
-                new Pair<int, string>(FSTHumanoid.SuspiciousLook.ID, "FST_SuspiciousLook"),
-                new Pair<int, string>(FSTHumanoid.Wink.ID, "FST_Wink"),
-                new Pair<int, string>(FSTHumanoid.Laugh.ID, "FST_Laugh"),
-                new Pair<int, string>(FSTHumanoid.LaughFeminine.ID, "FST_Neutral_LaughFeminine"),
+                new Pair<int, string>(FSTHumanoid.GotIdea.ID, "FST_Neutral_GotIdea"),
+                new Pair<int, string>(FSTHumanoid.Grimace.ID, "FST_Neutral_Grimace"),
                 new Pair<int, string>(FSTHumanoid.Nod.ID, "FST_Neutral_Nod"),
-                new Pair<int, string>(FSTHumanoid.HeadShake.ID, "FST_Head_Shake"),
-                new Pair<int, string>(FSTHumanoid.GotIdea.ID, "FST_Neutral_GotIdea")
+                new Pair<int, string>(FSTHumanoid.HeadShake.ID, "FST_Neutral_HeadShake"),
+                new Pair<int, string>(FSTHumanoid.Laugh.ID, "FST_Neutral_Laugh"),
+                new Pair<int, string>(FSTHumanoid.LaughFeminine.ID, "FST_Neutral_LaughFeminine"),
+                new Pair<int, string>(FSTHumanoid.LaughFeminine_Embarrassed.ID, "FST_Neutral_LaughFeminine_Embarrassed"),
+                new Pair<int, string>(FSTHumanoid.MouthPuckerSides.ID, "FST_Neutral_MouthPuckerSides"),
+                new Pair<int, string>(FSTHumanoid.PuffedCheeksBlow.ID, "FST_Neutral_PuffedCheeksBlow"),
+                new Pair<int, string>(FSTHumanoid.Rage.ID, "FST_Neutral_Rage"),
+                new Pair<int, string>(FSTHumanoid.RollingEyes.ID, "FST_Neutral_RollingEyes"),
+                new Pair<int, string>(FSTHumanoid.Shock.ID, "FST_Neutral_Shock"),
+                new Pair<int, string>(FSTHumanoid.SuspiciousLook.ID, "FST_Neutral_SuspiciousLook"),
+                new Pair<int, string>(FSTHumanoid.Wink.ID, "FST_Neutral_Wink"),
+                new Pair<int, string>(FSTHumanoid.SaluteHead.ID, "FST_Neutral_Salute_Head")
+
             );
 
             AddFS(FS_SHY, STATE_SHY, true);

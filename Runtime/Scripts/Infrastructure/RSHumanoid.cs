@@ -23,6 +23,9 @@ namespace VirtualBeings.Beings.Humanoid
 
         public static RSHumanoid Sit  = new(nameof(Sit), 0, isSitting: true);
 
+        public static RSHumanoid Jog = new(nameof(Jog), 0, isMoving: true);
+
+
         private RSHumanoid(
             string name,
             int side,

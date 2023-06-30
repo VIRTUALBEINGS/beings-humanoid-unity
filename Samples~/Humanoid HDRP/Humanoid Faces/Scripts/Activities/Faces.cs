@@ -57,10 +57,6 @@ namespace VirtualBeings.Tech.Humanoid.Sample.Faces
 
                 _lookAround = new LookAround(
                     this,
-                    firstPhaseDuration: 0.9f,
-                    firstPhaseDurationVariation: 1.1f,
-                    secondPhaseDuration: 0.8f,
-                    secondPhaseDurationVariation: 1.1f,
                     maxYaw: 40f
                 )
                 {
@@ -78,7 +74,6 @@ namespace VirtualBeings.Tech.Humanoid.Sample.Faces
         private IEnumerator FaceSample()
         {
             _stay.Start();
-            _face.Start();
 
             // Wait one frame for the being to see all of the cubes around him
             yield return null;
@@ -161,7 +156,6 @@ namespace VirtualBeings.Tech.Humanoid.Sample.Faces
         private IEnumerator TechShowcase()
         {
             _stay.Start();
-            _face.Start();
 
             // Wait one frame for the being to see all of the cubes around him
             yield return null;
@@ -234,7 +228,7 @@ namespace VirtualBeings.Tech.Humanoid.Sample.Faces
                     _locomotion.TerminationRequested = true;
 
                     _locomotion.DoUST(
-                        USTHumanoid.Suprised_CoveringMouth,
+                        USTHumanoid.Surprised_CoveringMouth,
                         overrideUpperBody01: 1f
                     );
 

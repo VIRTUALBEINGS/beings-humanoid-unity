@@ -61,15 +61,15 @@ ModelImporter:
       name: Root_Stand_BA_Idle_Satisfied
       takeName: Scene
       internalID: -623603649343465320
-      firstFrame: 6
+      firstFrame: 1
       lastFrame: 190
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
-      hasAdditiveReferencePose: 1
-      loopTime: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 1
@@ -86,7 +86,7 @@ ModelImporter:
       - path: 
         weight: 1
       - path: HumanoidRig
-        weight: 1
+        weight: 0
       - path: HumanoidRig/BSDriverHolder
         weight: 0
       - path: HumanoidRig/BSDriverHolder/BSDriver_eyes_01
@@ -194,9 +194,9 @@ ModelImporter:
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/HeadTop_End
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/LeftEye
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/RightEye
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder
         weight: 1
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
@@ -258,6 +258,7 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0

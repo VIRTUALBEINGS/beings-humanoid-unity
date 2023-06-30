@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 74a0780fa6fd6a34a90b357a6bf5d67d
 ModelImporter:
-  serializedVersion: 21300
+  serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects: {}
   materials:
@@ -21,22 +21,26 @@ ModelImporter:
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Scene' has import animation warnings that might
       lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
-      retargeting quality.\n\t'Spine' has scale animation that will be discarded.\n\t'Spine1'
-      has scale animation that will be discarded.\n\t'Spine2' has scale animation
-      that will be discarded.\n\t'LeftHandMiddle1' has translation animation that
-      will be discarded.\n\t'LeftHandMiddle1' has scale animation that will be discarded.\n\t'LeftHandMiddle2'
+      retargeting quality.\n\t'Hips' has scale animation that will be discarded.\n\t'Spine'
+      has scale animation that will be discarded.\n\t'Spine1' has scale animation
+      that will be discarded.\n\t'Spine2' has scale animation that will be discarded.\n\t'Neck'
+      has scale animation that will be discarded.\n\t'Head' has scale animation that
+      will be discarded.\n\t'LeftHandMiddle1' has translation animation that will
+      be discarded.\n\t'LeftHandMiddle1' has scale animation that will be discarded.\n\t'LeftHandMiddle2'
       has scale animation that will be discarded.\n\t'LeftHandRing1' has translation
       animation that will be discarded.\n\t'LeftHandRing1' has scale animation that
       will be discarded.\n\t'LeftHandRing2' has scale animation that will be discarded.\n\t'LeftHandPinky1'
-      has translation animation that will be discarded.\n\t'RightHandMiddle1' has
-      translation animation that will be discarded.\n\t'RightHandRing1' has translation
-      animation that will be discarded.\n\t'RightHandPinky1' has translation animation
-      that will be discarded.\n\t'LeftUpLeg' has scale animation that will be discarded.\n\t'LeftLeg'
-      has scale animation that will be discarded.\n\t'LeftFoot' has scale animation
-      that will be discarded.\n\t'LeftToeBase' has scale animation that will be discarded.\n\t'RightUpLeg'
-      has scale animation that will be discarded.\n\t'RightLeg' has scale animation
-      that will be discarded.\n\t'RightFoot' has scale animation that will be discarded.\n\t'RightToeBase'
-      has scale animation that will be discarded.\n"
+      has translation animation that will be discarded.\n\t'LeftHandPinky3' has scale
+      animation that will be discarded.\n\t'RightHandIndex3' has scale animation
+      that will be discarded.\n\t'RightHandMiddle1' has translation animation that
+      will be discarded.\n\t'RightHandRing1' has translation animation that will
+      be discarded.\n\t'RightHandPinky1' has translation animation that will be discarded.\n\t'LeftUpLeg'
+      has scale animation that will be discarded.\n\t'LeftLeg' has scale animation
+      that will be discarded.\n\t'LeftFoot' has scale animation that will be discarded.\n\t'LeftToeBase'
+      has scale animation that will be discarded.\n\t'RightUpLeg' has scale animation
+      that will be discarded.\n\t'RightLeg' has scale animation that will be discarded.\n\t'RightFoot'
+      has scale animation that will be discarded.\n\t'RightToeBase' has scale animation
+      that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -54,7 +58,7 @@ ModelImporter:
       takeName: Scene
       internalID: -623603649343465320
       firstFrame: 1
-      lastFrame: 51
+      lastFrame: 70
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -277,6 +281,7 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1092,6 +1097,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

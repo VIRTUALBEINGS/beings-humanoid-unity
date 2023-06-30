@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: afbbfc02d3e363a42a161402a36441f6
 ModelImporter:
-  serializedVersion: 21300
+  serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects: {}
   materials:
@@ -22,14 +22,14 @@ ModelImporter:
     animationImportWarnings: "\nClip 'Scene' has import animation warnings that might
       lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
       retargeting quality.\n\t'Spine1' has scale animation that will be discarded.\n\t'Spine2'
-      has scale animation that will be discarded.\n\t'RightHandPinky3' has translation
-      animation that will be discarded.\n\t'LeftUpLeg' has scale animation that will
-      be discarded.\n\t'LeftLeg' has scale animation that will be discarded.\n\t'LeftFoot'
-      has scale animation that will be discarded.\n\t'LeftToeBase' has scale animation
-      that will be discarded.\n\t'RightUpLeg' has scale animation that will be discarded.\n\t'RightLeg'
-      has scale animation that will be discarded.\n\t'RightFoot' has scale animation
-      that will be discarded.\n\t'RightToeBase' has scale animation that will be
-      discarded.\n"
+      has scale animation that will be discarded.\n\t'Head' has scale animation that
+      will be discarded.\n\t'RightHandPinky3' has translation animation that will
+      be discarded.\n\t'LeftUpLeg' has scale animation that will be discarded.\n\t'LeftLeg'
+      has scale animation that will be discarded.\n\t'LeftFoot' has scale animation
+      that will be discarded.\n\t'LeftToeBase' has scale animation that will be discarded.\n\t'RightUpLeg'
+      has scale animation that will be discarded.\n\t'RightLeg' has scale animation
+      that will be discarded.\n\t'RightFoot' has scale animation that will be discarded.\n\t'RightToeBase'
+      has scale animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -230,7 +230,19 @@ ModelImporter:
         weight: 1
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
         weight: 1
-      - path: Wolf3D_Body
+      - path: HumanoidRig/root
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.L
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.R
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Head
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Neck
+        weight: 1
+      - path: Wolf3D_Body3
         weight: 1
       maskType: 1
       maskSource: {fileID: 31900000, guid: 98e6295efb656bc409dc85d4a21fa874, type: 2}
@@ -243,6 +255,7 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
@@ -270,6 +283,7 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1085,6 +1099,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

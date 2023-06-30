@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 547e2526b40b54941ae61a1665ab9da7
+guid: fdadbb51ad4370e45b24be67f5ad9b16
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -23,7 +23,7 @@ ModelImporter:
       lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
       retargeting quality.\n\t'Spine' has scale animation that will be discarded.\n\t'Spine1'
       has scale animation that will be discarded.\n\t'Spine2' has scale animation
-      that will be discarded.\n\t'Neck' has scale animation that will be discarded.\n\t'LeftHandIndex2'
+      that will be discarded.\n\t'Head' has scale animation that will be discarded.\n\t'LeftHandIndex2'
       has scale animation that will be discarded.\n\t'RightHandPinky3' has translation
       animation that will be discarded.\n\t'LeftUpLeg' has scale animation that will
       be discarded.\n\t'LeftLeg' has scale animation that will be discarded.\n\t'LeftFoot'
@@ -36,7 +36,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.1
     animationPositionError: 0.1
     animationScaleError: 0.5
@@ -48,7 +48,7 @@ ModelImporter:
       name: Root_Stand_ST_Step_Turn90_R
       takeName: Scene
       internalID: -623603649343465320
-      firstFrame: 1
+      firstFrame: 0
       lastFrame: 44
       wrapMode: 0
       orientationOffsetY: 0
@@ -232,11 +232,23 @@ ModelImporter:
         weight: 1
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
         weight: 1
-      - path: Wolf3D_Body
+      - path: HumanoidRig/root
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.L
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.R
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Head
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Neck
+        weight: 1
+      - path: Wolf3D_Body3
         weight: 1
       maskType: 1
       maskSource: {fileID: 31900000, guid: 98e6295efb656bc409dc85d4a21fa874, type: 2}
-      additiveReferencePoseFrame: 0.9
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -248,7 +260,7 @@ ModelImporter:
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
-    importLights: 0
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
@@ -1081,7 +1093,8 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: a78a9cb91af38674ca2f0d06c32c5828, type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: a78a9cb91af38674ca2f0d06c32c5828,
+    type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1

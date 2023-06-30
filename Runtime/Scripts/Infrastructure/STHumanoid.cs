@@ -37,6 +37,41 @@ namespace VirtualBeings.Beings.Humanoid
         public static STHumanoid RollShoulder      = new(nameof(RollShoulder));
         public static STHumanoid SatisfiedJumpy    = new(nameof(SatisfiedJumpy));
         public static STHumanoid TwistTorso_Subtle = new(nameof(TwistTorso_Subtle));
+        public static STHumanoid Sad_FootKick      = new(nameof(Sad_FootKick));
+        public static STHumanoid HandsOnBack       = new(nameof(HandsOnBack));
+        public static STHumanoid HandsOnBackExit   = new(nameof(HandsOnBackExit));
+        public static STHumanoid StretchArmsL      = new(nameof(StretchArmsL));
+        public static STHumanoid StretchArmsR      = new(nameof(StretchArmsR));
+        public static STHumanoid InspectCuriousL   = new(nameof(InspectCuriousL));
+        public static STHumanoid InspectCuriousR   = new(nameof(InspectCuriousR));
+        public static STHumanoid ShakeFootL        = new(nameof(ShakeFootL));
+        public static STHumanoid ShakeFootR        = new(nameof(ShakeFootR));
+        public static STHumanoid Inspect_Arms_WideOpen = new(nameof(Inspect_Arms_WideOpen));
+        public static STHumanoid BalanceAdjust     = new(nameof(BalanceAdjust));
+
+
+        public static STHumanoid Speaking_Long_Overt_Agreeing_RH     = new(nameof(Speaking_Long_Overt_Agreeing_RH));
+        public static STHumanoid Speaking_Long_Overt_Explaining_BH   = new(nameof(Speaking_Long_Overt_Explaining_BH));
+        public static STHumanoid Speaking_Long_Overt_Left_BH         = new(nameof(Speaking_Long_Overt_Left_BH));
+        public static STHumanoid Speaking_Long_Overt_Explaining_Slow = new(nameof(Speaking_Long_Overt_Explaining_Slow));
+
+        public static STHumanoid Speaking_Med_Overt_Argument_BH   = new(nameof(Speaking_Med_Overt_Argument_BH));
+        public static STHumanoid Speaking_Med_Overt_Explaining_BH = new(nameof(Speaking_Med_Overt_Explaining_BH));
+        public static STHumanoid Speaking_Med_Overt_Sigh_RH       = new(nameof(Speaking_Med_Overt_Sigh_RH));
+        public static STHumanoid Speaking_Med_Subtle_Argument_RH  = new(nameof(Speaking_Med_Subtle_Argument_RH));
+
+        public static STHumanoid Speaking_Short_Overt_Agreeing_BH  = new(nameof(Speaking_Short_Overt_Agreeing_BH));
+        public static STHumanoid Speaking_Short_Overt_High_BH      = new(nameof(Speaking_Short_Overt_High_BH));
+        public static STHumanoid Speaking_Short_Overt_Agreeing_RH  = new(nameof(Speaking_Short_Overt_Agreeing_RH));
+        public static STHumanoid Speaking_Short_Subtle_Agreeing_BH = new(nameof(Speaking_Short_Subtle_Agreeing_BH));
+        public static STHumanoid Speaking_Short_Subtle_ArmsOpen_BH = new(nameof(Speaking_Short_Subtle_ArmsOpen_BH));
+        public static STHumanoid Speaking_Short_Subtle_Brief_RH    = new(nameof(Speaking_Short_Subtle_Brief_RH));
+        public static STHumanoid Speaking_Short_Subtle_Twist_RH    = new(nameof(Speaking_Short_Subtle_Twist_RH));
+
+        // STC
+        public static STHumanoid Idle             = new(nameof(Idle), true);
+        public static STHumanoid HandsOnBackCycle = new(nameof(HandsOnBackCycle), true);
+
 
         private STHumanoid(string name, bool isSTC = false) : base(isSTC, name) { }
         private STHumanoid(int id, string name, bool setSpecial) : base(id, name, setSpecial) { }

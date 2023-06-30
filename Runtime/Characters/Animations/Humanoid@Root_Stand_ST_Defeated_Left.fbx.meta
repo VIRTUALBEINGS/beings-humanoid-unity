@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: c66ce4b6b3bc0774ca09fc026dc1cfc0
 ModelImporter:
-  serializedVersion: 21300
+  serializedVersion: 22200
   internalIDToNameTable:
   - first:
       74: -623603649343465320
@@ -26,12 +26,13 @@ ModelImporter:
       lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
       retargeting quality.\n\t'Spine1' has scale animation that will be discarded.\n\t'Spine2'
       has scale animation that will be discarded.\n\t'Neck' has scale animation that
-      will be discarded.\n\t'LeftHandMiddle1' has translation animation that will
-      be discarded.\n\t'LeftHandMiddle1' has scale animation that will be discarded.\n\t'LeftHandRing1'
-      has translation animation that will be discarded.\n\t'LeftHandRing1' has scale
-      animation that will be discarded.\n\t'LeftHandPinky1' has translation animation
-      that will be discarded.\n\t'RightHandMiddle1' has translation animation that
-      will be discarded.\n\t'RightHandMiddle1' has scale animation that will be discarded.\n\t'RightHandRing1'
+      will be discarded.\n\t'Head' has scale animation that will be discarded.\n\t'LeftHandMiddle1'
+      has translation animation that will be discarded.\n\t'LeftHandMiddle1' has
+      scale animation that will be discarded.\n\t'LeftHandRing1' has translation
+      animation that will be discarded.\n\t'LeftHandRing1' has scale animation that
+      will be discarded.\n\t'LeftHandPinky1' has translation animation that will
+      be discarded.\n\t'RightHandMiddle1' has translation animation that will be
+      discarded.\n\t'RightHandMiddle1' has scale animation that will be discarded.\n\t'RightHandRing1'
       has translation animation that will be discarded.\n\t'RightHandRing1' has scale
       animation that will be discarded.\n\t'RightHandPinky1' has translation animation
       that will be discarded.\n\t'RightHandPinky3' has translation animation that
@@ -241,7 +242,19 @@ ModelImporter:
         weight: 1
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
         weight: 1
-      - path: Wolf3D_Body
+      - path: HumanoidRig/root
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.L
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.R
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Head
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Neck
+        weight: 1
+      - path: Wolf3D_Body3
         weight: 1
       maskType: 1
       maskSource: {fileID: 31900000, guid: 98e6295efb656bc409dc85d4a21fa874, type: 2}
@@ -254,6 +267,7 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
@@ -281,6 +295,7 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1096,6 +1111,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

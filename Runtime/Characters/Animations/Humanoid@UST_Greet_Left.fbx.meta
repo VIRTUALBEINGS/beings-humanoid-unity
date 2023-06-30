@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: b60f9acbf8157a54d80a03bbf3f69afe
 ModelImporter:
-  serializedVersion: 21300
+  serializedVersion: 22200
   internalIDToNameTable:
   - first:
       74: -623603649343465320
@@ -26,26 +26,25 @@ ModelImporter:
       lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
       retargeting quality.\n\t'Spine1' has scale animation that will be discarded.\n\t'Spine2'
       has scale animation that will be discarded.\n\t'Neck' has scale animation that
-      will be discarded.\n\t'Head' has scale animation that will be discarded.\n\t'LeftHandMiddle1'
-      has translation animation that will be discarded.\n\t'LeftHandMiddle1' has
-      scale animation that will be discarded.\n\t'LeftHandMiddle2' has scale animation
-      that will be discarded.\n\t'LeftHandMiddle3' has scale animation that will
-      be discarded.\n\t'LeftHandRing1' has translation animation that will be discarded.\n\t'LeftHandRing1'
-      has scale animation that will be discarded.\n\t'LeftHandRing2' has scale animation
-      that will be discarded.\n\t'LeftHandRing3' has scale animation that will be
-      discarded.\n\t'LeftHandPinky1' has translation animation that will be discarded.\n\t'RightHandMiddle1'
-      has translation animation that will be discarded.\n\t'RightHandMiddle1' has
-      scale animation that will be discarded.\n\t'RightHandMiddle2' has scale animation
-      that will be discarded.\n\t'RightHandRing1' has translation animation that
-      will be discarded.\n\t'RightHandRing1' has scale animation that will be discarded.\n\t'RightHandRing2'
-      has scale animation that will be discarded.\n\t'RightHandPinky1' has translation
-      animation that will be discarded.\n\t'LeftUpLeg' has scale animation that will
-      be discarded.\n\t'LeftLeg' has scale animation that will be discarded.\n\t'LeftFoot'
-      has scale animation that will be discarded.\n\t'LeftToeBase' has scale animation
-      that will be discarded.\n\t'RightUpLeg' has scale animation that will be discarded.\n\t'RightLeg'
-      has scale animation that will be discarded.\n\t'RightFoot' has scale animation
-      that will be discarded.\n\t'RightToeBase' has scale animation that will be
-      discarded.\n"
+      will be discarded.\n\t'LeftHandMiddle1' has translation animation that will
+      be discarded.\n\t'LeftHandMiddle1' has scale animation that will be discarded.\n\t'LeftHandMiddle2'
+      has scale animation that will be discarded.\n\t'LeftHandMiddle3' has scale
+      animation that will be discarded.\n\t'LeftHandRing1' has translation animation
+      that will be discarded.\n\t'LeftHandRing1' has scale animation that will be
+      discarded.\n\t'LeftHandRing2' has scale animation that will be discarded.\n\t'LeftHandRing3'
+      has scale animation that will be discarded.\n\t'LeftHandPinky1' has translation
+      animation that will be discarded.\n\t'RightHandMiddle1' has translation animation
+      that will be discarded.\n\t'RightHandMiddle1' has scale animation that will
+      be discarded.\n\t'RightHandMiddle2' has scale animation that will be discarded.\n\t'RightHandRing1'
+      has translation animation that will be discarded.\n\t'RightHandRing1' has scale
+      animation that will be discarded.\n\t'RightHandRing2' has scale animation that
+      will be discarded.\n\t'RightHandPinky1' has translation animation that will
+      be discarded.\n\t'LeftUpLeg' has scale animation that will be discarded.\n\t'LeftLeg'
+      has scale animation that will be discarded.\n\t'LeftFoot' has scale animation
+      that will be discarded.\n\t'LeftToeBase' has scale animation that will be discarded.\n\t'RightUpLeg'
+      has scale animation that will be discarded.\n\t'RightLeg' has scale animation
+      that will be discarded.\n\t'RightFoot' has scale animation that will be discarded.\n\t'RightToeBase'
+      has scale animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -63,7 +62,7 @@ ModelImporter:
       takeName: Scene
       internalID: 0
       firstFrame: 1
-      lastFrame: 112
+      lastFrame: 80
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -80,7 +79,7 @@ ModelImporter:
       keepOriginalPositionXZ: 1
       heightFromFeet: 0
       mirror: 0
-      bodyMask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000000000000000000
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
       transformMask:
@@ -89,27 +88,27 @@ ModelImporter:
       - path: HumanoidRig
         weight: 1
       - path: HumanoidRig/BSDriverHolder
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_eyes_01
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_eyes_02
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_eyes_03
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_01
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_02
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_03
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_04
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_05
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_06
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_prop_01
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_prop_02
         weight: 1
       - path: HumanoidRig/Hips
@@ -123,7 +122,7 @@ ModelImporter:
       - path: HumanoidRig/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
         weight: 1
       - path: HumanoidRig/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftToe_End
-        weight: 0
+        weight: 1
       - path: HumanoidRig/Hips/RightUpLeg
         weight: 1
       - path: HumanoidRig/Hips/RightUpLeg/RightLeg
@@ -133,7 +132,7 @@ ModelImporter:
       - path: HumanoidRig/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
         weight: 1
       - path: HumanoidRig/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightToe_End
-        weight: 0
+        weight: 1
       - path: HumanoidRig/Hips/Spine
         weight: 1
       - path: HumanoidRig/Hips/Spine/Spine1
@@ -193,7 +192,7 @@ ModelImporter:
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head
         weight: 1
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/HeadTop_End
-        weight: 0
+        weight: 1
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/LeftEye
         weight: 1
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/RightEye
@@ -246,10 +245,22 @@ ModelImporter:
         weight: 1
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
         weight: 1
-      - path: Wolf3D_Body
-        weight: 0
+      - path: HumanoidRig/root
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.L
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Eye.R
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Head
+        weight: 1
+      - path: HumanoidRig/root/RotationOffsetParent_NeckBase/RotationOffset_Neck
+        weight: 1
+      - path: Wolf3D_Body3
+        weight: 1
       maskType: 1
-      maskSource: {fileID: 31900000, guid: 6fefa293ef047bf4a8d97ed75fa7582a, type: 2}
+      maskSource: {fileID: 31900000, guid: 98e6295efb656bc409dc85d4a21fa874, type: 2}
       additiveReferencePoseFrame: 1
     isReadable: 0
   meshes:
@@ -286,6 +297,7 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1101,6 +1113,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

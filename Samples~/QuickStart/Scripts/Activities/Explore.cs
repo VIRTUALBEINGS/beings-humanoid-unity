@@ -39,7 +39,6 @@ namespace VirtualBeings.Beings.Humanoid.Sample.QuickStart
         {
             _stay.Start();
             _lookSimple.Start();
-            _face.Start();
 
             while (FOREVER)
             {

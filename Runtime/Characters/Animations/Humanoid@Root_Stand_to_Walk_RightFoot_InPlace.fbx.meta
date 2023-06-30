@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 367a2c2424425e445931cb375afc6179
 ModelImporter:
-  serializedVersion: 21300
+  serializedVersion: 22200
   internalIDToNameTable:
   - first:
       74: -623603649343465320
@@ -25,7 +25,15 @@ ModelImporter:
     animationImportWarnings: "\nClip 'Scene' has import animation warnings that might
       lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
       retargeting quality.\n\t'Spine1' has scale animation that will be discarded.\n\t'Spine2'
-      has scale animation that will be discarded.\n\t'LeftHandPinky1' has scale animation
+      has scale animation that will be discarded.\n\t'Neck' has scale animation that
+      will be discarded.\n\t'Head' has scale animation that will be discarded.\n\t'LeftHandMiddle1'
+      has translation animation that will be discarded.\n\t'LeftHandMiddle1' has
+      scale animation that will be discarded.\n\t'LeftHandRing1' has translation
+      animation that will be discarded.\n\t'LeftHandRing1' has scale animation that
+      will be discarded.\n\t'LeftHandRing2' has scale animation that will be discarded.\n\t'LeftHandPinky1'
+      has translation animation that will be discarded.\n\t'RightHandMiddle1' has
+      translation animation that will be discarded.\n\t'RightHandRing1' has translation
+      animation that will be discarded.\n\t'RightHandPinky1' has translation animation
       that will be discarded.\n\t'LeftUpLeg' has scale animation that will be discarded.\n\t'LeftLeg'
       has scale animation that will be discarded.\n\t'LeftFoot' has scale animation
       that will be discarded.\n\t'LeftToeBase' has scale animation that will be discarded.\n\t'RightUpLeg'
@@ -49,7 +57,7 @@ ModelImporter:
       takeName: Scene
       internalID: 0
       firstFrame: 1
-      lastFrame: 40
+      lastFrame: 70
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -272,6 +280,7 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -1087,6 +1096,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

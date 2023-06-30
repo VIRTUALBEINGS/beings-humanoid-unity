@@ -22,12 +22,13 @@ ModelImporter:
     animationImportWarnings: "\nClip 'Scene' has import animation warnings that might
       lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
       retargeting quality.\n\t'Spine1' has scale animation that will be discarded.\n\t'Spine2'
-      has scale animation that will be discarded.\n\t'RightHandPinky3' has translation
-      animation that will be discarded.\n\t'LeftUpLeg' has scale animation that will
-      be discarded.\n\t'LeftLeg' has scale animation that will be discarded.\n\t'LeftFoot'
-      has scale animation that will be discarded.\n\t'RightUpLeg' has scale animation
-      that will be discarded.\n\t'RightLeg' has scale animation that will be discarded.\n\t'RightFoot'
-      has scale animation that will be discarded.\n"
+      has scale animation that will be discarded.\n\t'Head' has scale animation that
+      will be discarded.\n\t'RightHandPinky3' has translation animation that will
+      be discarded.\n\t'LeftUpLeg' has scale animation that will be discarded.\n\t'LeftLeg'
+      has scale animation that will be discarded.\n\t'LeftFoot' has scale animation
+      that will be discarded.\n\t'RightUpLeg' has scale animation that will be discarded.\n\t'RightLeg'
+      has scale animation that will be discarded.\n\t'RightFoot' has scale animation
+      that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -69,7 +70,7 @@ ModelImporter:
       - path: 
         weight: 1
       - path: HumanoidRig
-        weight: 1
+        weight: 0
       - path: HumanoidRig/BSDriverHolder
         weight: 0
       - path: HumanoidRig/BSDriverHolder/BSDriver_eyes_01
@@ -177,9 +178,9 @@ ModelImporter:
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/HeadTop_End
         weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/LeftEye
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/Neck/Head/RightEye
-        weight: 1
+        weight: 0
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder
         weight: 1
       - path: HumanoidRig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
@@ -241,6 +242,7 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0

@@ -163,6 +163,7 @@ namespace VirtualBeings.Beings.Humanoid
             int RS_Stand              = RSHumanoid.Stand.ID;
             int RS_Sit                = RSHumanoid.Sit.ID;
             int RS_Walk               = RSHumanoid.Walk.ID;
+            int RS_Jog                = RSHumanoid.Jog.ID;
             int RS_Dance_LowEnergy    = RSHumanoid.Dance_LowEnergy.ID;
             int RS_Dance_Robot        = RSHumanoid.Dance_Robot.ID;
             int RS_Dance_Wave         = RSHumanoid.Dance_Wave.ID;
@@ -201,10 +202,29 @@ namespace VirtualBeings.Beings.Humanoid
             RSInfos[RS_Stand] = new RSInfo(
                 Animator.StringToHash("Stand"),
                 Animator.StringToHash("BA_State_Stand"),
-                new int[] { BodyAttitudeHumanoid.Idle.ID, BodyAttitudeHumanoid.Lean.ID },
+                new int[]
+                {
+                    BodyAttitudeHumanoid.Idle.ID,
+                    BodyAttitudeHumanoid.Lean.ID,
+                    BodyAttitudeHumanoid.Angry.ID,
+                    BodyAttitudeHumanoid.Confused.ID,
+                    BodyAttitudeHumanoid.Contrapposto.ID,
+                    BodyAttitudeHumanoid.Defeated.ID,
+                    BodyAttitudeHumanoid.Disgusted.ID,
+                    BodyAttitudeHumanoid.Judging.ID,
+                    BodyAttitudeHumanoid.LegJoined.ID,
+                    BodyAttitudeHumanoid.LegSpread.ID,
+                    BodyAttitudeHumanoid.Relaxed.ID,
+                    BodyAttitudeHumanoid.Scared.ID,
+                    BodyAttitudeHumanoid.HandsBehindBack.ID,
+                    BodyAttitudeHumanoid.HandsOnHips.ID,
+                },
                 new RSInfo.ST_and_int[]
                 {
-                    new(STHumanoid.Neutral.ID, AddS("ST_Stand_Neutral", maxCrossFadeDurationOfTransitionParameters: 0.1f)),
+                    new(
+                        STHumanoid.Neutral.ID,
+                        AddS("ST_Stand_Neutral", maxCrossFadeDurationOfTransitionParameters: 0.1f)
+                    ),
 
                     new(STHumanoid.Turn.ID, AddS("ST_Stand_Turn", maxCrossFadeDurationOfTransitionParameters: 0f)),
                     new(STHumanoid.StepL.ID, AddS("ST_Stand_StepL", maxCrossFadeDurationOfTransitionParameters: 0f)),
@@ -214,7 +234,7 @@ namespace VirtualBeings.Beings.Humanoid
                     new(STHumanoid.GreetActive.ID, AddS("ST_Stand_Greet_Active", STCrossfadeTime)),
                     new(STHumanoid.Greet.ID, AddS("ST_Stand_Greet", STCrossfadeTime)),
                     new(STHumanoid.Reacting.ID, AddS("ST_Stand_Reacting", STCrossfadeTime)),
-                    new(STHumanoid.Angry_Gesture.ID,AddS("ST_Stand_AngryGesture", STCrossfadeTime)),
+                    new(STHumanoid.Angry_Gesture.ID, AddS("ST_Stand_AngryGesture", STCrossfadeTime)),
                     new(STHumanoid.Angry_CrossArms.ID, AddS("ST_Stand_Angry_CrossArms", STCrossfadeTime)),
                     new(STHumanoid.StretchArms.ID, AddS("ST_Stand_StretchArms", STCrossfadeTime)),
                     new(STHumanoid.InspectCurious.ID, AddS("ST_Stand_Inspect_Curious", STCrossfadeTime)),
@@ -229,6 +249,84 @@ namespace VirtualBeings.Beings.Humanoid
                     new(STHumanoid.RollShoulder.ID, AddS("ST_Stand_RollShoulder", STCrossfadeTime)),
                     new(STHumanoid.SatisfiedJumpy.ID, AddS("ST_Stand_Satisfied_Jumpy", STCrossfadeTime)),
                     new(STHumanoid.TwistTorso_Subtle.ID, AddS("ST_Stand_TwistTorso_Subtle", STCrossfadeTime)),
+                    new(STHumanoid.Sad_FootKick.ID, AddS("ST_Stand_Sad_FootKick", STCrossfadeTime)),
+                    new(STHumanoid.HandsOnBack.ID, AddS("ST_Stand_HandsOnBack", STCrossfadeTime)),
+                    new(STHumanoid.HandsOnBackExit.ID, AddS("ST_Stand_HandsOnBackExit", STCrossfadeTime, 0.5f)),
+                    new(STHumanoid.StretchArmsL.ID, AddS("ST_Stand_StretchLeftArms", STCrossfadeTime)),
+                    new(STHumanoid.StretchArmsR.ID, AddS("ST_Stand_StretchRightArms", STCrossfadeTime)),
+                    new(STHumanoid.StretchArmsR.ID, AddS("ST_Stand_StretchRightArms", STCrossfadeTime)),
+                    new(STHumanoid.StretchArmsR.ID, AddS("ST_Stand_StretchRightArms", STCrossfadeTime)),
+                    new(STHumanoid.InspectCuriousL.ID, AddS("ST_Stand_Inspect_Curious_L", STCrossfadeTime)),
+                    new(STHumanoid.InspectCuriousR.ID, AddS("ST_Stand_Inspect_Curious_R", STCrossfadeTime)),
+                    new(STHumanoid.ShakeFootL.ID, AddS("ST_Stand_ShakeFootL", STCrossfadeTime)),
+                    new(STHumanoid.ShakeFootR.ID, AddS("ST_Stand_ShakeFootR", STCrossfadeTime)),
+                    new(STHumanoid.Inspect_Arms_WideOpen.ID, AddS("ST_Stand_Inspect_Arms_WideOpen", STCrossfadeTime)),
+                    new(STHumanoid.BalanceAdjust.ID, AddS("ST_Stand_BalanceAdjust", STCrossfadeTime)),
+
+                    new(
+                        STHumanoid.Speaking_Long_Overt_Agreeing_RH.ID,
+                        AddS("ST_Stand_Speaking_Long_Overt_Agreeing_RightHand", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Long_Overt_Explaining_BH.ID,
+                        AddS("ST_Stand_Speaking_Long_Overt_BothHands_Explaining", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Long_Overt_Left_BH.ID,
+                        AddS("ST_Stand_Speaking_Long_Overt_BothHands_Left", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Long_Overt_Explaining_Slow.ID,
+                        AddS("ST_Stand_Speaking_Long_Overt_Explaining_Slow", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Med_Overt_Argument_BH.ID,
+                        AddS("ST_Stand_Speaking_MidLength_Overt_BothHands_Argument", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Med_Overt_Explaining_BH.ID,
+                        AddS("ST_Stand_Speaking_MidLength_Overt_BothHands_Explaining", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Med_Overt_Sigh_RH.ID,
+                        AddS("ST_Stand_Speaking_MidLength_Overt_RightHand_Sigh", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Med_Subtle_Argument_RH.ID,
+                        AddS("ST_Stand_Speaking_MidLength_Subtle_RightHand_Argument", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Short_Overt_Agreeing_BH.ID,
+                        AddS("ST_Stand_Speaking_Short_Overt_BothHands_Agreeing", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Short_Overt_High_BH.ID,
+                        AddS("ST_Stand_Speaking_Short_Overt_BothHands_High", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Short_Overt_Agreeing_RH.ID,
+                        AddS("ST_Stand_Speaking_Short_Overt_RightHand_Agree", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Short_Subtle_Agreeing_BH.ID,
+                        AddS("ST_Stand_Speaking_Short_Subtle_BothHands_Agreeing", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Short_Subtle_ArmsOpen_BH.ID,
+                        AddS("ST_Stand_Speaking_Short_Subtle_BothHands_ArmsOpen", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Short_Subtle_Brief_RH.ID,
+                        AddS("ST_Stand_Speaking_Short_Subtle_RightHand_Brief", STCrossfadeTime)
+                    ),
+                    new(
+                        STHumanoid.Speaking_Short_Subtle_Twist_RH.ID,
+                        AddS("ST_Stand_Speaking_Short_Subtle_RightHand_Twist", STCrossfadeTime)
+                    ),
+
+                    // STC
+                    new(STHumanoid.HandsOnBackCycle.ID, AddS("STC_Stand_HandsOnBack", .5f)),
+                    new(STHumanoid.Idle.ID, AddS("STC_Stand_Idle", 1.2f)),
                 }
             );
 
@@ -245,6 +343,13 @@ namespace VirtualBeings.Beings.Humanoid
                 new int[] { },
                 new RSInfo.ST_and_int[] { }
             );
+
+            RSInfos[RS_Jog] = new RSInfo(
+               Animator.StringToHash("Root_Jog"),
+               Animator.StringToHash("BA_State_Stand"),
+               new int[] { },
+               new RSInfo.ST_and_int[] { }
+           );
 
             RSInfos[RS_Dance_LowEnergy] = new RSInfo(
                 Animator.StringToHash("Root_Dance_LowEnergy"),
@@ -298,6 +403,35 @@ namespace VirtualBeings.Beings.Humanoid
                 return RSTransitionInfosL.Count - 1;
             }
 
+            int AddOT(
+                string ot,
+                int transitionType = 0,
+                float crossFadeDuration = 0f,
+                float transitionOffset = 0f,
+                float exitTime = -1f,
+                int nextExpressiveVariation = -1,
+                int nextExitTimeVariation = -1,
+                float maxDistance = 0f,
+                float maxAngle = 180f,
+                float maxCrossFadeDurationOfTransitionParameters = -1f
+            )
+            {
+                return AddP(
+                    new RSTransitionInfo(
+                        Animator.StringToHash(ot),
+                        transitionType,
+                        crossFadeDuration,
+                        transitionOffset,
+                        exitTime,
+                        nextExpressiveVariation,
+                        nextExitTimeVariation,
+                        maxDistance,
+                        maxAngle,
+                        maxCrossFadeDurationOfTransitionParameters
+                    )
+                );
+            }
+
             float RSInterruptionTime = sharedSettings.CrossFadeTimeForRSInterruption;
 
             for (int i = 0; i < RStoRSMatrix.Length; i++)
@@ -319,14 +453,12 @@ namespace VirtualBeings.Beings.Humanoid
 
             RStoRSMatrixEntry NamedTransition(int RS, string OT, float crossFadeDuration = -1f)
             {
-                return new(
+                return new RStoRSMatrixEntry(
                     RS,
-                    AddP(
-                        new RSTransitionInfo(
-                            Animator.StringToHash(OT),
-                            TransitionTypeHumanoid.Default.ID,
-                            crossFadeDuration > 0 ? crossFadeDuration : RSInterruptionTime
-                        )
+                    AddOT(
+                        OT,
+                        TransitionTypeHumanoid.Default.ID,
+                        crossFadeDuration > 0 ? crossFadeDuration : RSInterruptionTime
                     )
                 );
             }
@@ -344,8 +476,37 @@ namespace VirtualBeings.Beings.Humanoid
             // ---------------------------------------
             // -> Stand
             InsertDefaultOT(RS_Stand, RS_Stand);
-            InsertDefaultOT(RS_Stand, RS_Walk);
             InsertDefaultOT(RS_Stand, RS_Sit);
+            InsertDefaultOT(RS_Stand, RS_Jog);
+
+            RStoRSMatrix[RS_Walk * nRS + RS_Stand] = new RStoRSMatrixEntry(
+                RS_Stand,
+                AddP(
+                    new RSTransitionInfo(
+                        RSInfos[RS_Stand].StateHash,
+                        TransitionTypeHumanoid.Default.ID,
+                        RSInterruptionTime,
+                        nextExpressiveVariation:
+                        AddOT(
+                            "Walk_to_Stand_Left",
+                            TransitionTypeHumanoid.NiceStop.ID,
+                            transitionOffset: 0f,
+                            exitTime: 0.5f,
+                            maxDistance: 0.5f,
+                            crossFadeDuration: 0.2f,
+                            nextExitTimeVariation:
+                            AddOT(
+                                "Walk_to_Stand_Right",
+                                TransitionTypeHumanoid.NiceStop.ID,
+                                transitionOffset: 0f,
+                                maxDistance: 0.5f,
+                                exitTime: 0f,
+                                crossFadeDuration: 0.2f
+                            )
+                        )
+                    )
+                )
+            );
 
             //InsertNamedOT(RS_Stand, RS_Dance_LowEnergy, "Dance_LowEnergy_to_Stand");
             //InsertNamedOT(RS_Stand, RS_Dance_Robot, "Dance_Robot_to_Stand");
@@ -362,30 +523,23 @@ namespace VirtualBeings.Beings.Humanoid
             // ---------------------------------------
             // -> Walk
             InsertDefaultOT(RS_Walk, RS_Walk);
-            RStoRSMatrix[RS_Stand * nRS + RS_Walk] = new(
+            RStoRSMatrix[RS_Stand * nRS + RS_Walk] = new RStoRSMatrixEntry(
                 RS_Walk,
-                AddP(
-                    new RSTransitionInfo(
-                        Animator.StringToHash("Stand_to_WalkL"),
-                        TransitionTypeHumanoid.DefaultLeft.ID,
-                        nextExpressiveVariation: AddP(
-                            new RSTransitionInfo(
-                                Animator.StringToHash("Stand_to_WalkR"),
-                                TransitionTypeHumanoid.DefaultRight.ID,
-                                nextExpressiveVariation: AddP(
-                                    new RSTransitionInfo(
-                                        Animator.StringToHash("Stand_to_Walk_BackwardsL"),
-                                        TransitionTypeHumanoid.DefaultBackwardLeft.ID,
-                                        nextExpressiveVariation: AddP(
-                                        new RSTransitionInfo(
-                                            Animator.StringToHash("Stand_to_Walk_BackwardsR"),
-                                            TransitionTypeHumanoid.DefaultBackwardRight.ID)
-                                            // nextExpressiveVariation: AddP(new RSTransitionInfo(Animator.StringToHash("Stand_to_Walk_AtAngleL"), TransitionTypeHumanoid.AtAngleLeft.ID,
-                                            // nextExpressiveVariation: AddP(new RSTransitionInfo(Animator.StringToHash("Stand_to_Walk_AtAngleR"), TransitionTypeHumanoid.AtAngleRight.ID)))))))));
-                                        )
-                                    )
-                                )
+                AddOT(
+                    "Stand_to_WalkL",
+                    TransitionTypeHumanoid.DefaultLeft.ID,
+                    nextExpressiveVariation: AddOT(
+                        "Stand_to_WalkR",
+                        TransitionTypeHumanoid.DefaultRight.ID,
+                        nextExpressiveVariation: AddOT(
+                            "Stand_to_Walk_BackwardsL",
+                            TransitionTypeHumanoid.DefaultBackwardLeft.ID,
+                            nextExpressiveVariation: AddOT(
+                                "Stand_to_Walk_BackwardsR",
+                                TransitionTypeHumanoid.DefaultBackwardRight.ID
                             )
+                            // nextExpressiveVariation: AddP(new RSTransitionInfo(Animator.StringToHash("Stand_to_Walk_AtAngleL"), TransitionTypeHumanoid.AtAngleLeft.ID,
+                            // nextExpressiveVariation: AddP(new RSTransitionInfo(Animator.StringToHash("Stand_to_Walk_AtAngleR"), TransitionTypeHumanoid.AtAngleRight.ID)))))))));
                         )
                     )
                 )
@@ -404,6 +558,22 @@ namespace VirtualBeings.Beings.Humanoid
             InsertDefaultOT(RS_Sit, RS_Sit);
             InsertDefaultOT(RS_Sit, RS_Stand);
             InsertDefaultOT(RS_Sit, RS_Walk);
+
+            // ------------------------------
+            // -> Jog
+            InsertDefaultOT(RS_Jog, RS_Jog);
+            RStoRSMatrix[RS_Stand * nRS + RS_Jog] = new RStoRSMatrixEntry(
+                RS_Jog,
+                AddOT(
+                    "Stand_to_JogL",
+                    TransitionTypeHumanoid.DefaultLeft.ID,
+                    nextExpressiveVariation: AddOT(
+                        "Stand_to_JogR",
+                        TransitionTypeHumanoid.DefaultRight.ID
+                    )
+                )
+            );
+
 
             // RStoRSMatrix[RS_Hover * nRS + RS_Stand] = new RStoRSMatrixEntry(
             // RSHumanoid.Stand.ID,
@@ -487,20 +657,29 @@ namespace VirtualBeings.Beings.Humanoid
 
             AddUST(USTHumanoid.None, "UST_None");
             AddUST(USTHumanoid.Neutral, "UST_None");
-            AddUST(USTHumanoid.SaluteBriefLeft, "UST_SaluteBriefLeft");
-            AddUST(USTHumanoid.SaluteBriefRight, "UST_SaluteBriefRight");
+
+            AddUST(USTHumanoid.Angry_Gesture, "UST_AngryGesture");
             AddUST(USTHumanoid.ApplauseQuick, "UST_Applause_Quick");
             AddUST(USTHumanoid.DismissingGesture, "UST_Dismissing_Gesture");
-            AddUST(USTHumanoid.VictoryGesture, "UST_Victory_Gesture");
-            AddUST(USTHumanoid.JumpScared, "UST_Jump_Scared");
-            AddUST(USTHumanoid.ScratchHead, "UST_Head_Scratch");
-            AddUST(USTHumanoid.WipeForehead, "UST_Wipe_Forehead");
-            AddUST(USTHumanoid.SwingArms_Subtle, "UST_SwingArms_Subtle");
+            AddUST(USTHumanoid.Greet, "UST_Greet");
             AddUST(USTHumanoid.HeadTilt_Stretch, "UST_HeadTilt_Stretch");
+            AddUST(USTHumanoid.JumpScared, "UST_Jump_Scared");
+            AddUST(USTHumanoid.Jumpscare_HoldHeart, "UST_JumpScare_HoldHeart");
+            AddUST(USTHumanoid.Look, "UST_Look");
+            AddUST(USTHumanoid.LookBehind, "UST_LookBehind");
             AddUST(USTHumanoid.RollShoulder, "UST_RollShoulder");
+            AddUST(USTHumanoid.SaluteBriefLeft, "UST_SaluteBriefLeft");
+            AddUST(USTHumanoid.SaluteBriefRight, "UST_SaluteBriefRight");
+            AddUST(USTHumanoid.ScratchHead, "UST_Head_Scratch");
+            AddUST(USTHumanoid.Sigh_Relieved, "UST_Surprised_CoveringMouth");
+            AddUST(USTHumanoid.Surprised_CoveringMouth, "UST_Surprised_CoveringMouth");
+            AddUST(USTHumanoid.SwingArms_Subtle, "UST_SwingArms_Subtle");
             AddUST(USTHumanoid.TwistTorso_Subtle, "UST_TwistTorso_Subtle");
-            AddUST(USTHumanoid.Angry_Gesture, "UST_AngryGesture");
-            AddUST(USTHumanoid.Suprised_CoveringMouth, "UST_Surprised_CoveringMouth");
+            AddUST(USTHumanoid.VictoryGesture, "UST_Victory_Gesture");
+            AddUST(USTHumanoid.WipeForehead, "UST_Wipe_Forehead");
+            AddUST(USTHumanoid.SaluteBrief, "UST_Salute_Brief");
+            AddUST(USTHumanoid.InspectCuriousL, "UST_Inspect_Curious_L");
+            AddUST(USTHumanoid.InspectCuriousR, "UST_Inspect_Curious_R");
 
             // ---------------------------------------
             // Write our results to sharedSettings

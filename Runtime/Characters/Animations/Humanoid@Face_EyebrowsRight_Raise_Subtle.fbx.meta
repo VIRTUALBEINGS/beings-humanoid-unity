@@ -67,9 +67,9 @@ ModelImporter:
       - path: HumanoidRig/BSDriverHolder/BSDriver_eyes_01
         weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_eyes_02
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_eyes_03
-        weight: 0
+        weight: 1
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_01
         weight: 0
       - path: HumanoidRig/BSDriverHolder/BSDriver_face_02
@@ -245,6 +245,7 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0

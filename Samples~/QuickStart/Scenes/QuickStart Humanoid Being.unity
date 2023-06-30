@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d51b0c591ac4fb44ebaa8d1569cfa4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _obstacleType: 1
+  _obstacleType: 2
   _overrideRefreshPeriod: -1
 --- !u!1 &633433110
 GameObject:
@@ -453,6 +453,7 @@ GameObject:
   - component: {fileID: 749478102}
   - component: {fileID: 749478101}
   - component: {fileID: 749478100}
+  - component: {fileID: 749478104}
   m_Layer: 2
   m_Name: Cube Blue (1)
   m_TagString: Untagged
@@ -487,7 +488,6 @@ MonoBehaviour:
   m_Script: {fileID: -817278363, guid: f458912201050ed4ca3895672c158549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _obstacleType: 1
   _transformOfCenterOfInterest: {fileID: 0}
   _childrenForInteractionDB: []
   _maxRadius: 0.5
@@ -561,6 +561,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749478098}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &749478104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749478098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51b0c591ac4fb44ebaa8d1569cfa4d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _obstacleType: 2
+  _overrideRefreshPeriod: -1
 --- !u!1 &934092133
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,6 +588,7 @@ GameObject:
   - component: {fileID: 934092137}
   - component: {fileID: 934092136}
   - component: {fileID: 934092135}
+  - component: {fileID: 934092139}
   m_Layer: 2
   m_Name: Cube Blue
   m_TagString: Untagged
@@ -608,7 +623,6 @@ MonoBehaviour:
   m_Script: {fileID: -817278363, guid: f458912201050ed4ca3895672c158549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _obstacleType: 1
   _transformOfCenterOfInterest: {fileID: 0}
   _childrenForInteractionDB: []
   _maxRadius: 0.5
@@ -682,6 +696,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934092133}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &934092139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934092133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51b0c591ac4fb44ebaa8d1569cfa4d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _obstacleType: 2
+  _overrideRefreshPeriod: -1
 --- !u!1 &946018090
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d51b0c591ac4fb44ebaa8d1569cfa4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _obstacleType: 1
+  _obstacleType: 2
   _overrideRefreshPeriod: -1
 --- !u!65 &946018093
 BoxCollider:
@@ -807,6 +835,7 @@ GameObject:
   - component: {fileID: 1294258184}
   - component: {fileID: 1294258183}
   - component: {fileID: 1294258182}
+  - component: {fileID: 1294258186}
   m_Layer: 2
   m_Name: Cube Blue (2)
   m_TagString: Untagged
@@ -841,7 +870,6 @@ MonoBehaviour:
   m_Script: {fileID: -817278363, guid: f458912201050ed4ca3895672c158549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _obstacleType: 1
   _transformOfCenterOfInterest: {fileID: 0}
   _childrenForInteractionDB: []
   _maxRadius: 0.5
@@ -915,6 +943,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294258180}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1294258186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294258180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51b0c591ac4fb44ebaa8d1569cfa4d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _obstacleType: 2
+  _overrideRefreshPeriod: -1
 --- !u!1 &1366379315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,16 +1116,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NavigableCollider: {fileID: 633433112}
-  _navigationAreaRefreshRate: -1
   NavigationIsInLocalSpace: 0
-  _margin: 1
-  _enableDebugView: 0
+  _maxSize: 20
   SpawningPoints: []
   NavigableTerrainSettings:
     Epsilon: 0.002
     TimeInMsPerFrameForNavMeshProcessing: 1
     LineSegmentVisualizer: {fileID: 0}
-  _interactableID: 0
+  _enableDebugView: 1
+  _displayWholeNavMesh: 0
 --- !u!4 &1660172451
 Transform:
   m_ObjectHideFlags: 0
